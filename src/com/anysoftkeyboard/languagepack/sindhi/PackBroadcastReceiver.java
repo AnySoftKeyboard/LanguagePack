@@ -1,4 +1,4 @@
-package com.anysoftkeyboard.languagepack.change_me;
+package com.anysoftkeyboard.languagepack.sindhi;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
