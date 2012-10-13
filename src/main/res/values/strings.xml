@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">AnySoftKeyboard - Russian Language Pack, русский язык</string>
     <string name="ru_keyboard">Русский</string>
     <string name="ru_keyboard_extra_rows">Русский с расширенным рядом</string>
     <string name="ru_ph_keyboard">Русский Фонетический</string>
     <string name="ru_ph_keyboard_extra_rows">Русский Фонетический с расширенным рядом</string>
+    <string name="russian_27_keys">Русский 27 клавиш</string>
+    <string name="russian_25_keys">Русский 25 клавиш</string>
+    <string name="russian_27_keys_desc">Редко используемые буквы вызываются длительным нажатием</string>
     <string name="russian_dictionary">Русский</string>
-
-    <string name="app_name">AnySoftKeyboard - Russian Language Pack, русский язык</string>
-    <string name="keyboard_name">Русский</string>
-    <string name="dictionary_name">Русский</string>
 </resources>

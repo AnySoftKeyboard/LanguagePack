@@ -21,6 +21,7 @@
 	defaultDictionaryLocale="ru" 
 	description="Created with dbriskin"
 	index="1"/>
+
 	<Keyboard 
 	id="203ac227-a166-4732-8c17-dc525cac00c1" 
 	nameResId="@string/ru_keyboard_extra_rows"
@@ -31,6 +32,7 @@
 	defaultDictionaryLocale="ru" 
 	description="Created with igormar"
 	index="2"/>
+
 	<Keyboard 
 	id="44e7cf9d-5b43-4b55-b1ce-ad755d1948b2" 
 	nameResId="@string/ru_ph_keyboard"
@@ -40,6 +42,7 @@
 	defaultDictionaryLocale="ru" 
 	description="Created with dbriskin"
 	index="3"/>
+
 	<Keyboard 
 	id="126e44c3-6338-4bac-a14b-0543d2191189" 
 	nameResId="@string/ru_ph_keyboard_extra_rows"
@@ -51,5 +54,24 @@
 	description="Created with igormar"
 	index="4"/>
 
+	<Keyboard
+	id="47943e10-08d5-11e2-892e-0800200c9a66"
+	nameResId="@string/russian_27_keys"
+	layoutResId="@xml/russian27"
+	description="@string/russian_27_keys_desc"
+	physicalKeyboardMappingResId="@xml/ru_physical"
+	iconResId="ru"
+	defaultDictionaryLocale="ru"
+	index="5"/>
+
+	<Keyboard
+	id="85c98910-08d5-11e2-892e-0800200c9a66"
+	nameResId="@string/russian_25_keys"
+	layoutResId="@xml/russian25"
+	description="@string/russian_27_keys_desc"
+	physicalKeyboardMappingResId="@xml/ru_physical"
+	iconResId="ru"
+	defaultDictionaryLocale="ru"
+	index="6"/>
 
 </Keyboards>
