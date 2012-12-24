@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Keyboards>
-	<Keyboard nameResId="@string/keyboard_name" iconResId="@drawable/ic_stat_ff" layoutResId="@xml/qwerty" id="2dbedd30-5339-11e1-b86c-0800200c9a66" defaultDictionaryLocale="ff" description="QWERTY by Ibraahiima SAAR" index="1"/>
-	<Keyboard nameResId="@string/keyboard_name" iconResId="@drawable/ic_stat_ff" layoutResId="@xml/azerty" id="7a9f0a30-5339-11e1-b86c-0800200c9a66" defaultDictionaryLocale="ff" description="AZERTY by Ibraahiima SAAR" index="2"/>
+	<Keyboard nameResId="@string/keyboard_name" iconResId="@drawable/ic_stat_ff" layoutResId="@xml/qwerty" id="2dbedd30-5339-11e1-b86c-0800200c9a66" defaultDictionaryLocale="ff" description="QWERTY by Ibrahima SARR" index="1"/>
+	<Keyboard nameResId="@string/keyboard_name" iconResId="@drawable/ic_stat_ff" layoutResId="@xml/azerty" id="7a9f0a30-5339-11e1-b86c-0800200c9a66" defaultDictionaryLocale="ff" description="AZERTY by Ibrahima SARR" index="2"/>
 </Keyboards>
