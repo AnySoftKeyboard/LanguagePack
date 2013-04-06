@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dictionaries>
-	<Dictionary nameResId="@string/dictionary" locale="cs"
-		id="133254fa-a680-481c-b70d-e8250ac81c89" type="binary"
-		dictionaryAssertName="cs_binary.mp3" description="" />
+    <Dictionary nameResId="@string/dictionary" locale="ka" id="cbe84b20-f120-425f-b9a4-b441d868d515" type="binary" dictionaryAssertName="ka_binary.mp3" description="Created by herrlado from lib.ge" />
 </Dictionaries>

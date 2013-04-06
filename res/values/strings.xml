@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - Czech Language Pack</string>
-    <string name="cs_qwertz_keyboard">Czech qwertz</string>
-    <string name="cs_qwerty_keyboard">Czech qwerty</string>
-    <string name="cs_qwerty_description">Czech qwerty</string>
-    <string name="cs_qwertz_description">Czech qwertz</string>
-    <string name="dictionary">Dictionary</string>
+    <string name="notification_contenttitle">AnySoftKeyboard</string>
+    <string name="app_name">AnySoftKeyboard - Georgian Language Pack</string>
+    <string name="ka_keyboard_qwerty">Georgian qwerty</string>
+    <string name="ka_old_keyboard_qwerty">Georgian qwerty</string>
+    <string name="ka_keyboard_qwertz">Georgian qwertz</string>
+    <string name="ka_qwerty_description">qwerty განლაგება</string>
+    <string name="ka_qwertz_description">qwertz განლაგება(გერმანული)</string>
+    <string name="ka_keyboard_ergonomic">Georgian Ergonomic</string>
+    <string name="ka_old_keyboard_ergonomic">Georgian Ergonomic</string>
+    <string name="ka_ergonomic_description">ერგონომიული</string>
+    <string name="ka_old_ergonomic_description">ერგონომიული, ნუსხა-ხუცური</string>
+    <string name="ka_old_qwerty_description">ნუსხა-ხუცური</string>
+    <string name="dictionary">Georgian</string>
 </resources>
