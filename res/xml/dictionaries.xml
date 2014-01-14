@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Dictionaries>
-	<Dictionary nameResId="@string/dictionary" locale="cs"
-		id="133254fa-a680-481c-b70d-e8250ac81c89" type="binary"
-		dictionaryAssertName="cs_binary.mp3" description="" />
+	<Dictionary nameResId="@string/dictionary" locale="sk"
+		id="0df8818b-53ec-4539-9583-4de692a8edab" type="binary"
+		dictionaryAssertName="sk_binary.mp3" description="by vanovcan" />
+		
+	<Dictionary nameResId="@string/dictionary_accent" locale="sk"
+		id="0d334d0b-4c00-423a-80d4-ecdcc3ea1260" type="binary"
+		dictionaryAssertName="sk_binary_accent.mp3" description="by vanovcan" />
 </Dictionaries>
