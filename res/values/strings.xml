@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - Czech Language Pack</string>
-    <string name="cs_qwertz_keyboard">Czech qwertz</string>
-    <string name="cs_qwerty_keyboard">Czech qwerty</string>
-    <string name="cs_qwerty_description">Czech qwerty</string>
-    <string name="cs_qwertz_description">Czech qwertz</string>
-    <string name="dictionary">Dictionary</string>
+    <string name="app_name">AnySoftKeyboard - Slovak Language Pack</string>
+    <string name="sk_keyboard">Slovak</string>
+    <string name="sk_keyboard_qwertz">Slovak qvertz</string>
+    <string name="sk_keyboard_qwertz_nomtap">Slovak qwertz- no multitap</string>
+    <string name="sk_keyboard_nomtap">Slovak - no multitap</string>
+    <string name="dictionary">Slovak - no accents</string>
+    <string name="dictionary_accent">Slovak - accents</string>
 </resources>
