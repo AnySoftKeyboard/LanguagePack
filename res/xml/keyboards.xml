@@ -24,13 +24,13 @@
 		defaultDictionaryLocale="sk" />
 	
 	<Keyboard nameResId="@string/sk_keyboard_qwertz" iconResId="@drawable/sk"
-		layoutResId="@xml/sk_qwerty" landscapeResId="@xml/sk_qwertz"
+		layoutResId="@xml/sk_qwertz" landscapeResId="@xml/sk_qwertz"
 		id="47bf7b6a-db70-4d8f-ad20-cb338b135250" description="Multitap qwertz for accent letters"
 		index="3" physicalKeyboardMappingResId="@xml/sk_qwertz_physical"
 		defaultDictionaryLocale="sk" />
 
 	<Keyboard nameResId="@string/sk_keyboard_qwertz_nomtap" iconResId="@drawable/sk"
-		layoutResId="@xml/sk_qwertz_nomtap" landscapeResId="@xml/sk_qwerty_nomtap"
+		layoutResId="@xml/sk_qwertz_nomtap" landscapeResId="@xml/sk_qwertz_nomtap"
 		id="eb6e45a0-7b3e-4094-a6d5-3f381cacfeb4" description="No multitap qwertz for accent letters"
 		index="4" physicalKeyboardMappingResId="@xml/sk_qwertz_physical"
 		defaultDictionaryLocale="sk" />
