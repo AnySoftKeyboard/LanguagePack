@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Dictionaries>
-    <!-- Dictionary attributes:
-     "nameResId" : the name of the dictionary. Should be short. Reference to a string in values.xml 
-     "locale" : the ID of the dictionary's (ISO) locale, e.g., "en", "iw", "ar", "ru", etc. The keyboard should declare the same locale. 
-     "id" : UUID for this dictionary. Obtain from here: http://www.famkruithof.net/uuid/uuidgen
-     "dictionaryResourceId" : a reference to the raw resource of the words dictionary
-     "autoTextResourceId" : a reference to a common typing mistakes XML.
-     -->
-	<Dictionary nameResId="@string/dictionary_name" locale="change_me" id="change_me" type="binary_resource"
-	dictionaryResourceId="@array/words_dict_array" autoTextResourceId="@xml/autotext" 
-	description="change_me"/>	
+	<Dictionary nameResId="@string/dictionary" locale="sk"
+		id="0df8818b-53ec-4539-9583-4de692a8edab" type="binary"
+		dictionaryAssertName="sk_binary.mp3" description="by vanovcan" />
+		
+	<Dictionary nameResId="@string/dictionary_accent" locale="sk"
+		id="0d334d0b-4c00-423a-80d4-ecdcc3ea1260" type="binary"
+		dictionaryAssertName="sk_binary_accent.mp3" description="by vanovcan" />
 </Dictionaries>

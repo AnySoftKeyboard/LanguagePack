@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - change_me Language Pack</string>
-    <string name="keyboard_name">change_me keyboard</string>
-    <string name="dictionary_name">change_me</string>
+    <string name="app_name">AnySoftKeyboard - Slovak Language Pack</string>
+    <string name="sk_keyboard">Slovak</string>
+    <string name="sk_keyboard_qwertz">Slovak qvertz</string>
+    <string name="sk_keyboard_qwertz_nomtap">Slovak qwertz- no multitap</string>
+    <string name="sk_keyboard_nomtap">Slovak - no multitap</string>
+    <string name="dictionary">Slovak - no accents</string>
+    <string name="dictionary_accent">Slovak - accents</string>
 </resources>
