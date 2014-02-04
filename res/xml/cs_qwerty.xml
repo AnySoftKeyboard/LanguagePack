@@ -42,7 +42,7 @@
     <Key android:codes="ů" android:popupCharacters="" android:keyEdgeFlags="right" />
 </Row>
 <Row>
-  <Key android:codes="-1" android:isModifier="true" android:keyWidth="14%p" android:isSticky="true" android:keyEdgeFlags="left"/>
+    <Key android:codes="-1" android:isModifier="true" android:keyWidth="14%p" android:isSticky="true" android:keyEdgeFlags="left"/>
     <Key android:codes="z" android:popupCharacters="ž" android:horizontalGap="1.1%p" />
     <Key android:codes="x" android:popupCharacters="" />
     <Key android:codes="c" android:popupCharacters="č" />
