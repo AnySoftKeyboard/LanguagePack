@@ -11,29 +11,21 @@
 		description := some text you would like to add. index := the sort
 		index of this keyboard in the Settings page.
 	-->
-	<Keyboard nameResId="@string/sk_keyboard" iconResId="@drawable/sk"
-		layoutResId="@xml/sk_qwerty" landscapeResId="@xml/sk_qwerty"
-		id="8c9bcbd0-3cda-4bee-bbab-198173a8afa1" description="Multitap for accent letters"
-		index="1" physicalKeyboardMappingResId="@xml/sk_qwerty_physical"
-		defaultDictionaryLocale="sk" />
+	<!-- 
+	<Keyboard nameResId="@string/ar_keyboard" iconResId="@drawable/am"
+		layoutResId="@xml/ar_qwerty" landscapeResId="@xml/ar_qwerty"
+		id="75221b32-e09d-4273-9322-a65c5b45597f" description="Created with herrlado"
+		index="1" physicalKeyboardMappingResId="@xml/ar_qwerty_physical"
+		defaultDictionaryLocale="ar" />
+-->
+	<Keyboard id="3cd03b9b-72c0-44a1-ad6d-911734fcd576" nameResId="@string/ar_keyboard_extra_rows"
+		layoutResId="@xml/ar_qwerty_4_rows" landscapeResId="@xml/ar_qwerty_4_rows" iconResId="@drawable/am"
+		defaultDictionaryLocale="ar" description="Created with herrlado"
+		index="1" />
+	
+		<Keyboard id="cc5f440b-2509-4ad0-845b-98052f27e0e6" nameResId="@string/ar_keyboard_extra_rows_v2"
+		layoutResId="@xml/ar_qwerty_4_rows_v2" landscapeResId="@xml/ar_qwerty_4_rows_v2" iconResId="@drawable/am"
+		defaultDictionaryLocale="ar" description="Created by Hayk Yeghiazaryan (haykweb@gmail.com)"
+		index="2" />
 
-	<Keyboard nameResId="@string/sk_keyboard_nomtap" iconResId="@drawable/sk"
-		layoutResId="@xml/sk_qwerty_nomtap" landscapeResId="@xml/sk_qwerty_nomtap"
-		id="1f9d583b-dfe3-4892-a4fc-cc1f0835838d" description="No multitap for accent letters"
-		index="2" physicalKeyboardMappingResId="@xml/sk_qwerty_physical"
-		defaultDictionaryLocale="sk" />
-	
-	<Keyboard nameResId="@string/sk_keyboard_qwertz" iconResId="@drawable/sk"
-		layoutResId="@xml/sk_qwertz" landscapeResId="@xml/sk_qwertz"
-		id="47bf7b6a-db70-4d8f-ad20-cb338b135250" description="Multitap qwertz for accent letters"
-		index="3" physicalKeyboardMappingResId="@xml/sk_qwertz_physical"
-		defaultDictionaryLocale="sk" />
-
-	<Keyboard nameResId="@string/sk_keyboard_qwertz_nomtap" iconResId="@drawable/sk"
-		layoutResId="@xml/sk_qwertz_nomtap" landscapeResId="@xml/sk_qwertz_nomtap"
-		id="eb6e45a0-7b3e-4094-a6d5-3f381cacfeb4" description="No multitap qwertz for accent letters"
-		index="4" physicalKeyboardMappingResId="@xml/sk_qwertz_physical"
-		defaultDictionaryLocale="sk" />
-	
-	
 </Keyboards>

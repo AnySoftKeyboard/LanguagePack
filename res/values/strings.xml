@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - Slovak Language Pack</string>
-    <string name="sk_keyboard">Slovak</string>
-    <string name="sk_keyboard_qwertz">Slovak qvertz</string>
-    <string name="sk_keyboard_qwertz_nomtap">Slovak qwertz- no multitap</string>
-    <string name="sk_keyboard_nomtap">Slovak - no multitap</string>
-    <string name="dictionary">Slovak - no accents</string>
-    <string name="dictionary_accent">Slovak - accents</string>
+    <string name="app_name">AnySoftKeyboard - Armenian Language Pack</string>
+    <string name="ar_keyboard">Հայերեն</string>
+    <string name="ar_keyboard_extra_rows">Հայերեն չորս շարքով</string>
+    <string name="ar_keyboard_extra_rows_v2">Հայերեն չորս շարքով (Hayk)</string>
 </resources>
