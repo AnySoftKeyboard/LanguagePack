@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.herrlado.ask.languagepack.armenian"
-    android:versionCode="20"
-    android:versionName="20140216-new4rows" >
+    android:versionCode="21"
+    android:versionName="20140220-wordlist" >
 
     <uses-sdk
         android:minSdkVersion="3"
@@ -43,6 +43,9 @@
             <meta-data
                 android:name="com.menny.android.anysoftkeyboard.keyboards"
                 android:resource="@xml/keyboards" />
+            <meta-data
+                android:name="com.menny.android.anysoftkeyboard.dictionaries"
+                android:resource="@xml/dictionaries" />
         </receiver>
     </application>
 
