@@ -15,13 +15,13 @@
          -->
         <Key android:codes="1091" android:keyLabel="у" android:popupCharacters="1" android:keyEdgeFlags="left"/>
         <Key android:codes="1082" android:keyLabel="к" android:popupCharacters="2"/>
-        <Key android:codes="1077" android:keyLabel="е" android:popupCharacters="3ё"/>
+        <Key android:codes="1077" android:keyLabel="е" android:popupCharacters="ё3"/>
         <Key android:codes="1085" android:keyLabel="н" android:popupCharacters="4" />
         <Key android:codes="1075" android:keyLabel="г" android:popupCharacters="5"/>
-        <Key android:codes="1096" android:keyLabel="ш" android:popupCharacters="6щ" />
+        <Key android:codes="1096" android:keyLabel="ш" android:popupCharacters="щ6" />
         <Key android:codes="1079" android:keyLabel="з" android:popupCharacters="7" />
         <Key android:codes="1093" android:keyLabel="х" android:popupCharacters="8" />
-        <Key android:codes="1100" android:keyLabel="ь" android:popupCharacters="9ъ"/>
+        <Key android:codes="1100" android:keyLabel="ь" android:popupCharacters="ъ9"/>
         <Key android:codes="1102" android:keyLabel="ю" android:popupCharacters="0" android:keyEdgeFlags="right"/>
     </Row>
 

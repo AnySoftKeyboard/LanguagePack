@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.anysoftkeyboard.languagepack.russian2"
-      android:versionName="20141020" android:versionCode="7">
+      android:versionName="20141029" android:versionCode="8">
       
     <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="15"></uses-sdk>
 
