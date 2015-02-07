@@ -1,4 +1,4 @@
-package com.anysoftkeyboard.languagepack.ukrainian;
+package com.anysoftkeyboard.languagepack.belarusian;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

@@ -2,6 +2,5 @@
 <resources>
     <array name="words_dict_array">
         <item>@raw/words_1</item>
-        <item>@raw/words_2</item>
     </array>
 </resources>

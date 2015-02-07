@@ -7,7 +7,7 @@
      "dictionaryResourceId" : a reference to the raw resource of the words dictionary
      "autoTextResourceId" : a reference to a common typing mistakes XML.
      -->
-	<Dictionary nameResId="@string/dictionary_name" locale="uk" id="9aed337e-ab3a-47e4-97fb-f81b6aca870a" type="binary_resource"
-	dictionaryResourceId="@array/words_dict_array" autoTextResourceId="@xml/autotext" 
-	description="Generated from uk Wikipedia"/>
+	<Dictionary nameResId="@string/dictionary_name" locale="be" id="6a0722cc-af00-11e4-9c84-5c260a0693c3" type="binary_resource"
+	dictionaryResourceId="@array/words_dict_array" autoTextResourceId="@xml/autotext"
+	description="Generated from hunspell-be data"/>
 </Dictionaries>
