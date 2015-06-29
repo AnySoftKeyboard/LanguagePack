@@ -5,11 +5,11 @@ android {
     buildToolsVersion '22.0.1'
 
     defaultConfig {
-        applicationId "api.anysoftkeyboard.com.languagepack"
+        applicationId "org.herrlado.ask.languagepack.georgian"
         minSdkVersion 15
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        versionCode 18
+        versionName "18.0"
     }
     buildTypes {
         release {
