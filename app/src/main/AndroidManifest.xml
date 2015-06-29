@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="18" android:versionName="18" package="org.herrlado.ask.languagepack.georgian"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/app_icon">
+        <receiver android:name=".KeyboardBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.menny.android.anysoftkeyboard.KEYBOARD" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.ALTERNATIVE" />
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.menny.android.anysoftkeyboard.DICTIONARY" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.ALTERNATIVE" />
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.menny.android.anysoftkeyboard.api.NOTIFY_LAYOUT_SWITCH" />
+            </intent-filter>
+            <meta-data android:name="com.menny.android.anysoftkeyboard.keyboards" android:resource="@xml/keyboards" />
+            <meta-data android:name="com.menny.android.anysoftkeyboard.dictionaries" android:resource="@xml/dictionaries" />
+        </receiver>
+    </application>
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="4" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+</manifest>

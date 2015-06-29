@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/opt/android-sdk-update-manager/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/home/lado/development/android/ask/LanguagePack/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-0324d823d500fc71d30e58690b4eabf97dc632f9.jar" />
+    </item>
+    <item
+        jar="/home/lado/development/android/ask/LanguagePack/app/build/intermediates/exploded-aar/LanguagePack/api/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bc66da581c1eb3f49e90a174044cb3225149a7c0">
+        <dex dex="/home/lado/development/android/ask/LanguagePack/app/build/intermediates/pre-dexed/debug/classes-fb22231182f4bc74306fe9cec12dbd0002434764.jar" />
+    </item>
+    <item
+        jar="/home/lado/development/android/ask/LanguagePack/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/home/lado/development/android/ask/LanguagePack/app/build/intermediates/pre-dexed/debug/classes-0b28bccefe1158a42809d2a8f419ffe6d9c92df8.jar" />
+    </item>
+    <item
+        jar="/home/lado/development/android/ask/LanguagePack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/home/lado/development/android/ask/LanguagePack/app/build/intermediates/pre-dexed/debug/classes-02d838afda31f1d3b663f8ead98434a18993f176.jar" />
+    </item>
+    <item
+        jar="/home/lado/development/android/ask/LanguagePack/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/home/lado/development/android/ask/LanguagePack/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-45675f10eff263d8af84f2fe75a350813f983f61.jar" />
+    </item>
+
+</items>

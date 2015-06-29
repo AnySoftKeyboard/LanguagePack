@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_contenttitle">AnySoftKeyboard</string>
+    <string name="app_name">AnySoftKeyboard - Georgian Language Pack</string>
+    <string name="ka_keyboard_qwerty">Georgian qwerty</string>
+    <string name="ka_old_keyboard_qwerty">Georgian qwerty</string>
+    <string name="ka_keyboard_qwertz">Georgian qwertz</string>
+    <string name="ka_qwerty_description">qwerty განლაგება</string>
+    <string name="ka_gjuken_description">ღჯუკენ განლაგება</string>
+    <string name="ka_qwertz_description">qwertz განლაგება(გერმანული)</string>
+    <string name="ka_keyboard_ergonomic">Georgian Ergonomic</string>
+        <string name="ka_keyboard_gjuken">Georgian ღჯუკენ</string>
+
+    <string name="ka_old_keyboard_ergonomic">Georgian Ergonomic</string>
+    <string name="ka_ergonomic_description">ერგონომიული</string>
+    <string name="ka_old_ergonomic_description">ერგონომიული, ნუსხა-ხუცური</string>
+    <string name="ka_old_qwerty_description">ნუსხა-ხუცური</string>
+    <string name="dictionary">Georgian</string>
+</resources>
