@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ask="http://schemas.android.com/apk/res/com.anysoftkeyboard.languagepack.belarusian"
+    android:keyWidth="10%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="@dimen/key_height"
+    >
+
+    <Row android:keyWidth="8.33%p">
+    <!-- йцукенгшўзх' -->
+        <Key android:codes="0x0439" android:keyLabel="" android:keyEdgeFlags="left"/>
+        <Key android:codes="0x0446" android:keyLabel=""/>
+        <Key android:codes="0x0443" android:keyLabel=""/>
+        <Key android:codes="0x043A" android:keyLabel=""/>
+        <Key android:codes="0x0435" android:keyLabel=""/>
+        <Key android:codes="0x043D" android:keyLabel=""/>
+        <Key android:codes="0x0433" android:keyLabel="" android:popupCharacters="&#x0491;"/>
+        <Key android:codes="0x0448" android:keyLabel=""/>
+        <Key android:codes="0x045E" android:keyLabel=""/>
+        <Key android:codes="0x0437" android:keyLabel=""/>
+        <Key android:codes="0x0445" android:keyLabel=""/>
+        <Key android:codes="0x02BC" android:keyLabel="'" android:keyEdgeFlags="right"/>
+    </Row>
+    
+    <Row android:keyWidth="8.33%p">
+    <!-- фывапролджэ -->
+        <Key android:codes="0x0444" android:keyLabel="" android:keyEdgeFlags="left"/>
+        <Key android:codes="0x044B" android:keyLabel=""/>
+        <Key android:codes="0x0432" android:keyLabel=""/>
+        <Key android:codes="0x0430" android:keyLabel=""/>
+        <Key android:codes="0x043F" android:keyLabel=""/>
+        <Key android:codes="0x0440" android:keyLabel=""/>
+        <Key android:codes="0x043E" android:keyLabel=""/>
+        <Key android:codes="0x043B" android:keyLabel=""/>
+        <Key android:codes="0x0434" android:keyLabel=""/>
+        <Key android:codes="0x0436" android:keyLabel=""/>
+        <Key android:codes="0x044D" android:keyLabel=""/>
+        <Key android:codes="0x0451" android:keyLabel="" android:keyEdgeFlags="right"/>
+    </Row>
+    
+    <Row android:keyWidth="9.09%p">
+    <!-- ячсмітьбю -->
+    	<Key android:codes="-1" android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="0x044F" android:keyLabel=""/>
+        <Key android:codes="0x0447" android:keyLabel=""/>
+        <Key android:codes="0x0441" android:keyLabel=""/>
+        <Key android:codes="0x043C" android:keyLabel=""/>
+        <Key android:codes="0x0456" android:keyLabel=""/>
+        <Key android:codes="0x0442" android:keyLabel=""/>
+        <Key android:codes="0x044C" android:keyLabel=""/>
+        <Key android:codes="0x0431" android:keyLabel=""/>
+        <Key android:codes="0x044E" android:keyLabel=""/>
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true"/>
+    </Row>
+</Keyboard>

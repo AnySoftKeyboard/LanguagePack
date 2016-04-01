@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PhysicalTranslation>
+	<!-- KEYCODE_C -->
+	<SequenceMapping keySequence="31,31" targetChar="&#x0107;"/>
+	<!-- KEYCODE_C -->
+	<SequenceMapping keySequence="31,31,31" targetChar="&#x010D;"/>
+	<!-- KEYCODE_L -->
+	<SequenceMapping keySequence="40,40" targetChar="&#x0142;"/>
+	<!-- KEYCODE_N -->
+	<SequenceMapping keySequence="42,42" targetChar="&#x0144;"/>
+	<!-- KEYCODE_S -->
+	<SequenceMapping keySequence="47,47" targetChar="&#x015B;"/>
+	<!-- KEYCODE_S -->
+	<SequenceMapping keySequence="47,47,47" targetChar="&#x0161;"/>
+	<!-- KEYCODE_U -->
+	<SequenceMapping keySequence="49,49" targetChar="&#x016D;"/>
+	<!-- KEYCODE_Z -->
+	<SequenceMapping keySequence="54,54" targetChar="&#x017A;"/>
+	<!-- KEYCODE_Z -->
+	<SequenceMapping keySequence="54,54,54" targetChar="&#x017E;"/>
+</PhysicalTranslation>

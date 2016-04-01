@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - change_me Language Pack</string>
-    <string name="keyboard_name">change_me keyboard</string>
-    <string name="dictionary_name">change_me</string>
+    <string name="app_name">AnySoftKeyboard - Belarusian Language Pack</string>
+    <string name="keyboard_name">Belarusian</string>
+    <string name="dictionary_name">Belarusian</string>
+    <string name="be_cyrillic_keyboard">Belarusian cyrillic</string>
+    <string name="be_latin_keyboard">Belarusian latin</string>
+    <string name="be_cyrillic_typo_keyboard">Беларуская друкарская</string>
+    <string name="be_latin_typo_keyboard">Biełaruskaja drukarskaja</string>
 </resources>
