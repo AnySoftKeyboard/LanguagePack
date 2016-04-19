@@ -8,7 +8,6 @@ buildscript {
 
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:d60a5b6'
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:d60a5b6'
-        //classpath files('english_dictionary/generatewordslist-1.0-SNAPSHOT.jar')
         classpath 'org.jsoup:jsoup:1.9.1'
     }
 }
@@ -20,11 +19,11 @@ android {
     buildToolsVersion '25.0.2'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.hebrew"
         minSdkVersion 7
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode 102
+        versionName "3.0.0"
     }
 
     signingConfigs {
@@ -47,29 +46,33 @@ android {
     }
 }
 
-task parseTextInputFiles(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
-}
-
-//another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
-task parseAospForEnglishDictionary(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListFromAOSPTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
+//Takdn from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
+task parseAospForHebrewDictionary(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListFromAOSPTask) {
+    inputFile new File(project.getProjectDir(), "dictionary/aosp_iw_wordlist.combined")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
     maxWordsInList 300000
+}
+def hebrewCharacters = "אבגדהוזחטיכלמנסעפצקרשת".toCharArray()
+def additionalInnerHebrewCharacters = "ץםןף\"'".toCharArray()
+
+task parseTextInputFiles(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask) {
+    inputFiles new File(project.getProjectDir(), "dictionary/Slang_wikipedia.htm")
+    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_inputs.xml")
+    wordCharacters = hebrewCharacters
+    additionalInnerCharacters = additionalInnerHebrewCharacters
 }
 
 task mergeAllWordLists(type: com.anysoftkeyboard.tools.generatewordslist.MergeWordsListTask) {
     dependsOn parseTextInputFiles
+    dependsOn parseAospForHebrewDictionary
 
     inputWordsListFiles = [
-            new File(project.getProjectDir(), "dictionary/words_from_texts.xml"),
-            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
+            new File(project.getProjectDir(), "dictionary/words.xml"),//legacy
+            new File(project.getProjectDir(), "dictionary/words_from_aosp.xml"),
+            new File(project.getProjectDir(), "dictionary/words_from_inputs.xml"),
     ] as File[]
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
-    maxWordsInList 100000
+    maxWordsInList 200000
 }
 
 task makeDictionary(type: com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask) {
