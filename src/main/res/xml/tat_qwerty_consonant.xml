@@ -49,7 +49,7 @@
         <Key android:codes="63"  android:popupCharacters=""/>
         <Key android:codes="35" android:keyLabel="-" android:popupCharacters=""/>
         <Key android:codes="1101" android:keyLabel="э" android:popupCharacters="ә" />
-        <Key android:codes="1093" android:keyLabel="х" android:popupCharacters=""/>
+        <Key android:codes="1093" android:keyLabel="х" android:popupCharacters="һ"/>
         <Key android:codes="1098" android:keyLabel="ъ" android:popupCharacters=""/>
         <Key android:keyWidth="15%p" android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true"/>
     </Row>
