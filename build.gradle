@@ -60,40 +60,39 @@ android {
 //    inputFile new File(project.getProjectDir(), "dictionary/kitaphane.tatarstan.ru.united.txt")
 //    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_ny_state_assembly.xml")
 //}
-def tatarCharacters = "АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя".toCharArray()
-def additionalTatarInnerCharacters = "-".toCharArray();
-
-task parseKitaphaneTatarstanRu(type: GenerateWordsListTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/kitaphane.tatarstan.ru.united.txt")
-//    wordCharacters = "АаӘәБбВвГгДдЕеЁёЖжҖҗЗзИиЙйКкЛлМмНнҢңОоӨөПпРрСсТтУуҮүФфХхҺһЦцЧчШшЩщЪъЫыЬьЭэЮюЯя".toCharArray()
-    wordCharacters = tatarCharacters
-    additionalInnerCharacters = additionalTatarInnerCharacters
-//    locale new Locale("ru")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/kitaphane.tatarstan.ru.united.xml")
-}
-
-task mergeAllWordLists(type: com.anysoftkeyboard.tools.generatewordslist.MergeWordsListTask) {
-//    dependsOn parseStateAssembly
-    dependsOn parseKitaphaneTatarstanRu
-
-    inputWordsListFiles = [
-//            new File(project.getProjectDir(), "dictionary/words_ny_state_assembly.xml"),
-//            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
-new File(project.getProjectDir(), "dictionary/kitaphane.tatarstan.ru.united.xml")
-    ] as File[]
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
-    maxWordsInList 100000
-}
-
-task makeDictionary(type: com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask) {
-    dependsOn mergeAllWordLists
-    inputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
-}
+//def tatarCharacters = "АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя".toCharArray()
+//def additionalTatarInnerCharacters = "-".toCharArray();
+//
+//task parseKitaphaneTatarstanRu(type: GenerateWordsListTask) {
+//    inputFile new File(project.getProjectDir(), "dictionary/kitaphane.tatarstan.ru.united.txt")
+////    wordCharacters = "АаӘәБбВвГгДдЕеЁёЖжҖҗЗзИиЙйКкЛлМмНнҢңОоӨөПпРрСсТтУуҮүФфХхҺһЦцЧчШшЩщЪъЫыЬьЭэЮюЯя".toCharArray()
+//    wordCharacters = tatarCharacters
+//    additionalInnerCharacters = additionalTatarInnerCharacters
+////    locale new Locale("ru")
+//    outputWordsListFile new File(project.getProjectDir(), "dictionary/kitaphane.tatarstan.ru.united.xml")
+//}
+//
+//task mergeAllWordLists(type: com.anysoftkeyboard.tools.generatewordslist.MergeWordsListTask) {
+////    dependsOn parseStateAssembly
+//    dependsOn parseKitaphaneTatarstanRu
+//
+//    inputWordsListFiles = [
+////            new File(project.getProjectDir(), "dictionary/words_ny_state_assembly.xml"),
+////            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
+//new File(project.getProjectDir(), "dictionary/kitaphane.tatarstan.ru.united.xml")
+//    ] as File[]
+//    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
+//    maxWordsInList 100000
+//}
+//
+//task makeDictionary(type: com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask) {
+//    dependsOn mergeAllWordLists
+//    inputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
+//}
 
 afterEvaluate { proj ->
     proj.tasks.all { task ->
         if (task.name.startsWith('generate') && task.name.endsWith('BuildConfig')) {
-            task.dependsOn makeDictionary
         }
     }
 }
