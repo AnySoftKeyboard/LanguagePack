@@ -11,7 +11,7 @@
         autoTextResourceId="@xml/autotext"
         description="Татарский словарь от Булата usmanovbf Усманова"
         dictionaryResourceId="@array/words_dict_array"
-        id="7263630a-3284-4f46-8137-eef38adb5640"
+        id="7263630a-3284-4f46-8137-eef38adb5620"
         locale="tt"
         nameResId="@string/dictionary_name"
         type="binary_resource"/>
