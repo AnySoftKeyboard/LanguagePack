@@ -5,8 +5,32 @@
      "defaultDictionaryLocale" : the ID of the keyboard's (ISO) locale, e.g., "en", "iw", "ar", "ru", etc. The dictionary should declare the same locale. 
      "id" : UUID for this keyboard. Obtain from here: http://www.famkruithof.net/uuid/uuidgen
      "iconResId" : a reference to a drawable which can be used to show a flag in the notification bar.
-     "layoutResId" : a reference to a keyboard layout XML. See res/xml/qwerty.xml
+     "layoutResId" : a reference to a keyboard layout XML. See res/xml/tat_qwerty_4rows.xml
      -->
-	<Keyboard nameResId="@string/keyboard_name" iconResId="change_me" layoutResId="@xml/qwerty" 
-	    id="change_me" defaultDictionaryLocale="change_me" description="change_me" index="1"/>
+    <Keyboard
+        defaultDictionaryLocale="tt"
+        description="Татарская клавиатура с 4-мя строками	"
+        iconResId="@drawable/app_icon"
+        id="7263630a-3284-4f46-8137-eef38adb5649"
+        index="1"
+        layoutResId="@xml/tat_qwerty_4rows"
+        nameResId="@string/keyboard_name_4rows"/>
+
+    <Keyboard
+        defaultDictionaryLocale="tt"
+        description="Татарская клавиатура с 4-мя строками и созвучными буквами"
+        iconResId="@drawable/app_icon"
+        id="7263630a-3284-4f46-8137-eef38adb5639"
+        index="2"
+        layoutResId="@xml/tat_qwerty_consonant"
+        nameResId="@string/keyboard_name_consonant"/>
+
+    <Keyboard
+        defaultDictionaryLocale="tt"
+        description="Татарская клавиатура с 3-мя строками и созвучными буквами"
+        iconResId="@drawable/app_icon"
+        id="7263630a-3284-4f46-8137-eef38adb5619"
+        index="2"
+        layoutResId="@xml/tat_qwerty_3rows_consonant"
+        nameResId="@string/keyboard_name_3rows_consonant"/>
 </Keyboards>
