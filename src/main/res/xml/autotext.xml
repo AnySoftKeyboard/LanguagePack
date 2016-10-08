@@ -62,9 +62,6 @@
 <words>
     <!-- this dictionary is used for common typing mistakes -->
     <!-- the attribute 'src' will be replace by the node's value: -->
-    <word src="'s Gravenbrakel">'s-Gravenbrakel</word>
-    <word src="'s Gravenvoeren">'s-Gravenvoeren</word>
-    <word src="'s Gravenwezel">'s-Gravenwezel</word>
     <word src="'s-Gravenmoer">'s Gravenmoer</word>
     <word src="'s-hertogenbosch">'s-Hertogenbosch</word>
     <word src="-wanneer">wanneer</word>
@@ -371,11 +368,8 @@
     <word src="Halloween-tocht">halloweentocht</word>
     <word src="Heeeeeeel">Héél</word>
     <word src="Heeeeeel">Héél</word>
-    <word src="Hein Donner">Jan Hein Donner</word>
     <word src="Helloween">Halloween</word>
     <word src="Hitler's">Hitlers</word>
-    <word src="Hoogvlakte van Nieuw-Kastilië">Hoogvlakte van Nieuw-Castilië</word>
-    <word src="Hoogvlakte van Oud-Kastilië">Hoogvlakte van Oud-Castilië</word>
     <word src="Híer">Híér</word>
     <word src="IB`er">IB'er</word>
     <word src="ICT-er">ICT'er</word>
@@ -441,17 +435,14 @@
     <word src="Jaaaaaaaaaa">Já</word>
     <word src="Jaaaaaaaaaaa">Já</word>
     <word src="Jaaaaaaaaaaaaaaa">Já</word>
-    <word src="Jantje van Leiden">jantje-van-leiden</word>
     <word src="Jantje-van-Leiden">jantje-van-leiden</word>
     <word src="Jesus">Jezus</word>
     <word src="Jesus'">Jezus'</word>
     <word src="Jesusgebed">Jezusgebed</word>
     <word src="Jezus`">Jezus'</word>
-    <word src="Joeri van Gelder">Yuri van Gelder</word>
     <word src="KI">ki</word>
     <word src="Kastiliaan">Castiliaan</word>
     <word src="Kastiliaans">Castiliaans</word>
-    <word src="Kastiliaans Scheidingsgebergte">Castiliaans Scheidingsgebergte</word>
     <word src="Kastilië">Castilië</word>
     <word src="Kiparissia">Kyparissia</word>
     <word src="Klassiekarabisch">klassiek Arabisch</word>
@@ -490,12 +481,9 @@
     <word src="NEN3610">NEN 3610</word>
     <word src="NEN5740">NEN 5740</word>
     <word src="Natùùrlijk">Natúúrlijk</word>
-    <word src="Nederlands Antilliaan">Nederlands-Antilliaan</word>
-    <word src="Nederlands Antilliaans">Nederlands-Antilliaans</word>
     <word src="Neeeeee">Néé</word>
     <word src="Neeeeeee">Néé</word>
     <word src="New-Yorkse">New Yorkse</word>
-    <word src="Nicolas Sarcozy">Nicolas Sarkozy</word>
     <word src="Nieuw-Kastilië">Nieuw-Castilië</word>
     <word src="Nobelprijs-winnaar">Nobelprijswinnaar</word>
     <word src="Nobelprijs-winnaars">Nobelprijswinnaars</word>
@@ -582,7 +570,6 @@
     <word src="SP-kamerleden">SP-Kamerleden</word>
     <word src="SP-kamerlid">SP-Kamerlid</word>
     <word src="STER-reclame's">STER-reclames</word>
-    <word src="Saint Laurent du Maroni">Saint-Laurent-du-Maroni</word>
     <word src="Salaì">Salaino</word>
     <word src="Scandinavia">Scandinavië</word>
     <word src="Scandinavian">Scandinavisch</word>
@@ -600,7 +587,6 @@
     <word src="Ster-reclame">STER-reclame</word>
     <word src="Ster-reclame's">STER-reclames</word>
     <word src="Ster-reclames">STER-reclames</word>
-    <word src="Straat van Otranto">Kanaal van Otranto</word>
     <word src="Talmud">Talmoed</word>
     <word src="TicketBox">Ticketbox</word>
     <word src="Timo’s">Timo's</word>
@@ -611,7 +597,6 @@
     <word src="Tunesie">Tunesië</word>
     <word src="Tunesier">Tunesiër</word>
     <word src="Tuva">Toeva</word>
-    <word src="Tweede Kamer-leden">Tweede Kamerleden</word>
     <word src="Tweede-Kamer-leden">Tweede Kamerleden</word>
     <word src="Tweedekamer">Tweede Kamer</word>
     <word src="Tweedekamerleden">Tweede Kamerleden</word>
@@ -635,19 +620,15 @@
     <word src="Vinexlocaties">Vinex-locaties</word>
     <word src="Vinexwijk">Vinex-wijk</word>
     <word src="Vinexwijken">Vinex-wijken</word>
-    <word src="Voedsel- en Warenautoriteit">Nederlandse Voedsel- en Warenautoriteit</word>
     <word src="Volkslatijn">volkslatijn</word>
     <word src="Vòòr">Vóór</word>
     <word src="WAO-ers">WAO'ers</word>
     <word src="We`l">Wél</word>
     <word src="West-Zeeuws-Vlaanderen">West Zeeuws-Vlaanderen</word>
-    <word src="Westelijke Duina">Westelijke Dvina</word>
     <word src="Westeuropese">West-Europese</word>
     <word src="Westfries">West-Fries</word>
     <word src="Westfriese">West-Friese</word>
     <word src="Westfriesland">West-Friesland</word>
-    <word src="Wiener schnitzel">wienerschnitzel</word>
-    <word src="Wiener schnitzels">wienerschnitzels</word>
     <word src="Wim2">Wim</word>
     <word src="Wordfued">Wordfeud</word>
     <word src="ZDNET">ZDNet</word>
@@ -683,7 +664,6 @@
     <word src="accomodation">accommodatie</word>
     <word src="accomoderen">accommoderen</word>
     <word src="achterloos">achterlijk</word>
-    <word src="achteruit kijk">achteruitkijk</word>
     <word src="achteruitkijk">achteruit kijk</word>
     <word src="achterwant">achterwand</word>
     <word src="achtien">achttien</word>
@@ -734,7 +714,6 @@
     <word src="ambt.">ambtelijk</word>
     <word src="ambulanc">ambulance</word>
     <word src="amer">Amer</word>
-    <word src="american football">American football</word>
     <word src="ana">aan</word>
     <word src="analise">analyse</word>
     <word src="analyse-apparatuur">analyseapparatuur</word>
@@ -1035,7 +1014,6 @@
     <word src="cateringszaken">cateringzaken</word>
     <word src="cd`s">cd's</word>
     <word src="centrale-bankpresidenten">centralebankpresidenten</word>
-    <word src="chateau briand">chateaubriand</word>
     <word src="chateau's">chateaus</word>
     <word src="checkboekje">chequeboekje</word>
     <word src="cher">Cher</word>
@@ -1048,7 +1026,6 @@
     <word src="collega`s">collega's</word>
     <word src="collet">kollet</word>
     <word src="colokatie">colocatie</word>
-    <word src="coming out">coming-out</word>
     <word src="comit">comité</word>
     <word src="command-line">opdrachtregel</word>
     <word src="commenters">commentatoren</word>
@@ -1127,8 +1104,6 @@
     <word src="derdegeneratie">derde generatie</word>
     <word src="derdegeneratie-">derde-</word>
     <word src="dermatologist">dermatoloog</word>
-    <word src="des gevallend">desgevallend</word>
-    <word src="des konings">des Konings</word>
     <word src="dese">deze</word>
     <word src="desector">de sector</word>
     <word src="deser">dezer</word>
@@ -1303,7 +1278,6 @@
     <word src="frans">Frans</word>
     <word src="fraxodi">Fraxodi</word>
     <word src="freestylert">freestyler</word>
-    <word src="frequent flier">frequent flyer</word>
     <word src="friendship">vriendschap</word>
     <word src="friese">Friese</word>
     <word src="friesland">Friesland</word>
@@ -1443,7 +1417,6 @@
     <word src="halucineert">hallucineert</word>
     <word src="halucineren">hallucineren</word>
     <word src="halucinerend">hallucinerend</word>
-    <word src="hamertje tik">hamertje-tik</word>
     <word src="handelsbarrie`res">handelsbarrière</word>
     <word src="handenspandiensten">hand-en-spandiensten</word>
     <word src="handliggende">hand liggende</word>
@@ -1546,7 +1519,6 @@
     <word src="idiologie">ideologie</word>
     <word src="idols">Idols</word>
     <word src="ietskes">ietsjes</word>
-    <word src="in zake">inzake</word>
     <word src="inbrekert">inbreker</word>
     <word src="inburgerings">inburgerings-</word>
     <word src="incassobureau's">incassobureaus</word>
@@ -1701,8 +1673,6 @@
     <word src="klupje">clubje</word>
     <word src="kluppie">clubje</word>
     <word src="knijn">konijn</word>
-    <word src="kno arts">kno-arts</word>
-    <word src="kno artsen">kno-artsen</word>
     <word src="knoppie">knopje</word>
     <word src="koekske">koekje</word>
     <word src="koekskes">koekjes</word>
@@ -1760,7 +1730,6 @@
     <word src="la`">lá</word>
     <word src="labellen">labelen</word>
     <word src="lage-lonenlanden">lagelonenlanden</word>
-    <word src="laisser passers">laissez passers</word>
     <word src="landschapformaat">landschapsformaat</word>
     <word src="lange-afstandsraketten">langeafstandsraketten</word>
     <word src="lange-afstandsverbindingen">langeafstandsverbindingen</word>
@@ -1839,7 +1808,6 @@
     <word src="maisonette">maisonnette</word>
     <word src="maisonettes">maisonnettes</word>
     <word src="malariaepidemieën">malaria-epidemieën</word>
-    <word src="malle praat">mallepraat</word>
     <word src="mama`s">mama's</word>
     <word src="maria">Maria</word>
     <word src="marijuana">marihuana</word>
@@ -2095,7 +2063,6 @@
     <word src="oost-west-richting">oost-westrichting</word>
     <word src="oostbloklanden">Oostbloklanden</word>
     <word src="oostenrijk">Oostenrijk</word>
-    <word src="op en top">op-en-top</word>
     <word src="opelkaar">op elkaar</word>
     <word src="openbaarvervoer">openbaar vervoer</word>
     <word src="opgaveformulier">opgavenformulier</word>
@@ -2246,7 +2213,6 @@
     <word src="prakticant">praktikant</word>
     <word src="prakticanten">praktikanten</word>
     <word src="praktij">praktijk</word>
-    <word src="praten als brugman">praten als Brugman</word>
     <word src="premie`re">première</word>
     <word src="premieuitgaven">premie-uitgaven</word>
     <word src="presidentsschap">presidentschap</word>
@@ -2555,7 +2521,6 @@
     <word src="sex">seks</word>
     <word src="ship">tallship</word>
     <word src="ships">tallships</word>
-    <word src="sick jokes">zieke grappen</word>
     <word src="silvester">Silvester</word>
     <word src="sin">in</word>
     <word src="sint-bernardhond">sint-bernardshond</word>
@@ -2708,10 +2673,8 @@
     <word src="televisieuitzending">televisie-uitzending</word>
     <word src="televisieuitzendingen">televisie-uitzendingen</word>
     <word src="teminste">tenminste</word>
-    <word src="ten tweede male">ten tweeden male</word>
     <word src="teneer">terneer</word>
     <word src="teneergeslagen">terneergeslagen</word>
-    <word src="teniet gedaan">tenietgedaan</word>
     <word src="tenwiji">terwijl</word>
     <word src="terechtwijzigingen">terechtwijzingen</word>
     <word src="tergelijkertijd">tegelijkertijd</word>
@@ -2751,8 +2714,6 @@
     <word src="toplokaties">toplocaties</word>
     <word src="topvijf">top vijf</word>
     <word src="torend">torent</word>
-    <word src="toy boy">toyboy</word>
-    <word src="toy boys">toyboys</word>
     <word src="toyota">Toyota</word>
     <word src="tractaat">traktaat</word>
     <word src="tragediënnes">tragédiennes</word>
@@ -2827,7 +2788,6 @@
     <word src="vakantielokatie">vakantielocatie</word>
     <word src="vakantieuitkering">vakantie-uitkering</word>
     <word src="valent">Valent</word>
-    <word src="van zinnens zijn">zinnens zijn</word>
     <word src="vanVUmc">van VUmc</word>
     <word src="vandeze">van deze</word>
     <word src="vandien">van dien</word>
@@ -3036,8 +2996,6 @@
     <word src="wetswijzing">wetswijziging</word>
     <word src="wetswijzingen">wetswijzigingen</word>
     <word src="whatsApp">WhatsApp</word>
-    <word src="wiener schnitzel">wienerschnitzel</word>
-    <word src="wiener schnitzels">wienerschnitzels</word>
     <word src="wienerschnitsel">wienerschnitzel</word>
     <word src="wienerschnitsels">wienerschnitzels</word>
     <word src="wienersnitsel">wienerschnitzel</word>
@@ -3047,11 +3005,9 @@
     <word src="wijdsheid">wijsheid</word>
     <word src="wijndrinken">wijn drinken</word>
     <word src="wijte">weet</word>
-    <word src="wilde Westen">Wilde Westen</word>
     <word src="wildeweg">wilde weg</word>
     <word src="winaars">winnaars</word>
     <word src="winlokatie">winlocatie</word>
-    <word src="winning mood">winningmood</word>
     <word src="wolkenloze">wolkeloze</word>
     <word src="wondende">wonende</word>
     <word src="woningbouwlokaties">woningbouwlocaties</word>
