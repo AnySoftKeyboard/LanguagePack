@@ -15,6 +15,6 @@ then
 fi
 
 cp -f $SOURCE $TARGET
-convert $SOURCE -resize 48x48 ../src/main/res/drawable/app_icon.png
-convert $SOURCE -resize 72x72 ../src/main/res/drawable-hdpi/app_icon.png
-convert $SOURCE -resize 96x96 ../src/main/res/drawable-xhdpi/app_icon.png
+convert $TARGET -resize 48x48 ../src/main/res/drawable/app_icon.png
+convert $TARGET -resize 72x72 ../src/main/res/drawable-hdpi/app_icon.png
+convert $TARGET -resize 96x96 ../src/main/res/drawable-xhdpi/app_icon.png
