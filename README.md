@@ -25,7 +25,7 @@ schrijfhulpsoftware zoals spelling- en grammaticacontrole. Hiervoor heeft zij
 een collectie van 500.000 woorden met woordrelaties en woordeigenschappen.
 
 Vanuit haar ervaring met FOSS heeft OpenTaal in 2016 tijdens de
-[Week van het Nederlands](http://http://weekvanhetnederlands.org/activiteiten/opensource-nederlands-toetsenbord-voor-android)
+[Week van het Nederlands](http://weekvanhetnederlands.org/activiteiten/opensource-nederlands-toetsenbord-voor-android)
 deze Nederlandse ondersteuning voor AnySoftKeyboard gemaakt.
 
 ![logo Stichting OpenTaal](opentaal.png?raw=true)
@@ -60,6 +60,15 @@ als de
 [Creative Commons, Attribution 4.0 (unported)](https://creativecommons.org/licenses/by/4.0/deed.en)
 zijn van toepasing. Voor meer informatie over de licentie, zie het bestand
 [LICENSE](LICENSE).
+
+
+Dank
+----
+
+Dank gaat uit naar [TaalTik](http://taaltik.nl) voor de woordfrequenties en
+[Hellebaard](http://hellebaard.nl) voor de software en configuratie. De
+[Taalunie](http://taalunie.org) wordt bedankt voor het organiseren van
+[De Week van het Nederlands](http://weekvanhetnederlands.org).
 
 
 Installatie
@@ -103,6 +112,15 @@ The language-specific files in this language pack have a dual license. Bot the
 as the
 [Creative Commons, Attribution 4.0 (unported)](https://creativecommons.org/licenses/by/4.0/deed.en)
 apply. For more information, see the file [LICENSE](LICENSE).
+
+
+Thanks
+------
+
+Thanks go to [TaalTik](http://taaltik.nl) for the word frequencies and
+[Hellebaard](http://hellebaard.nl) for the software and configuration. The
+[Taalunie](http://taalunie.org) is being thanked for organising the
+[De Week van het Nederlands](http://weekvanhetnederlands.org).
 
 
 Installation
