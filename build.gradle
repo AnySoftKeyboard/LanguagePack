@@ -16,11 +16,11 @@ buildscript {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "24.0.0 rc3"
+    compileSdkVersion 25
+    buildToolsVersion "25"
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.dutch"
         minSdkVersion 7
         targetSdkVersion 23
         versionCode 1
@@ -47,29 +47,12 @@ android {
     }
 }
 
-task parseStateAssembly(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_ny_state_assembly.xml")
-}
-
-task parseEnWikipediaEnglishCivilWar(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
-    inputFileType = com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask.InputFileType.Html
-    //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_en_wikipedia_civil_war.xml")
-}
-
 task mergeAllWordLists(type: com.anysoftkeyboard.tools.generatewordslist.MergeWordsListTask) {
-    dependsOn parseStateAssembly
-    dependsOn parseEnWikipediaEnglishCivilWar
-
     inputWordsListFiles = [
-            new File(project.getProjectDir(), "dictionary/words_ny_state_assembly.xml"),
-            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
-            new File(project.getProjectDir(), "dictionary/words_en_wikipedia_civil_war.xml")
+            new File(project.getProjectDir(), "dictionary/words.xml"),
     ] as File[]
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
-    maxWordsInList 100000
+    maxWordsInList 140000
 }
 
 task makeDictionary(type: com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask) {
