@@ -94,3 +94,6 @@ dependencies {
     compile 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.7.0'
 }
 
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
