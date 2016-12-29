@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="de_keyboard">Deutsch/Schweizerdeutsch</string>
+    <string name="german_dictionary">Deutsch</string>
+    <string name="keyboard_name">Deutsche Tastatur</string>
+    <string name="app_name">AnySoftKeyboard - Deutsches Sprachpaket</string>
+    <string name="dictionary_name">Deutsch</string>
+</resources>
