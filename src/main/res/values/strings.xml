@@ -4,4 +4,6 @@
 	<string name="app_name">AnySoftKeyboard - German Language Pack</string>
     <string name="de_keyboard">German/Swiss German</string>
     <string name="german_dictionary">german</string>
+  <string name="dictionary_name">german</string>
+  <string name="keyboard_name">German Keyboard</string>
 </resources>
