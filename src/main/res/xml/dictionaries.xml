@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Dictionaries>
-	<!--
-	id := a UUID (you may want to generate this using our simple Java program at:  /trunk/project/dict_creation (uuidgen_Windows.bat or uuidgen_Linux)
-	locale := a locate identifier for this dictionary. E.g., English will be en, Hebrew will be iw, etc.
-	nameResId := the resource Id which holds the name of the dictionary. See strings.xml.
-	type := currently we only support binary dictionaries.
-	dictionaryAssertName := the binary data holder
-	description := some text you would like to add.
-	 -->
-	<Dictionary nameResId="@string/german_dictionary" locale="de" id="11ddd2ec-5d9e-4407-b4c0-b86e600ad683" type="binary" dictionaryAssertName="de_binary.mp3" description="Dictionary from CyanogenMod Gingerbread"/>
+<!-- Dictionary attributes:
+ "nameResId" : the name of the dictionary. Should be short. Reference to a string in values.xml
+ "locale" : the ID of the dictionary's (ISO) locale, e.g., "en", "iw", "ar", "ru", etc. The keyboard should declare the same locale.
+ "id" : UUID for this dictionary. Obtain from here: http://www.famkruithof.net/uuid/uuidgen
+ "dictionaryResourceId" : a reference to the raw resource of the words dictionary
+ "autoTextResourceId" : a reference to a common typing mistakes XML.
+ -->
+<Dictionary nameResId="@string/dictionary_name" locale="de" id="efdd0170-e223-11e6-9598-0800200c9a66" type="binary_resource"
+		dictionaryResourceId="@array/words_dict_array" autoTextResourceId="@xml/autotext"
+		description="A german dictionary generated from the AOSP sources"/>
 </Dictionaries>
