@@ -25,8 +25,13 @@ android {
         applicationId "com.anysoftkeyboard.languagepack.german"
         minSdkVersion 7
         targetSdkVersion 25
+<<<<<<< HEAD
         versionCode 1
         versionName "1.0"
+=======
+        versionCode 100
+        versionName "v2.0.1"
+>>>>>>> updating version name and code
     }
 
     signingConfigs {
