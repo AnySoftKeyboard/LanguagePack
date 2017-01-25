@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
 	<string name="app_name">AnySoftKeyboard - German Language Pack</string>
-    <string name="de_keyboard">German/Swiss German</string>
+    <string name="de_keyboard">German</string>
     <string name="german_dictionary">german</string>
   <string name="dictionary_name">german</string>
   <string name="keyboard_name">German Keyboard</string>
+  <string name="store_title">German Language Pack</string>
+  <string name="store_promo">German language pack for AnySoftKeyboard</string>
+  <string name="store_description">AnySoftKeyboard keyboards pack:
+    German keyboard and dictionary.
+
+This is an expansion pack for AnySoftKeyboard.
+Install AnySoftKeyboard first, and then select the desired layout from AnySoftKeyboard\'s Settings->Keyboards menu.</string>
 </resources>
