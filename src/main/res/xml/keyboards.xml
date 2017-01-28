@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Keyboards>
-    <!-- Dictionary attributes:
-     "nameResId" : the name of the keyboard. Should be short. Reference to a string in values.xml 
-     "defaultDictionaryLocale" : the ID of the keyboard's (ISO) locale, e.g., "en", "iw", "ar", "ru", etc. The dictionary should declare the same locale. 
-     "id" : UUID for this keyboard. Obtain from here: http://www.famkruithof.net/uuid/uuidgen
-     "iconResId" : a reference to a drawable which can be used to show a flag in the notification bar.
-     "layoutResId" : a reference to a keyboard layout XML. See res/xml/qwerty.xml
-     -->
-	<Keyboard nameResId="@string/keyboard_name" iconResId="change_me" layoutResId="@xml/qwerty" 
-	    id="change_me" defaultDictionaryLocale="change_me" description="change_me" index="1"/>
+	<Keyboard nameResId="@string/swedish_keyboard" layoutResId="@xml/swedish_qwerty" id="8dd7b7fa-91c7-4be1-9b9c-cdfee1b34a47" index="1" defaultDictionaryLocale="sv" description="Created with jtlallo"/>
+	<Keyboard nameResId="@string/svorak_keyboard" layoutResId="@xml/svorak" id="595f7064-e9d8-40cc-9348-78ea065aff53" index="2" defaultDictionaryLocale="sv" description="Created by Henrik Andersson"/>
 </Keyboards>
