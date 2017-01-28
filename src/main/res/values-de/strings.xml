@@ -12,4 +12,6 @@
 
     Dies ist ein Erweiterungspaket für AnySoftKeyboard.
     Installiere zuerst AnySoftKeyboard und wähle dann die gewünschte Tastaturbelegung in AnySoftKeyboards Menü Einstellungen->Keyboards.</string>
+    <string name="de_keyboard_condensed">Deutsch schmal</string>
+    <string name="de_keyboard_extra">Deutsch schmal+</string>
 </resources>
