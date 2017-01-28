@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - change_me Language Pack</string>
-    <string name="keyboard_name">change_me keyboard</string>
-    <string name="dictionary_name">change_me</string>
+    <string name="app_name">AnySoftKeyboard - Swedish Language Pack</string>
+    <string name="keyboard_name">Swedish keyboard</string>
+    <string name="dictionary_name">Swedish</string>
+    <string name="swedish_keyboard">Swedish/Finnish</string>
+    <string name="svorak_keyboard">Svorak</string>
+    <string name="swedish_dictionary">Swedish</string>
+    <string name="store_title">Swedish Language Pack</string>
+    <string name="store_promo">Swedish language pack for AnySoftKeyboard</string>
+    <string name="store_description">AnySoftKeyboard keyboards pack:
+      Swedish keyboard and dictionary.
+
+      This is an expansion pack for AnySoftKeyboard.
+      Install AnySoftKeyboard first, and then select the desired layout from AnySoftKeyboard\'s Settings->Keyboards menu.</string>
 </resources>
