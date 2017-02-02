@@ -2,11 +2,7 @@
 
 
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:keyWidth="10%p"
-    android:horizontalGap="0px"
-    android:verticalGap="0px"
-    android:keyHeight="@dimen/key_height"
-    >
+    android:keyWidth="10%p">
     
     <Row android:keyWidth="10%p">
         <Key android:codes="113" android:keyLabel="q" android:popupCharacters="\@" android:keyEdgeFlags="left" />
