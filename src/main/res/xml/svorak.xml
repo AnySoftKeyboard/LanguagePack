@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:keyWidth="9.05%p"
-    android:horizontalGap="0px"
-    android:verticalGap="0px"
-    android:keyHeight="@dimen/key_height"
-    >
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android">
     
     <Row>
         <Key android:codes="229"  android:keyLabel="å" android:keyEdgeFlags="left"/>
