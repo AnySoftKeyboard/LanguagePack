@@ -7,4 +7,7 @@
 /build
 /captures
 keystore.properties
-key.store
+/dictionary/words_from_aosp.xml
+src/main/res/raw/*
+src/main/res/values/words_dict_array.xml
+LanguagePack-release.apk
