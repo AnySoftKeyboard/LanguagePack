@@ -28,8 +28,8 @@ android {
         applicationId "com.anysoftkeyboard.languagepack.swedish"
         minSdkVersion 7
         targetSdkVersion 25
-        versionCode 101
-        versionName "2.0.1"
+        versionCode 103
+        versionName "2.0.3"
     }
 
     signingConfigs {
