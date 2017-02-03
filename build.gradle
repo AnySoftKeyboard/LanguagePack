@@ -27,8 +27,8 @@ android {
         applicationId "com.anysoftkeyboard.languagepack.swedish"
         minSdkVersion 7
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode 100
+        versionName "2.0.0"
     }
 
     signingConfigs {
