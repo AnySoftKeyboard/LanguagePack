@@ -28,8 +28,8 @@ android {
         applicationId "com.anysoftkeyboard.languagepack.swedish"
         minSdkVersion 7
         targetSdkVersion 25
-        versionCode 100
-        versionName "2.0.0"
+        versionCode 101
+        versionName "2.0.1"
     }
 
     signingConfigs {
@@ -61,6 +61,9 @@ task parseAospForSwedishDictionary(type: GenerateWordsListFromAOSPTask) {
 }
 
 task makeDictionary(type: MakeDictionaryTask) {
+    doFirst {
+        mkdir 'src/main/res/raw'
+    }
     dependsOn parseAospForSwedishDictionary
     inputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
 }
