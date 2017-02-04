@@ -13,8 +13,6 @@
 	<SequenceMapping keySequence="KEYCODE_S,KEYCODE_S" targetChar="š" />
 	<SequenceMapping keySequence="KEYCODE_U,KEYCODE_U" targetChar="ū" />
 	<SequenceMapping keySequence="KEYCODE_Z,KEYCODE_Z" targetChar="ž" />
-<!-- 
 	<SequenceMapping keySequence="KEYCODE_O,KEYCODE_O" targetChar="ō" />
 	<SequenceMapping keySequence="KEYCODE_R,KEYCODE_R" targetChar="ŗ" />
--->
 </PhysicalTranslation>

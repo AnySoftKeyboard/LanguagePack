@@ -9,12 +9,12 @@
         <Key android:codes="q" android:popupCharacters="" android:keyLabel="" android:keyEdgeFlags="left"/>
         <Key android:codes="w" android:popupCharacters="" android:keyLabel=""/>
         <Key android:codes="e,ē" android:popupCharacters="ē€" android:keyLabel=""/>
-        <Key android:codes="r" android:popupCharacters="" android:keyLabel=""/>
+        <Key android:codes="r,ŗ" android:popupCharacters="ŗ" android:keyLabel=""/>
         <Key android:codes="t" android:popupCharacters="" android:keyLabel=""/>
         <Key android:codes="y" android:popupCharacters="" android:keyLabel=""/>
         <Key android:codes="u,ū" android:popupCharacters="ū" android:keyLabel=""/>
         <Key android:codes="i,ī" android:popupCharacters="ī" android:keyLabel=""/>
-        <Key android:codes="o" android:popupCharacters="" android:keyLabel=""/>
+        <Key android:codes="o,ō" android:popupCharacters="ō" android:keyLabel=""/>
         <Key android:codes="p" android:popupCharacters="" android:keyLabel="" android:keyEdgeFlags="right"/>
     </Row>
 
