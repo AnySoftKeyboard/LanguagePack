@@ -1,4 +1,4 @@
-package com.anysoftkeyboard.languagepack.languagepack;
+package com.anysoftkeyboard.languagepack.basque;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

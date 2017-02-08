@@ -20,7 +20,7 @@ android {
     buildToolsVersion '25.0.2'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.basque"
         minSdkVersion 7
         targetSdkVersion 25
         versionCode 1
@@ -47,34 +47,8 @@ android {
     }
 }
 
-task parseTextInputFiles(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
-}
-
-//another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
-task parseAospForEnglishDictionary(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListFromAOSPTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
-    maxWordsInList 300000
-}
-
-task mergeAllWordLists(type: com.anysoftkeyboard.tools.generatewordslist.MergeWordsListTask) {
-    dependsOn parseTextInputFiles
-
-    inputWordsListFiles = [
-            new File(project.getProjectDir(), "dictionary/words_from_texts.xml"),
-            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
-    ] as File[]
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
-    maxWordsInList 100000
-}
-
 task makeDictionary(type: com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask) {
-    dependsOn mergeAllWordLists
-    inputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
+    inputWordsListFile new File(project.getProjectDir(), "dictionary/eu_wordlist.xml")
 }
 
 afterEvaluate { proj ->
@@ -92,4 +66,3 @@ dependencies {
     }
     compile 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.7.0'
 }
-
