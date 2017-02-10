@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="keyboard_name">Русский</string>
+  <string name="keyboard_extra_rows">Русский с расширенным рядом</string>
+  <string name="ph_keyboard">Русский Фонетический</string>
+  <string name="ph_keyboard_extra_rows">Русский Фонетический с расширенным рядом</string>
+  <string name="dictionary_name">Русский</string>
+</resources>

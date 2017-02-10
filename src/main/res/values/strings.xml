@@ -3,4 +3,5 @@
     <string name="app_name">AnySoftKeyboard - Russian Language Pack</string>
     <string name="keyboard_name">Russian keyboard</string>
     <string name="dictionary_name">Russian</string>
+    <string name="keyboard_extra_rows">Russian keyboard - extra rows</string>
 </resources>
