@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="keyboard_name">Suomalainen näppäimistö</string>
+        
+    <string name="dictionary_name">Suomi</string>
+</resources>
