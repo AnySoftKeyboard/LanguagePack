@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - change_me Language Pack</string>
-    <string name="keyboard_name">change_me keyboard</string>
-    <string name="dictionary_name">change_me</string>
+    <string name="app_name">AnySoftKeyboard - Latvian Language Pack</string>
+    <string name="keyboard_name">Latvian keyboard</string>
+    <string name="dictionary_name">Latvian</string>
+    <string name="lv_ergonomic_description">Created with herrlado</string>
+    <string name="lv_qwerty_description">Created with herrlado</string>
+    <string name="lv_dictionary_description">Created with herrlado</string>
 </resources>
