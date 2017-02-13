@@ -1,4 +1,4 @@
-package com.anysoftkeyboard.languagepack.russian;
+package com.anysoftkeyboard.languagepack.russian2;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
