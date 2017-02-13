@@ -1,4 +1,3 @@
-import com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListFromAOSPTask
 import com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask
 
 buildscript {
@@ -10,7 +9,6 @@ buildscript {
         classpath 'com.android.tools.build:gradle:2.2.3'
 
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:99bd3e6'
-        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:99bd3e6'
         classpath 'org.jsoup:jsoup:1.9.1'
     }
 }
@@ -49,20 +47,11 @@ android {
     }
 }
 
-//download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
-//make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
-task parseAospForDictionary(type: GenerateWordsListFromAOSPTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
-    maxWordsInList 300000
-}
-
 task makeDictionary(type: MakeDictionaryTask) {
   doFirst {
     mkdir 'src/main/res/raw'
   }
-  dependsOn parseAospForDictionary
-  inputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
+  inputWordsListFile new File(project.getProjectDir(), "dictionary/words.xml")
 }
 
 afterEvaluate { proj ->
