@@ -2,5 +2,5 @@
 <resources>
     <string name="app_name">AnySoftKeyboard - Pacote de linguagem portuguesa</string>
     <string name="keyboard_name">Português</string>
-    <string name="dictionary_name">Português</string>
+    <string name="dictionary_name">Português do Brasil</string>
 </resources>
