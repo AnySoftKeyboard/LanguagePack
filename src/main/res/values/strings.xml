@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AnySoftKeyboard - Tatar Language Pack</string>
-    <string name="keyboard_name_4rows">Тат. 4 ряд</string>
-    <string name="keyboard_name_consonant">Тат. 4 созвучные</string>
-    <string name="keyboard_name_3rows_consonant">Тат. 3 созвучные</string>
-    <string name="dictionary_name">Татарский</string>
+    <string name="keyboard_name_4rows">Tatar 4 rows keyboard</string>
+    <string name="keyboard_name_consonant">Tatar 4 rows consonant keyboard</string>
+    <string name="keyboard_name_3rows_consonant">Tatar 3 rows consonant keyboard</string>
+    <string name="dictionary_name">Tatar</string>
 </resources>
