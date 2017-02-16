@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - change_me Language Pack</string>
-    <string name="keyboard_name">change_me keyboard</string>
-    <string name="dictionary_name">change_me</string>
+    <string name="app_name">AnySoftKeyboard - French Language Pack</string>
+    <string name="keyboard_name">French keyboard</string>
+    <string name="dictionary_name">French</string>
+    <string name="azerty_keyboard">AZERTY</string>
+    <string name="fr_ca_keyboard">French Canadian</string>
+    <string name="bepo_keyboard">French B&#233;po</string><!-- BEPO -->
+    <string name="bepo_keyboard_description">www.bepo.fr - dvorak like</string><!-- BEPO -->
 </resources>
