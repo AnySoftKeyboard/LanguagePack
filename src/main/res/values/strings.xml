@@ -4,4 +4,9 @@
     <string name="keyboard_name">Russian keyboard</string>
     <string name="dictionary_name">Russian</string>
     <string name="keyboard_extra_rows">Russian keyboard - extra rows</string>
+    <string name="ph_keyboard">Русский Фонетический</string>
+    <string name="ph_keyboard_extra_rows">Русский Фонетический с расширенным рядом</string>
+    <string name="russian_27_keys">Русский 27 клавиш</string>
+    <string name="russian_25_keys">Русский 25 клавиш</string>
+    <string name="russian_27_keys_desc">Редко используемые буквы вызываются длительным нажатием</string>
 </resources>
