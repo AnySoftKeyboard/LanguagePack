@@ -25,13 +25,13 @@ android {
         applicationId "com.anysoftkeyboard.languagepack.russian2"
         minSdkVersion 7
         targetSdkVersion 25
-        versionCode 100
-        versionName "2.0"
+        versionCode 101
+        versionName "2.0.1"
     }
 
     signingConfigs {
         release {
-            storeFile file("key.store")
+            storeFile file("pelya.keystore")
             storePassword System.getenv("PACK_KEYSTORE_PASSWORD")
             keyAlias System.getenv("PACK_KEYSTORE_ALIAS")
             keyPassword System.getenv("PACK_KEYSTORE_KEY_PASSWORD")
