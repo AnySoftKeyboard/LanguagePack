@@ -27,23 +27,16 @@ android {
         applicationId "com.anysoftkeyboard.languagepack.tatar"
         minSdkVersion 7
         targetSdkVersion 25
-        versionCode 1
-        versionName "0.1-alpha"
+        versionCode 100
+        versionName "2.0.0"
     }
 
-    signingConfigs {
+     signingConfigs {
         release {
-            def propsFile = rootProject.file('keystore.properties')
-
-            if (propsFile.exists()) {
-                def props = new Properties()
-                props.load(new FileInputStream(propsFile))
-                storeFile = file(props['storeFile'])
-                storePassword = props['storePassword']
-                keyAlias = props['keyAlias']
-                keyPassword = props['keyPassword']
-            }
-
+            storeFile file("key.store")
+            storePassword System.getenv("PACK_KEYSTORE_PASSWORD")
+            keyAlias System.getenv("PACK_KEYSTORE_ALIAS")
+            keyPassword System.getenv("PACK_KEYSTORE_KEY_PASSWORD")
         }
     }
 
