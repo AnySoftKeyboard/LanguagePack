@@ -1,14 +1,18 @@
+import com.anysoftkeyboard.tools.generatewordslist.MergeWordsListTask
+import com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask
+
+import com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask
+
 buildscript {
     repositories {
         jcenter()
         maven { url 'https://jitpack.io' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.0.0'
+        classpath 'com.android.tools.build:gradle:2.2.3'
 
-        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:e0929d04f944eae0154c47e834e42f7dcbcb837c'
-        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:e0929d04f944eae0154c47e834e42f7dcbcb837c'
-        //classpath files('english_dictionary/generatewordslist-1.0-SNAPSHOT.jar')
+        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:99bd3e6'
+        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:99bd3e6'
         classpath 'org.jsoup:jsoup:1.9.1'
     }
 }
@@ -16,23 +20,30 @@ buildscript {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "24.0.0 rc3"
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.tatar"
         minSdkVersion 7
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 1
-        versionName "1.0"
+        versionName "0.1-alpha"
     }
 
     signingConfigs {
         release {
-            storeFile file("key.store")
-            storePassword System.getenv("PACK_KEYSTORE_PASSWORD")
-            keyAlias System.getenv("PACK_KEYSTORE_ALIAS")
-            keyPassword System.getenv("PACK_KEYSTORE_KEY_PASSWORD")
+            def propsFile = rootProject.file('keystore.properties')
+
+            if (propsFile.exists()) {
+                def props = new Properties()
+                props.load(new FileInputStream(propsFile))
+                storeFile = file(props['storeFile'])
+                storePassword = props['storePassword']
+                keyAlias = props['keyAlias']
+                keyPassword = props['keyPassword']
+            }
+
         }
     }
 
@@ -47,32 +58,33 @@ android {
     }
 }
 
-task parseStateAssembly(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_ny_state_assembly.xml")
+def wordCharacters =  "АаӘәБбВвГгДдЕеЁёЖжҖҗЗзИиЙйКкЛлМмНнҢңОоӨөПпРрСсТтУуҮүФфХхҺһЦцЧчШшЩщЪъЫыЬьЭэЮюЯя".toCharArray()
+def tatarCharacters = "АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя".toCharArray()
+
+def additionalTatarInnerCharacters = "-".toCharArray();
+
+task parseKitaphaneTatarstanRu(type: GenerateWordsListTask) {
+    inputFiles new File(project.getProjectDir(), "dictionary/kitaphane.tatarstan.ru.united.txt")
+    wordCharacters = tatarCharacters
+    additionalInnerCharacters = additionalTatarInnerCharacters
+//    locale new Locale("ru")
+    outputWordsListFile new File(project.getProjectDir(), "dictionary/kitaphane.tatarstan.ru.united.xml")
 }
 
-task parseEnWikipediaEnglishCivilWar(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
-    inputFileType = com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask.InputFileType.Html
-    //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_en_wikipedia_civil_war.xml")
-}
-
-task mergeAllWordLists(type: com.anysoftkeyboard.tools.generatewordslist.MergeWordsListTask) {
-    dependsOn parseStateAssembly
-    dependsOn parseEnWikipediaEnglishCivilWar
+task mergeAllWordLists(type: MergeWordsListTask) {
+    dependsOn parseKitaphaneTatarstanRu
 
     inputWordsListFiles = [
-            new File(project.getProjectDir(), "dictionary/words_ny_state_assembly.xml"),
-            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
-            new File(project.getProjectDir(), "dictionary/words_en_wikipedia_civil_war.xml")
+        new File(project.getProjectDir(), "dictionary/kitaphane.tatarstan.ru.united.xml")
     ] as File[]
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
     maxWordsInList 100000
 }
 
-task makeDictionary(type: com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask) {
+task makeDictionary(type: MakeDictionaryTask) {
+    doFirst {
+        mkdir 'src/main/res/raw'
+    }
     dependsOn mergeAllWordLists
     inputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
 }
@@ -90,9 +102,5 @@ dependencies {
         jcenter()
         maven { url "https://jitpack.io" }
     }
-    compile 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.3.5'
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
+    compile 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.7.0'
 }

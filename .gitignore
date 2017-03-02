@@ -2,6 +2,14 @@
 .gradle
 /local.properties
 .idea
+/key.store
 .DS_Store
 /build
 /captures
+keystore.properties
+/dictionary/words_from_aosp.xml
+src/main/res/raw/*
+src/main/res/values/words_dict_array.xml
+LanguagePack-release.apk
+dictionary/kitaphane.tatarstan.ru.united.xml
+dictionary/words_merged.xml

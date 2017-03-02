@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - change_me Language Pack</string>
-    <string name="keyboard_name">change_me keyboard</string>
-    <string name="dictionary_name">change_me</string>
+    <string name="app_name">AnySoftKeyboard - Tatar Language Pack</string>
+    <string name="keyboard_name_4rows">Tatar 4 rows keyboard</string>
+    <string name="keyboard_name_consonant">Tatar 4 rows consonant keyboard</string>
+    <string name="keyboard_name_3rows_consonant">Tatar 3 rows consonant keyboard</string>
+    <string name="dictionary_name">Tatar</string>
 </resources>
