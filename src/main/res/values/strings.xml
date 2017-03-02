@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - Greek Language Pack</string>
-    <string name="keyboard_name">Greek keyboard</string>
-    <string name="dictionary_name">Greek</string>
+    <string name="app_name">AnySoftKeyboard - Ελληνικό Γλωσσικό Πακέτο</string>
+    <string name="keyboard_name">Ελληνικό</string>
+    <string name="dictionary_name">Ελληνικό</string>
 </resources>
