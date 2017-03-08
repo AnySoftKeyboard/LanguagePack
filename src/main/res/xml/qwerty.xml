@@ -9,7 +9,7 @@
 		<Key android:codes="121" android:popupCharacters="6" android:keyLabel="y" />
 		<Key android:codes="117" android:popupCharacters="7" android:keyLabel="u" />
 		<Key android:codes="105" android:popupCharacters="8" android:keyLabel="i" />
-		<Key android:codes="949" android:popupCharacters="9" android:keyLabel="ε" />
+		<Key android:codes="949" android:popupCharacters="9" android:keyLabel="ɛ" />
 		<Key android:codes="611" android:popupCharacters="0" android:keyEdgeFlags="right" android:keyLabel="ɣ" />
 	</Row>
 	<Row>
