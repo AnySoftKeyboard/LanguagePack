@@ -28,7 +28,7 @@
     <Row>
         <Key android:horizontalGap="5%p" android:codes="11591" android:keyLabel="s" android:popupCharacters="" android:keyEdgeFlags="left"/>
         <Key android:codes="11609" android:popupCharacters="" />
-        <Key android:codes="11575" />
+        <Key android:codes="11575" android:popupCharacters="" />
         <Key android:codes="11580" android:popupCharacters="" />
         <Key android:codes="11571" android:popupCharacters="" />
         <Key android:codes="11584" android:popupCharacters="" />
