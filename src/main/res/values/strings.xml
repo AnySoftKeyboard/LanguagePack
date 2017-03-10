@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - Kabyle Language Pack</string>
-    <string name="keyboard_name">Kabyle keyboard</string>
-    <string name="dictionary_name">Kabyle</string>
+    <string name="app_name">AnySoftKeyboard - Tifinagh Language Pack</string>
+    <string name="keyboard_name">Tifinagh keyboard</string>
+    <string name="dictionary_name">Tifinagh</string>
 </resources>
