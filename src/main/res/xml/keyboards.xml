@@ -10,7 +10,7 @@
 	<Keyboard
 	id="fcc9f9c1-05a4-11e7-9598-0800200c9a66"
 	nameResId="@string/keyboard_name"
-	layoutResId="@xml/tifinagh_qwerty"
+	layoutResId="@xml/qwerty"
 	physicalKeyboardMappingResId="@xml/zgh_physical"
 	iconResId="@drawable/flag"
 	defaultDictionaryLocale="zgh"
