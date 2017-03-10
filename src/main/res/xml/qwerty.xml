@@ -32,7 +32,7 @@
         <Key android:codes="11580" android:keyLabel="ⴼ" android:popupCharacters="" />
         <Key android:codes="11571" android:keyLabel="ⴳ" android:popupCharacters="ⴴⴵ" />
         <Key android:codes="11584" android:keyLabel="ⵀ" android:popupCharacters="ⵃⵁ" />
-        <Key android:codes="11594" android:keyLabel="ⵊ" android:popupCharacters="" />
+        <Key android:codes="11594" android:keyLabel="ⵊ" android:popupCharacters="ⴶ" />
         <Key android:codes="11581" android:keyLabel="ⴽ" android:popupCharacters="ⴿ" />
         <Key android:codes="11597" android:keyLabel="ⵍ" android:popupCharacters="" />
         <Key android:codes="11598" android:keyLabel="ⵎ" android:popupCharacters="" android:keyEdgeFlags="right"/>
@@ -42,12 +42,12 @@
         <Key android:codes="11617" android:keyLabel="ⵡ" android:popupCharacters="" />
         <Key android:codes="11589" android:keyLabel="ⵅ" android:popupCharacters="" />
         <Key android:codes="11611" android:keyLabel="ⵛ" android:popupCharacters="ⵞ" />
-        <Key android:codes="11613" android:keyLabel="ⵯ" android:popupCharacters="" />
+        <Key android:codes="11631" android:keyLabel="ⵯ" android:popupCharacters="" />
         <Key android:codes="11569" android:keyLabel="ⴱ" android:popupCharacters="ⴲ" />
-        <Key android:codes="11599" android:keyLabel="ⵏ" android:popupCharacters="" />
+        <Key android:codes="11599" android:keyLabel="ⵏ" android:popupCharacters="ⵒ" />
         <Key android:codes="11613" android:keyLabel="ⵝ" android:popupCharacters="" />
         <Key android:codes="11576" android:keyLabel="ⴸ" android:popupCharacters="" />
-        <Key android:codes="11583" android:keyLabel="ⴿ" android:popupCharacters="" />
+        <Key android:codes="11591" android:keyLabel="ⴿ" android:popupCharacters="" />
         <Key android:keyWidth="10%p" android:codes="-5" android:horizontalGap="0.0px" android:keyEdgeFlags="right" android:isRepeatable="true"/>
     </Row>
 </Keyboard>
