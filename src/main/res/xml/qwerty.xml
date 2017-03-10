@@ -13,16 +13,16 @@
          "android:isRepeatable" : true/false (default is false) whether this key repeats printing on long press (like the backspace). Setting this to true will disable the long-press (android:popupCharacters) functionality
          "android:keyWidth" : specify the width of this key
          -->
-        <Key android:codes="11568" android:popupCharacters="1" android:keyEdgeFlags="left"/>
-        <Key android:codes="11619" android:popupCharacters="2" />
-        <Key android:codes="11579" android:popupCharacters="3" />
-        <Key android:codes="11604" android:popupCharacters="4" />
-        <Key android:codes="11612" android:popupCharacters="5" />
-        <Key android:codes="11618" android:popupCharacters="6" />
-        <Key android:codes="11603" android:popupCharacters="7" />
-        <Key android:codes="11593" android:popupCharacters="8" />
-        <Key android:codes="11588" android:popupCharacters="9" />
-        <Key android:codes="11606" android:popupCharacters="0" android:keyEdgeFlags="right"/>
+        <Key android:codes="11568" android:keyLabel="ⴰ" android:popupCharacters="1" android:keyEdgeFlags="left"/>
+        <Key android:codes="11619" android:keyLabel="ⵣ" android:popupCharacters="2" />
+        <Key android:codes="11579" android:keyLabel="ⴻ" android:popupCharacters="3" />
+        <Key android:codes="11604" android:keyLabel="ⵔ" android:popupCharacters="4" />
+        <Key android:codes="11612" android:keyLabel="ⵜ" android:popupCharacters="5" />
+        <Key android:codes="11618" android:keyLabel="ⵢ" android:popupCharacters="6" />
+        <Key android:codes="11603" android:keyLabel="ⵓ" android:popupCharacters="7" />
+        <Key android:codes="11593" android:keyLabel="ⵉ" android:popupCharacters="8" />
+        <Key android:codes="11588" android:keyLabel="ⵄ" android:popupCharacters="9" />
+        <Key android:codes="11606" android:keyLabel="ⵖ" android:popupCharacters="0" android:keyEdgeFlags="right"/>
     </Row>
      
     <Row>
