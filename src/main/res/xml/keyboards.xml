@@ -10,7 +10,7 @@
 	<Keyboard
 	id="fcc9f9c1-05a4-11e7-9598-0800200c9a66"
 	nameResId="@string/keyboard_name"
-	layoutResId="@xml/qwerty"
+	layoutResId="@xml/tifinagh"
 	iconResId="@drawable/flag"
 	defaultDictionaryLocale="zgh"
 	description="Tifinagh keyboard layout by ButterflyOfFire"
