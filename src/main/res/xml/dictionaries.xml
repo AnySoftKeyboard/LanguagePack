@@ -7,7 +7,7 @@
      "dictionaryResourceId" : a reference to the raw resource of the words dictionary
      "autoTextResourceId" : a reference to a common typing mistakes XML.
      -->
-	<Dictionary nameResId="@string/dictionary_name" locale="change_me" id="change_me" type="binary_resource"
+	<Dictionary nameResId="@string/dictionary_name" locale="pt" id="25e3a292-9342-4c15-9aec-22eda1191fd8" type="binary_resource"
 	dictionaryResourceId="@array/words_dict_array" autoTextResourceId="@xml/autotext" 
-	description="change_me"/>	
+	description="AOSP Dictionary"/>
 </Dictionaries>
