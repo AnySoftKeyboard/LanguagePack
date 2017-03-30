@@ -1,4 +1,4 @@
-package com.anysoftkeyboard.languagepack.spanish;
+package com.anysoftkeyboard.languagepack.spain;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

@@ -22,7 +22,7 @@ android {
     buildToolsVersion '25.0.2'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.spanish"
+        applicationId "com.anysoftkeyboard.languagepack.spain"
         minSdkVersion 7
         targetSdkVersion 25
         versionCode 100
