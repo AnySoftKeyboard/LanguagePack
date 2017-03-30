@@ -1,16 +1,12 @@
-# built application files
-*.apk
-*.ap_
-
-# files for the dex VM
-*.dex
-
-# Java class files
-*.class
-
-# generated files
-bin/
-gen/
-
-# Local configuration file (sdk path, etc)
-local.properties
+*.iml
+.gradle
+/local.properties
+.idea
+/key.store
+.DS_Store
+/build
+/captures
+/dictionary/words_from_aosp.xml
+src/main/res/raw/*
+src/main/res/values/words_dict_array.xml
+LanguagePack-release.apk

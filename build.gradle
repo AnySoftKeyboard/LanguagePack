@@ -1,0 +1,82 @@
+import com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListFromAOSPTask
+import com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask
+
+buildscript {
+    repositories {
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.0'
+
+        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:99bd3e6'
+        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:99bd3e6'
+        classpath 'org.jsoup:jsoup:1.9.1'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        applicationId "com.anysoftkeyboard.languagepack.danish"
+        minSdkVersion 7
+        targetSdkVersion 25
+        versionCode 100
+        versionName "2.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("key.store")
+            storePassword System.getenv("PACK_KEYSTORE_PASSWORD")
+            keyAlias System.getenv("PACK_KEYSTORE_ALIAS")
+            keyPassword System.getenv("PACK_KEYSTORE_KEY_PASSWORD")
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            zipAlignEnabled true
+            debuggable false
+
+            minifyEnabled false
+        }
+    }
+}
+
+//download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
+//make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
+task parseAospForDictionary(type: GenerateWordsListFromAOSPTask) {
+    inputFile new File(project.getProjectDir(), "dictionary/da_wordlist.combined")
+    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
+    maxWordsInList 300000
+}
+
+task makeDictionary(type: MakeDictionaryTask) {
+  doFirst {
+    mkdir 'src/main/res/raw'
+  }
+  dependsOn parseAospForDictionary
+  inputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
+}
+
+afterEvaluate { proj ->
+    proj.tasks.all { task ->
+        if (task.name.startsWith('generate') && task.name.endsWith('BuildConfig')) {
+            task.dependsOn makeDictionary
+        }
+    }
+}
+
+dependencies {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+    compile 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.7.0'
+}
