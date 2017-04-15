@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">AnySoftKeyboard - Český jazykový balík</string>
+	<string name="cs_qwerty_keyboard">Česká klávesnice qwerty</string>
+	<string name="cs_qwertz_keyboard">Česká klávesnice qwertz</string>
+	<string name="cs_qwerty_description">>Česká klávesnice qwerty</string>
+    <string name="cs_qwertz_description">>Česká klávesnice qwertz</string>
+	<string name="dictionary">Slovník</string>
+</resources>
