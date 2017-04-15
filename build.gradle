@@ -1,0 +1,96 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+
+        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:99bd3e6'
+        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:99bd3e6'
+        //classpath files('english_dictionary/generatewordslist-1.0-SNAPSHOT.jar')
+        classpath 'org.jsoup:jsoup:1.9.1'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        minSdkVersion 7
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("key.store")
+            storePassword System.getenv("PACK_KEYSTORE_PASSWORD")
+            keyAlias System.getenv("PACK_KEYSTORE_ALIAS")
+            keyPassword System.getenv("PACK_KEYSTORE_KEY_PASSWORD")
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            zipAlignEnabled true
+            debuggable false
+
+            minifyEnabled false
+        }
+    }
+}
+
+task parseTextInputFiles(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask) {
+    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
+                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
+                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
+    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
+}
+
+//another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
+//make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
+task parseAospForEnglishDictionary(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListFromAOSPTask) {
+    inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
+    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
+    maxWordsInList 300000
+}
+
+task mergeAllWordLists(type: com.anysoftkeyboard.tools.generatewordslist.MergeWordsListTask) {
+    dependsOn parseTextInputFiles
+
+    inputWordsListFiles = [
+            new File(project.getProjectDir(), "dictionary/words_from_texts.xml"),
+            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
+    ] as File[]
+    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
+    maxWordsInList 100000
+}
+
+task makeDictionary(type: com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask) {
+    dependsOn mergeAllWordLists
+    inputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
+}
+
+afterEvaluate { proj ->
+    proj.tasks.all { task ->
+        if (task.name.startsWith('generate') && task.name.endsWith('BuildConfig')) {
+            task.dependsOn makeDictionary
+        }
+    }
+}
+
+dependencies {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+    compile 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.7.0'
+}
+
