@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:keyWidth="10%p"
-    android:horizontalGap="0px"
-    android:verticalGap="0px">
+    android:keyWidth="10%p">
 <Row>
     <Key android:codes="+" android:popupCharacters="1" android:keyEdgeFlags="left" />
     <Key android:codes="ě" android:popupCharacters="2" />
