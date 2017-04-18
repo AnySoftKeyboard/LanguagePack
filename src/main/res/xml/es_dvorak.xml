@@ -28,8 +28,8 @@
         <Key android:codes="115" android:keyLabel="s" android:popupCharacters="ßśŝšșσ" android:keyEdgeFlags="right"/>
     </Row>
     
-    <Row android:keyWidth="11.11%p">
-        <Key android:codes="113" android:keyLabel="q" android:popupCharacters="β" android:keyEdgeFlags="left"/>
+    <Row>
+        <Key android:codes="113" android:keyLabel="q" android:popupCharacters="β" android:keyEdgeFlags="left" android:horizontalGap="5%p"/>
         <Key android:codes="106" android:keyLabel="j" android:popupCharacters="ĵ"/>
         <Key android:codes="107" android:keyLabel="k" android:popupCharacters="κ"/>
         <Key android:codes="120" android:keyLabel="x" android:popupCharacters="ξχ"/>
