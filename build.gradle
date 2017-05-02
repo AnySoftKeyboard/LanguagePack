@@ -93,4 +93,6 @@ dependencies {
     }
     compile 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.7.0'
 }
-
+	dependencies {
+		compile 'com.github.User:Repo:Tag'
+	}
