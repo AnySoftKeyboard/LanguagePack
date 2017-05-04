@@ -4,4 +4,5 @@
     <string name="keyboard_name">Spanish</string>
     <string name="dictionary_name">Spanish</string>
     <string name="keyboard_name_catalan">Catalan</string>
+    <string name="keyboard_name_dvorak">Dvorak</string>
 </resources>
