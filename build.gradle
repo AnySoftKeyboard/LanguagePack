@@ -6,8 +6,8 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
 
-        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:99bd3e6'
-        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:99bd3e6'
+        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:-SNAPSHOT'
+        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:-SNAPSHOT'
         //classpath files('english_dictionary/generatewordslist-1.0-SNAPSHOT.jar')
         classpath 'org.jsoup:jsoup:1.9.1'
     }
@@ -66,16 +66,25 @@ task mergeAllWordLists(type: com.anysoftkeyboard.tools.generatewordslist.MergeWo
     dependsOn parseTextInputFiles
 
     inputWordsListFiles = [
-            new File(project.getProjectDir(), "dictionary/words_from_texts.xml"),
+            new File(project.getProjectDir(), "dictionary/armenian_wiki_words.xml"),
+            new File(project.getProjectDir(), "dictionary/facebook_chat_words.xml"),
             new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
     ] as File[]
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
-    maxWordsInList 100000
+    maxWordsInList 200000
 }
 
 task makeDictionary(type: com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask) {
     dependsOn mergeAllWordLists
     inputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
+}
+task parseArmenianWiki(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask) {
+    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
+            new File(project.getProjectDir(), "dictionary/wiki_00.txt")
+    outputWordsListFile new File(project.getProjectDir(), "dictionary/armenian_wiki_words.xml")
+    wordCharacters "աբգդեզԷըթժիլխծկհձղճմյնշոչպջռսվտրցուփքևօֆԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՈՒՓՔՕՖ".toCharArray()
+    additionalInnerCharacters "".toCharArray()
+    locale Locale.getDefault()
 }
 
 afterEvaluate { proj ->
