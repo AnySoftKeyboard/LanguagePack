@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - change_me Language Pack</string>
-    <string name="keyboard_name">change_me keyboard</string>
-    <string name="dictionary_name">change_me</string>
+    <string name="app_name">AnySoftKeyboard - Armenian Language Pack</string>
+    <string name="ar_keyboard">Հայերեն</string>
+    <string name="ar_keyboard_extra_rows">Հայերեն չորս շարքով</string>
+    <string name="ar_keyboard_extra_rows_v2">Հայերեն</string>
+    <string name="dictionary">Հայերեն</string>
 </resources>

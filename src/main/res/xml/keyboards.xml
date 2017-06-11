@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Keyboards>
-    <!-- Dictionary attributes:
-     "nameResId" : the name of the keyboard. Should be short. Reference to a string in values.xml 
-     "defaultDictionaryLocale" : the ID of the keyboard's (ISO) locale, e.g., "en", "iw", "ar", "ru", etc. The dictionary should declare the same locale. 
-     "id" : UUID for this keyboard. Obtain from here: http://www.famkruithof.net/uuid/uuidgen
-     "iconResId" : a reference to a drawable which can be used to show a flag in the notification bar.
-     "layoutResId" : a reference to a keyboard layout XML. See res/xml/qwerty.xml
-     -->
-	<Keyboard nameResId="@string/keyboard_name" iconResId="change_me" layoutResId="@xml/qwerty" 
-	    id="change_me" defaultDictionaryLocale="change_me" description="change_me" index="1"/>
+
+    <!--
+		id := a UUID (you may want to generate this using our simple Java
+		program at: /trunk/project/dict_creation (uuidgen_Windows.bat or
+		uuidgen_Linux) nameResId := the resource Id which holds the name of
+		the keyboard. See strings.xml. layoutResId := the resource Id which
+		holds the layout definition of this keyboard. The sample is an English
+		QWERTY keyboard. defaultDictionaryLocale := a locate identifier for
+		this keyboard. E.g., English will be en, Hebrew will be iw, etc.
+		description := some text you would like to add. index := the sort
+		index of this keyboard in the Settings page.
+    -->
+    <!--
+	<Keyboard nameResId="@string/ar_keyboard" iconResId="@drawable/am"
+		layoutResId="@xml/ar_qwerty" landscapeResId="@xml/ar_qwerty"
+		id="75221b32-e09d-4273-9322-a65c5b45597f" description="Created with herrlado"
+		index="1" physicalKeyboardMappingResId="@xml/ar_qwerty_physical"
+		defaultDictionaryLocale="ar" />
+    -->
+
+    <Keyboard
+        id="cc5f440b-2509-4ad0-845b-98052f27e0e6"
+        defaultDictionaryLocale="hy"
+        description="Created by Hayk Yeghiazaryan (haykweb@gmail.com)"
+        iconResId="@drawable/am"
+        index="1"
+        landscapeResId="@xml/ar_qwerty_4_rows_v2"
+        layoutResId="@xml/ar_qwerty_4_rows_v2"
+        nameResId="@string/ar_keyboard_extra_rows_v2" />
+    <Keyboard
+        id="3cd03b9b-72c0-44a1-ad6d-911734fcd576"
+        defaultDictionaryLocale="hy"
+        description="Deprecated"
+        iconResId="@drawable/am"
+        index="2"
+        landscapeResId="@xml/ar_qwerty_4_rows"
+        layoutResId="@xml/ar_qwerty_4_rows"
+        nameResId="@string/ar_keyboard_extra_rows" />
+
 </Keyboards>
