@@ -4,5 +4,9 @@
     <string name="ar_keyboard">Հայերեն</string>
     <string name="ar_keyboard_extra_rows">Հայերեն չորս շարքով</string>
     <string name="ar_keyboard_extra_rows_v2">Հայերեն</string>
+    <string name="ar_keyboard_extra_rows_v3">Հայերեն</string>
     <string name="dictionary">Հայերեն</string>
+    <string name="deprecated">Հնացած</string>
+    <string name="credits_Hayk">Created by Hayk Yeghiazaryan (haykweb@gmail.com)</string>
+    <string name="credits_Narek">Created by Narek Galstyan</string>
 </resources>
