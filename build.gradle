@@ -48,9 +48,7 @@ android {
 }
 
 task parseTextInputFiles(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
+inputFiles new File(project.getProjectDir(), "dictionary/Indonesian-slang-wikipedia.html")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
 }
 
