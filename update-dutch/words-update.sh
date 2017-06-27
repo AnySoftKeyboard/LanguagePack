@@ -22,4 +22,4 @@ sed 's/&/&amp;/g' $SOURCE|sed 's/"/&quot;/g'|sed 's/</&lt;/g'|sed 's/>/&gt;/g'|a
 cat $FOOTER >> $TARGET
 echo 'INFO: Number of lines in target after update is '`wc -l $TARGET`
 
-java -jar ../../AnySoftKeyboardTools/makedict/makedict.jar
+java -classpath ../../AnySoftKeyboardTools/makedictionary/build/classes/main com.anysoftkeyboard.tools.makedictionary.MainClass ../dictionary/words.xml ../src/main/res
