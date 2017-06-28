@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AnySoftKeyboard - Nederlands Taalpakket</string>
+    <string name="keyboard_name">Nederlands</string>
+    <string name="dictionary_name">Nederlands</string>
+    <string name="description">Nederlandse ondersteuning door Stichting OpenTaal</string>
+</resources>

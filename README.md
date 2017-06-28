@@ -13,7 +13,7 @@ Beschrijving
 
 AnySoftKeyboard is een praktisch toetsenbord voor smartphones en tablets met
 Android. In dit project is de vrije en open Nederlandse ondersteuning te vinden
-in de vorm van een _language pack_ voor AnySoftKeyboard. Deze onderstuening is
+in de vorm van een _language pack_ voor AnySoftKeyboard. Deze ondersteuning is
 gemaakt door Stichting OpenTaal en voor iedereen gratis te installeren.
 
 
@@ -53,12 +53,12 @@ die beter aansluiten op uw behoeften.
 Licentie
 --------
 
-De taalspecifieke bestanden in dit _langauage pack_ hebben een dubbele
+De taalspecifieke bestanden in dit _language pack_ hebben een dubbele
 licentie. Zowel de
 [BSD 2-Clause License](http//opensource.org/licenses/bsd-license.php)
 als de
 [Creative Commons, Attribution 4.0 (unported)](https://creativecommons.org/licenses/by/4.0/deed.en)
-zijn van toepasing. Voor meer informatie over de licentie, zie het bestand
+zijn van toepassing. Voor meer informatie over de licentie, zie het bestand
 [LICENSE](LICENSE).
 
 
@@ -75,7 +75,7 @@ Installatie
 -----------
 
 Installatie is mogelijk vanuit de appstores F-Droid en Google Play zonder enige
-kosten. Overweeg a.u.b. om een donatie te doen aan Stichting OpenTaal om dit
+kosten. Overweeg a.u.b. om een donatie te doen aan Stichting OpenTaal om deze
 ondersteuning voor het Nederlands mogelijk te maken.
 
 <a href="https://f-droid.org/app/YOUR.APP.ID">
