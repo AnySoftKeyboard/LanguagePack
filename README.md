@@ -44,7 +44,7 @@ Woordenlijst
 ------------
 
 De woordenlijst in dit project bevat maar een deel van de woorden van de
-complete woordenlijst van Stichting OpenTaal. Als u voor andere doeleinde de
+complete woordenlijst van Stichting OpenTaal. Als u voor andere doeleinden de
 woordenlijst uit dit project wil hergebruiken, neem a.u.b. contact op met
 Stichting OpenTaal. We kunnen maatwerk en uitgebreider woordenlijsten leveren
 die beter aansluiten op uw behoeften.
@@ -104,10 +104,10 @@ pack for AnySoftKeyboard. This support has been created by Stichting OpenTaal
 and can be installed by all without any costs.
 
 
-Licence
+License
 -------
 
-The language-specific files in this language pack have a dual license. Bot the
+The language-specific files in this language pack have a dual license. Both the
 [BSD 2-Clause License](http//opensource.org/licenses/bsd-license.php)
 as the
 [Creative Commons, Attribution 4.0 (unported)](https://creativecommons.org/licenses/by/4.0/deed.en)
@@ -119,7 +119,7 @@ Thanks
 
 Thanks go to [TaalTik](http://taaltik.nl) for the word frequencies and
 [Hellebaard](http://hellebaard.nl) for the software and configuration. The
-[Taalunie](http://taalunie.org) is being thanked for organising the
+[Taalunie](http://taalunie.org) is being thanked for organizing the
 [De Week van het Nederlands](http://weekvanhetnederlands.org).
 
 
@@ -141,3 +141,10 @@ support for Dutch possible and actively maintained.
 </a>
 
 [![Flattr AnySoftKeyBoard LanguagePack Dutch by OpenTaal](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=OpenTaal&url=https://github.com/OpenTaal/LanguagePack&title=LanguagePack&language=en&tags=github&category=software)
+
+
+See also
+--------
+
+* https://gitlab.com/fdroid/fdroiddata/blob/master/metadata/com.anysoftkeyboard.languagepack.dutch.txt
+* https://f-droid.org/wiki/page/com.anysoftkeyboard.languagepack.dutch
