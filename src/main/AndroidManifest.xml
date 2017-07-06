@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.anysoftkeyboard.languagepack.languagepack">
+    package="com.anysoftkeyboard.languagepack.polish">
 
     <supports-screens
         android:anyDensity="true"
