@@ -23,13 +23,13 @@ android {
         applicationId "com.anysoftkeyboard.languagepack.dutch"
         minSdkVersion 7
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
     }
 
     signingConfigs {
         release {
-            storeFile file("key.store")
+            storeFile file("../../Documents/opentaal.keystore")
             storePassword System.getenv("PACK_KEYSTORE_PASSWORD")
             keyAlias System.getenv("PACK_KEYSTORE_ALIAS")
             keyPassword System.getenv("PACK_KEYSTORE_KEY_PASSWORD")
