@@ -4,6 +4,7 @@ KEYSTORE_FILE_URL=$1
 PUBLISH_CERT_FILE_URL=$2
 USERNAME=$3
 PULL_REQUEST_URL=$4
+BRANCH=$5
 
 if [ "${USERNAME}" == "AnySoftKeyboard" ]; then
     echo "Repo owner is allowed for deploy."
@@ -26,6 +27,13 @@ if [ -z "${PULL_REQUEST_URL}" ]; then
     echo "This is not a pull request. We should deploy."
 else
     echo "This is a pull request. We should not deploy."
+    exit 0
+fi
+
+if [ "${BRANCH}" == "Hebrew" ]; then
+    echo "Building in the language branch. We should deploy."
+else
+    echo "Building in '${BRANCH}'. We should not deploy."
     exit 0
 fi
 
