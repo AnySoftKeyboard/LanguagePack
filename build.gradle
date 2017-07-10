@@ -30,8 +30,8 @@ android {
         applicationId "com.anysoftkeyboard.languagepack.hebrew"
         minSdkVersion 7
         targetSdkVersion 26
-        versionCode 103
-        versionName "3.0.1"
+        versionCode 104
+        versionName "3.0.2"
     }
 
     signingConfigs {
