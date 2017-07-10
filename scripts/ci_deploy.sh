@@ -22,7 +22,9 @@ if [ -z "${PUBLISH_CERT_FILE_URL}" ]; then
     exit 1
 fi
 
-if [ ! -z "${PULL_REQUEST_URL}" ]; then
+if [ -z "${PULL_REQUEST_URL}" ]; then
+    echo "This is not a pull request. We should deploy."
+else
     echo "This is a pull request. We should not deploy."
     exit 0
 fi
