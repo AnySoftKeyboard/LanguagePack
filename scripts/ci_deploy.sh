@@ -3,8 +3,9 @@
 KEYSTORE_FILE_URL=$1
 PUBLISH_CERT_FILE_URL=$2
 USERNAME=$3
-PULL_REQUEST_URL=$4
-BRANCH=$5
+BRANCH=$4
+#note: PULL_REQUEST_URL may be empty, so make sure it is last
+PULL_REQUEST_URL=$5
 
 if [ "${USERNAME}" == "AnySoftKeyboard" ]; then
     echo "Repo owner is allowed for deploy."
