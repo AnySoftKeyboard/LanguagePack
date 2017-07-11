@@ -10,3 +10,4 @@
 src/main/res/raw/*
 src/main/res/values/words_dict_array.xml
 LanguagePack-release.apk
+LanguagePack-*.apk
