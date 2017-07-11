@@ -1,37 +1,45 @@
 import com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListFromAOSPTask
 import com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask
 
+System.setProperty("file.encoding", "UTF-8")
+
 buildscript {
     repositories {
         jcenter()
+        mavenCentral()
         maven { url 'https://jitpack.io' }
+        maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:2.3.3'
 
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:99bd3e6'
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:99bd3e6'
         classpath 'org.jsoup:jsoup:1.9.1'
+
+        classpath 'com.github.Triple-T:gradle-play-publisher:8cda31a5d0e3c4f2d7f47ffde6fc3b370e59dd8a'
     }
 }
 
+apply plugin: 'checkstyle'
 apply plugin: 'com.android.application'
+apply plugin: 'com.github.triplet.play'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.2'
+    compileSdkVersion 26
+    buildToolsVersion '26.0.0'
 
     defaultConfig {
         applicationId "com.anysoftkeyboard.languagepack.german"
         minSdkVersion 7
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 104
         versionName "2.0.4"
     }
 
     signingConfigs {
         release {
-            storeFile file("key.store")
+            storeFile file("/tmp/language_pack.keystore")
             storePassword System.getenv("PACK_KEYSTORE_PASSWORD")
             keyAlias System.getenv("PACK_KEYSTORE_ALIAS")
             keyPassword System.getenv("PACK_KEYSTORE_KEY_PASSWORD")
@@ -47,6 +55,14 @@ android {
             minifyEnabled false
         }
     }
+}
+
+
+play {
+  track = 'alpha'
+  serviceAccountEmail = System.getenv("PUBLISH_APK_SERVICE_ACCOUNT_EMAIL")
+  pk12File = file('/tmp/apk_upload_key.p12')
+  uploadImages = true
 }
 
 //download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
@@ -75,6 +91,12 @@ dependencies {
         jcenter()
         maven { url "https://jitpack.io" }
     }
-    compile 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.7.0'
+    compile 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.9.0'
+}
+
+task checkstyle(type: Checkstyle) {
+    configFile file("${projectDir}/checkstyle/checkstyle.xml")
+    source 'src'
+    classpath = files()
 }
 
