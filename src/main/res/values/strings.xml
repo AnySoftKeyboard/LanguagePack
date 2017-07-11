@@ -8,11 +8,4 @@
   <string name="german_dictionary">german</string>
   <string name="dictionary_name">german</string>
   <string name="keyboard_name">German Keyboard</string>
-  <string name="store_title">German Language Pack</string>
-  <string name="store_promo">German language pack for AnySoftKeyboard</string>
-  <string name="store_description">AnySoftKeyboard keyboards pack:
-    German keyboard and dictionary.
-
-This is an expansion pack for AnySoftKeyboard.
-Install AnySoftKeyboard first, and then select the desired layout from AnySoftKeyboard\'s Settings->Keyboards menu.</string>
 </resources>
