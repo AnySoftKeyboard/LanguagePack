@@ -29,8 +29,8 @@ android {
     defaultConfig {
         applicationId "com.anysoftkeyboard.languagepack.brazilian"
         minSdkVersion 7
-        versionCode 101
-        versionName "2.0.1"
+        versionCode 102
+        versionName "2.0.2"
     }
 
     signingConfigs {
@@ -61,13 +61,13 @@ play {
 }
 
 //make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
-task parseAospForDictionary(type: GenerateWordsListFromAOSPTask) {
+task parseAospForDictionary(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListFromAOSPTask) {
     inputFile new File(project.getProjectDir(), "dictionary/pt_BR_wordlist.combined")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
     maxWordsInList 300000
 }
 
-task makeDictionary(type: MakeDictionaryTask) {
+task makeDictionary(type: com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask) {
   doFirst {
     mkdir 'src/main/res/raw'
   }
