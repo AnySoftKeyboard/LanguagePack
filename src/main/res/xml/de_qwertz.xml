@@ -2,6 +2,7 @@
 
 
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ask="http://schemas.android.com/apk/res-auto"
     android:keyWidth="10%p">
     
     <Row android:keyWidth="9.09%p">
@@ -41,7 +42,7 @@
         <Key android:codes="98" android:keyLabel="b" android:popupCharacters=""/>
         <Key android:codes="110" android:keyLabel="n" android:popupCharacters=""/>
         <Key android:codes="109" android:keyLabel="m" android:popupCharacters=""/>
-        <Key android:codes="223" android:keyLabel="ß" android:popupCharacters=""/>
+        <Key android:codes="223" android:keyLabel="ß" android:popupCharacters="" ask:shiftedCodes="7838" ask:shiftedKeyLabel="ẞ"/>
         <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true"/>
     </Row>
 </Keyboard>
