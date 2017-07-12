@@ -28,7 +28,7 @@ android {
     buildToolsVersion '26.0.0'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.macedonian"
         minSdkVersion 7
         targetSdkVersion 26
         versionCode 1
