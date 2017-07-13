@@ -22,7 +22,7 @@ android {
     buildToolsVersion '25.0.2'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.persian.persian"
         minSdkVersion 7
         targetSdkVersion 25
         versionCode 100
@@ -49,6 +49,7 @@ android {
     }
 }
 
+/*
 //download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
 //make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
 task parseAospForDictionary(type: GenerateWordsListFromAOSPTask) {
@@ -72,6 +73,7 @@ afterEvaluate { proj ->
         }
     }
 }
+*/
 
 dependencies {
     repositories {
