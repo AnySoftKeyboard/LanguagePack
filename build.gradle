@@ -28,7 +28,7 @@ android {
     buildToolsVersion '26.0.0'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.persian"
         minSdkVersion 7
         targetSdkVersion 26
         versionCode 1
@@ -57,7 +57,7 @@ android {
 
 play {
     track = 'alpha'
-    serviceAccountEmail = System.getenv("PUBLISH_APK_SERVICE_ACCOUNT_EMAIL")
+    serviceAccountEmail = System.getenv("amiralinull@gmail.com")
     pk12File = file('/tmp/apk_upload_key.p12')
     uploadImages = true
 }
