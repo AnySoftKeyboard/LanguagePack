@@ -25,7 +25,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.github.triplet.play'
 apply plugin: 'net.evendanan.versiongenerator'
 
-def versionData = versionGenerator.generateVersion(3, 1, 0)
+def generators = [
+        new net.evendanan.versiongenerator.generators.EnvBuildVersionGenerator.CircleCi(104),
+        new net.evendanan.versiongenerator.generators.GitBuildVersionGenerator(104),
+        new net.evendanan.versiongenerator.generators.StaticVersionGenerator()
+]
+
+def versionData = versionGenerator.generateVersion(3, 1, 0, generators)
 
 android {
     compileSdkVersion 26
