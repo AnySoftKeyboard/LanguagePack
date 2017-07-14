@@ -15,12 +15,17 @@ buildscript {
         classpath 'org.jsoup:jsoup:1.9.1'
 
         classpath 'com.github.Triple-T:gradle-play-publisher:8cda31a5d0e3c4f2d7f47ffde6fc3b370e59dd8a'
+
+        classpath 'com.github.menny:GradleVersion:0.0.2'
     }
 }
 
 apply plugin: 'checkstyle'
 apply plugin: 'com.android.application'
 apply plugin: 'com.github.triplet.play'
+apply plugin: 'net.evendanan.versiongenerator'
+
+def versionData = versionGenerator.generateVersion(3, 1, 0)
 
 android {
     compileSdkVersion 26
@@ -30,8 +35,10 @@ android {
         applicationId "com.anysoftkeyboard.languagepack.hebrew"
         minSdkVersion 7
         targetSdkVersion 26
-        versionCode 104
-        versionName "3.0.2"
+        versionName versionData.versionName
+        versionCode versionData.versionCode
+
+        println "Building ${applicationId} v${versionName}, version-code ${versionCode}..."
     }
 
     signingConfigs {
