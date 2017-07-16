@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# See also fouten-zonder-spaties-met-correcties.sh on zapf.ntg.nl
+# See also fouten-met-correcties.sh on zapf.ntg.nl
 
-SOURCE=data/fouten-zonder-spaties-met-correcties.tsv
+SOURCE=data/fouten-met-correcties.tsv
 HEADER=resources/autotext-header.xml
 FOOTER=resources/autotext-footer.xml
 TARGET=../src/main/res/xml/autotext.xml

@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# See also fouten-zonder-spaties-met-correcties.sh on zapf.ntg.nl
-
 SOURCE=resources/LICENSE
 TARGET=../LICENSE
 
