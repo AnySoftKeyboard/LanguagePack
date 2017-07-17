@@ -6,10 +6,12 @@
 .DS_Store
 /build
 /captures
-dictionary/words_from_aosp.xml
 src/main/res/raw/*
 src/main/res/values/words_dict_array.xml
 LanguagePack-release.apk
 /src/main/res/mipmap-*/launcher*.png
 /src/main/res/mipmap-*/ic_broad_launcher.png
 /src/main/res/mipmap-*/ic_launcher_broad.png
+dictionary/words_merged.xml
+dictionary/words_from_aosp.xml
+dictionary/words_from_texts.xml
