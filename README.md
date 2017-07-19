@@ -78,12 +78,14 @@ Installatie is mogelijk vanuit de appstores F-Droid en Google Play zonder enige
 kosten. Overweeg a.u.b. om een donatie te doen aan Stichting OpenTaal om deze
 ondersteuning voor het Nederlands mogelijk te maken.
 
-<a href="https://f-droid.org/app/YOUR.APP.ID">
-    <img src="https://f-droid.org/badge/get-it-on-nl.png"
+<a href="https://f-droid.org/packages/com.anysoftkeyboard.languagepack.dutch">
+    <!--img src="https://f-droid.org/badge/get-it-on-nl.png"
+         alt="Ontdek het op F-Droid" height="80"-->
+    <img src="https://gitlab.com/fdroid/artwork/raw/master/badge/get-it-on-nl.png"
          alt="Ontdek het op F-Droid" height="80">
 </a>
 
-<a href="https://play.google.com/store/apps/details?id=YOUR.APP.ID">
+<a href="https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.dutch">
     <img src="https://play.google.com/intl/en_us/badges/images/generic/nl_badge_web_generic.png"
          alt="Ontdek het op Google Play" height="80">
 </a>
@@ -154,12 +156,14 @@ Installation is possible from F-Droid and Google Play app stores without any
 costs. Please, consider making a donation to Stichting OpenTaal for making this
 support for Dutch possible and actively maintained.
 
-<a href="https://f-droid.org/app/YOUR.APP.ID">
-    <img src="https://f-droid.org/badge/get-it-on.png"
-         alt="Get it on F-Droid" height="80">
+<a href="https://f-droid.org/packages/com.anysoftkeyboard.languagepack.dutch">
+    <!--img src="https://f-droid.org/badge/get-it-on.png"
+         alt="Get it on F-Droid" height="80"-->
+    <img src="https://gitlab.com/fdroid/artwork/raw/master/badge/get-it-on.png"
+         alt="Ontdek het op F-Droid" height="80">
 </a>
 
-<a href="https://play.google.com/store/apps/details?id=YOUR.APP.ID">
+<a href="https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.dutch">
     <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
          alt="Get it on Google Play" height="80">
 </a>
