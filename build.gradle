@@ -1,4 +1,11 @@
+import com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListFromAOSPTask
+import com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask
+import com.anysoftkeyboard.tools.generatewordslist.MergeWordsListTask
+import com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask
 import fr.avianey.androidsvgdrawable.gradle.SvgDrawableTask
+import net.evendanan.versiongenerator.generators.EnvBuildVersionGenerator
+import net.evendanan.versiongenerator.generators.GitBuildVersionGenerator
+import net.evendanan.versiongenerator.generators.StaticVersionGenerator
 
 System.setProperty("file.encoding", "UTF-8")
 
@@ -35,9 +42,9 @@ apply plugin: "androidsvgdrawable"
 
 
 def generators = [
-        new net.evendanan.versiongenerator.generators.EnvBuildVersionGenerator.CircleCi(0),
-        new net.evendanan.versiongenerator.generators.GitBuildVersionGenerator(0),
-        new net.evendanan.versiongenerator.generators.StaticVersionGenerator()
+    new EnvBuildVersionGenerator.CircleCi(0),
+    new GitBuildVersionGenerator(0),
+    new StaticVersionGenerator()
 ]
 
 def versionData = versionGenerator.generateVersion(1, 0, 0, generators)
@@ -52,6 +59,10 @@ android {
         targetSdkVersion 26
         versionName versionData.versionName
         versionCode versionData.versionCode
+
+        // change name of generated apk to make previews and testing of multiple packs easier
+        def packName = applicationId.substring(applicationId.lastIndexOf(".") + 1)
+        setProperty("archivesBaseName", "ASKLangPack-" + packName + "-v" + versionName + "(" + versionCode + ")")
 
         println "Building ${applicationId} v${versionName}, version-code ${versionCode}..."
     }
@@ -90,12 +101,19 @@ task parseAospForDictionary(type: com.anysoftkeyboard.tools.generatewordslist.Ge
     maxWordsInList 300000
 }
 
-task makeDictionary(type: com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask) {
-  doFirst {
-    mkdir 'src/main/res/raw'
-  }
-  dependsOn parseAospForDictionary
-  inputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
+task mergeAllWordLists(type: MergeWordsListTask) {
+    dependsOn parseTextInputFiles
+
+    inputWordsListFiles = [
+            new File(project.getProjectDir(), "dictionary/words_from_aosp.xml"),
+    ] as File[]
+    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
+    maxWordsInList 300000
+}
+
+task makeDictionary(type: MakeDictionaryTask) {
+    dependsOn mergeAllWordLists
+    inputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
 }
 
 afterEvaluate { proj ->
@@ -140,4 +158,3 @@ task svgToDrawablePng(type: SvgDrawableTask) {
     svgMaskFiles = files('src/main/svg-png/mask')
     svgMaskResourceFiles = files('src/main/svg-png/mask/svg')
 }
-
