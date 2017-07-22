@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 ** The data in this file has a dual-license MIT/BSD and is allowed to be
-** distributed in the Dutch language pack for AnySoftKeyboard.
+** distributed ONLY in the Dutch language pack for AnySoftKeyboard.
+**
+** The word list below is a highly customised export from the collection
+** of Stichting OpenTaal and is NOT suited to be used for other purposes.
+** Please, contact Stichting OpenTaal for free and open Dutch word lists.
 ** 
 ** 
 **
@@ -96,8 +100,8 @@
     <word src="0mdat">omdat</word>
     <word src="0mm">0 mm</word>
     <word src="1.000m2">1.000 m²</word>
-    <word src="1000m2">1.000 m²</word>
-    <word src="1000m3">1.000 m³</word>
+    <word src="1000m2">1000 m²</word>
+    <word src="1000m3">1000 m³</word>
     <word src="100m2">100 m²</word>
     <word src="10jarige">10-jarige</word>
     <word src="10m2">10 m²</word>
@@ -106,10 +110,14 @@
     <word src="12m2">12 m²</word>
     <word src="13jarige">13-jarige</word>
     <word src="14jarige">14-jarige</word>
+    <word src="14m2">14 m²</word>
+    <word src="150m2">150 m²</word>
     <word src="15jarige">15-jarige</word>
+    <word src="15m2">15 m²</word>
     <word src="16jarige">16-jarige</word>
     <word src="16m2">16 m²</word>
     <word src="17jarige">17-jarige</word>
+    <word src="17m2">17 m²</word>
     <word src="18jarige">18-jarige</word>
     <word src="19eeeuw">19e eeuw</word>
     <word src="1cm">1 cm</word>
@@ -117,7 +125,7 @@
     <word src="1kg">1 kg</word>
     <word src="1km">1 km</word>
     <word src="1m">1 m</word>
-    <word src="1m2">1 m2</word>
+    <word src="1m2">1 m²</word>
     <word src="1m3">1m³</word>
     <word src="1m30">1,30 m</word>
     <word src="1maal">1 maal</word>
@@ -163,7 +171,7 @@
     <word src="3kg">3 kg</word>
     <word src="3km">3 km</word>
     <word src="3m">3 m</word>
-    <word src="3m2">3 m2</word>
+    <word src="3m2">3 m²</word>
     <word src="3maanden">3 maanden</word>
     <word src="3miljoen">3 miljoen</word>
     <word src="3minuten">3 minuten</word>
@@ -179,7 +187,7 @@
     <word src="4kg">4 kg</word>
     <word src="4km">4 km</word>
     <word src="4m">4 m</word>
-    <word src="4m2">4 m2</word>
+    <word src="4m2">4m²</word>
     <word src="4miljard">4 miljard</word>
     <word src="4miljoen">4 miljoen</word>
     <word src="4mm">4 mm</word>
@@ -187,7 +195,7 @@
     <word src="50+-ers">50+'ers</word>
     <word src="50+er">50+'er</word>
     <word src="50+ers">50+'ers</word>
-    <word src="5000m2">5.000 m²</word>
+    <word src="5000m2">5000 m²</word>
     <word src="500m2">500 m²</word>
     <word src="500m3">500 m³</word>
     <word src="55+-ers">55+'ers</word>
@@ -197,7 +205,7 @@
     <word src="5kg">5 kg</word>
     <word src="5km">5 km</word>
     <word src="5m">5 m</word>
-    <word src="5m2">5 m2</word>
+    <word src="5m2">5 m²</word>
     <word src="5m3">5 m³</word>
     <word src="5meter">5 meter</word>
     <word src="5mg">5 mg</word>
@@ -271,6 +279,7 @@
     <word src="AZERTY-toetsenborden">azertytoetsenborden</word>
     <word src="AZERTY-toetsenbordje">azertytoetsenbordje</word>
     <word src="AZERTY-toetsenbordjes">azertytoetsenbordjes</word>
+    <word src="Africa's">Afrika's</word>
     <word src="Airship">Luchtschip</word>
     <word src="Aldi">ALDI</word>
     <word src="America's">Amerika's</word>
@@ -916,6 +925,8 @@
     <word src="afgezondert">afgezonderd</word>
     <word src="afhad">af had</word>
     <word src="afhadden">af hadden</word>
+    <word src="afleidingsmanoevre">afleidingsmanoeuvre</word>
+    <word src="afleidingsmanouvre">afleidingsmanoeuvre</word>
     <word src="afrees">afreisde</word>
     <word src="afscheidskado">afscheidscadeau</word>
     <word src="afscheidstoernee">afscheidstournee</word>
@@ -1548,6 +1559,7 @@
     <word src="enquète">enquête</word>
     <word src="enquètes">enquêtes</word>
     <word src="erch">erg</word>
+    <word src="etage's">etages</word>
     <word src="etappe's">etappes</word>
     <word src="etherpad">Etherpad</word>
     <word src="euri">euro</word>
@@ -2044,6 +2056,8 @@
     <word src="gemandt">gemand</word>
     <word src="gemanipuleert">gemanipuleerd</word>
     <word src="gemankeerdt">gemankeerd</word>
+    <word src="gemanoevreerd">gemanoeuvreerd</word>
+    <word src="gemanouvreerd">gemanoeuvreerd</word>
     <word src="gemarkeert">gemarkeerd</word>
     <word src="gemartelt">gemarteld</word>
     <word src="gemasseert">gemasseerd</word>
@@ -2052,8 +2066,10 @@
     <word src="gemeldt">gemeld</word>
     <word src="gemelt">gemeld</word>
     <word src="gemendt">gemend</word>
+    <word src="gemenerikken">gemeneriken</word>
     <word src="gemengdt">gemengd</word>
     <word src="gemengt">gemengd</word>
+    <word src="gemeniriken">gemeneriken</word>
     <word src="gement">gemend</word>
     <word src="gemerkd">gemerkt</word>
     <word src="gemerkdt">gemerkt</word>
@@ -2709,6 +2725,7 @@
     <word src="houdswerkzaamheden">onderhoudswerkzaamheden</word>
     <word src="housde">housede</word>
     <word src="houtgreep">houdgreep</word>
+    <word src="howdo">houdoe</word>
     <word src="huib">Huib</word>
     <word src="huiske">huisje</word>
     <word src="hulpvragend">hulp vragend</word>
@@ -2717,6 +2734,9 @@
     <word src="huuske">huisje</word>
     <word src="huwlijk">huwelijk</word>
     <word src="huwlijken">huwelijken</word>
+    <word src="hybride-aandrijving">hybrideaandrijving</word>
+    <word src="hybride-auto">hybrideauto</word>
+    <word src="hybride-auto's">hybrideauto's</word>
     <word src="hyperuricaemie">hyperurikemie</word>
     <word src="hypoglycaemie">hypoglycemie</word>
     <word src="hèbben">hébben</word>
@@ -2817,6 +2837,8 @@
     <word src="ingezamelt">ingezameld</word>
     <word src="ingezoomt">ingezoomd</word>
     <word src="ingeënd">ingeënt</word>
+    <word src="inhaalmanoevre">inhaamanoeuvre</word>
+    <word src="inhaalmanouvre">inhaalmanoeuvre</word>
     <word src="inkomensniveau's">inkomensniveaus</word>
     <word src="inkoppert">inkopper</word>
     <word src="insekticiden">insecticiden</word>
@@ -3093,6 +3115,20 @@
     <word src="maisonettes">maisonnettes</word>
     <word src="malariaepidemieën">malaria-epidemieën</word>
     <word src="mama`s">mama's</word>
+    <word src="maneuvre">manoeuvre</word>
+    <word src="maneuvreren">manoeuvreren</word>
+    <word src="maneuvres">manoeuvres</word>
+    <word src="manoevre">manoeuvre</word>
+    <word src="manoevreerruimte">manoeuvreerruimte</word>
+    <word src="manoevreert">manoeuvreert</word>
+    <word src="manoevreren">manoeuvreren</word>
+    <word src="manoevres">manoeuvres</word>
+    <word src="manouvre">manoeuvre</word>
+    <word src="manouvreerde">manoeuvreeerde</word>
+    <word src="manouvreerruimte">manoeuvreerruimte</word>
+    <word src="manouvreert">manoeuvreert</word>
+    <word src="manouvreren">manoeuvreren</word>
+    <word src="manouvres">manoeuvres</word>
     <word src="maria">Maria</word>
     <word src="marijuana">marihuana</word>
     <word src="marktvertrouw">marktvertrouwen</word>
@@ -3488,6 +3524,8 @@
     <word src="orchestreren">orkestreren</word>
     <word src="ordend">ordent</word>
     <word src="orleans">Orleans</word>
+    <word src="oud-oom">oudoom</word>
+    <word src="oud-ooms">oudooms</word>
     <word src="oud-testamentische">oudtestamentische</word>
     <word src="oudeman">oude man</word>
     <word src="oudergewoonte">ouder gewoonte</word>
@@ -3881,7 +3919,6 @@
     <word src="schilp">Schilp</word>
     <word src="schilpad">schildpad</word>
     <word src="schilpadden">schildpadden</word>
-    <word src="schin">Schin op Geul</word>
     <word src="scholarship">studiebeurs</word>
     <word src="scholarships">studiebeurzen</word>
     <word src="schoolboordkrijt">schoolbordkrijt</word>
@@ -4346,7 +4383,6 @@
     <word src="vakantieuitkering">vakantie-uitkering</word>
     <word src="valent">Valent</word>
     <word src="vam">van</word>
-    <word src="vanVUmc">van VUmc</word>
     <word src="vanacht">vannacht</word>
     <word src="vanalles">van alles</word>
     <word src="vandeze">van deze</word>

@@ -78,15 +78,23 @@ Installatie is mogelijk vanuit de appstores F-Droid en Google Play zonder enige
 kosten. Overweeg a.u.b. om een donatie te doen aan Stichting OpenTaal om deze
 ondersteuning voor het Nederlands mogelijk te maken.
 
-<a href="https://f-droid.org/app/YOUR.APP.ID">
-    <img src="https://f-droid.org/badge/get-it-on-nl.png"
+<a href="https://f-droid.org/packages/com.anysoftkeyboard.languagepack.dutch">
+    <!--img src="https://f-droid.org/badge/get-it-on-nl.png"
+         alt="Ontdek het op F-Droid" height="80"-->
+    <img src="https://gitlab.com/fdroid/artwork/raw/master/badge/get-it-on-nl.png"
          alt="Ontdek het op F-Droid" height="80">
 </a>
 
-<a href="https://play.google.com/store/apps/details?id=YOUR.APP.ID">
+<a href="https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.dutch">
     <img src="https://play.google.com/intl/en_us/badges/images/generic/nl_badge_web_generic.png"
          alt="Ontdek het op Google Play" height="80">
 </a>
+
+
+Gebruik
+-------
+
+Zie voorlopig de Engelse uitleg hieronder bij _Usage_.
 
 [![Flattr AnySoftKeyBoard LanguagePack Nederlands van OpenTaal](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=OpenTaal&url=https://github.com/OpenTaal/LanguagePack&title=LanguagePack&language=nl&tags=github&category=software)
 
@@ -102,6 +110,24 @@ AnySoftKeyboard is a practical keyboard for Android smartphones and tablets.
 This project offers the free and open Dutch support in the form of a language
 pack for AnySoftKeyboard. This support has been created by Stichting OpenTaal
 and can be installed by all without any costs.
+
+
+Stichting OpenTaal
+------------------
+
+See, for now, the text in Dutch above.
+
+
+Quality Mark Spelling
+---------------------
+
+See, for now, the text in Dutch above.
+
+
+Word List
+---------
+
+See, for now, the text in Dutch above.
 
 
 License
@@ -130,15 +156,32 @@ Installation is possible from F-Droid and Google Play app stores without any
 costs. Please, consider making a donation to Stichting OpenTaal for making this
 support for Dutch possible and actively maintained.
 
-<a href="https://f-droid.org/app/YOUR.APP.ID">
-    <img src="https://f-droid.org/badge/get-it-on.png"
-         alt="Get it on F-Droid" height="80">
+<a href="https://f-droid.org/packages/com.anysoftkeyboard.languagepack.dutch">
+    <!--img src="https://f-droid.org/badge/get-it-on.png"
+         alt="Get it on F-Droid" height="80"-->
+    <img src="https://gitlab.com/fdroid/artwork/raw/master/badge/get-it-on.png"
+         alt="Ontdek het op F-Droid" height="80">
 </a>
 
-<a href="https://play.google.com/store/apps/details?id=YOUR.APP.ID">
+<a href="https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.dutch">
     <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
          alt="Get it on Google Play" height="80">
 </a>
+
+
+Usage
+-----
+
+Note that the language shown in a subtle way on the space bar is the language
+you are currently using. Any language displayed more prominently at the top of
+the keyboard is simply to change into that language.
+
+It is recommended to configure AnySoftKeyboard in the following
+way. Open the app called AnySoftKeybaord and choose __Go to Settings__ Then go
+to the bottom of the menu and choose "Even more…" under USER INTERFACE. For
+**Common top generic row** choose the row type **Small keys** and for
+**Common bottom generic row** choose **Classic (no mic)**, or when you want to
+use voice input, leave it as **Regular**.
 
 [![Flattr AnySoftKeyBoard LanguagePack Dutch by OpenTaal](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=OpenTaal&url=https://github.com/OpenTaal/LanguagePack&title=LanguagePack&language=en&tags=github&category=software)
 
