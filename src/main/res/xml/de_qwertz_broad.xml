@@ -2,6 +2,7 @@
 
 
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ask="http://schemas.android.com/apk/res-auto"
     android:keyWidth="10%p">
     
     <Row android:keyWidth="10%p">
@@ -19,7 +20,7 @@
     
     <Row android:keyWidth="11.111%p">
         <Key android:codes="97" android:keyLabel="a" android:popupCharacters="ä" android:keyEdgeFlags="left"/>
-        <Key android:codes="115" android:keyLabel="s" android:popupCharacters="ß"/>
+        <Key android:codes="115" android:keyLabel="s" android:popupCharacters="ßẞ"/>
         <Key android:codes="100" android:keyLabel="d" android:popupCharacters=""/>
         <Key android:codes="102" android:keyLabel="f" android:popupCharacters=""/>
         <Key android:codes="103" android:keyLabel="g" android:popupCharacters=""/>
