@@ -8,10 +8,10 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="59.792"
-   width="106.289"
+   height="60"
+   width="160"
    version="1.0"
-   viewBox="-2100 -1470 620.01918 348.78667"
+   viewBox="-2100 -1470 933.33334 350"
    id="svg2"
    inkscape:version="0.91 r13725"
    sodipodi:docname="launcher-xxxhdpi.svg">
@@ -230,6 +230,13 @@
        cx="0"
        cy="0" />
   </clipPath>
+  <rect
+     style="fill:#d20000"
+     y="-1470"
+     x="-1864.2401"
+     width="700"
+     height="350"
+     id="rect4256" />
   <g
      id="g4475"
      transform="matrix(116.26223,0,0,116.26224,-2061.292,-1470)">
