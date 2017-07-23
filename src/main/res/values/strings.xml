@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AnySoftKeyboard - Persian Language Pack</string>
-    <string name="keyboard_name">Persian keyboard</string>
+    <string name="keyboard_name">Persian</string>
     <string name="dictionary_name">Persian</string>
 </resources>
