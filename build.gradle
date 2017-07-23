@@ -1,5 +1,11 @@
 import com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListFromAOSPTask
+import com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask
+import com.anysoftkeyboard.tools.generatewordslist.MergeWordsListTask
 import com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask
+import fr.avianey.androidsvgdrawable.gradle.SvgDrawableTask
+import net.evendanan.versiongenerator.generators.EnvBuildVersionGenerator
+import net.evendanan.versiongenerator.generators.GitBuildVersionGenerator
+import net.evendanan.versiongenerator.generators.StaticVersionGenerator
 
 System.setProperty("file.encoding", "UTF-8")
 
@@ -13,17 +19,35 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
 
-        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:99bd3e6'
-        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:99bd3e6'
+        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:287fe7812294918636359e4d28dbcbc931f3dab8'
+        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:287fe7812294918636359e4d28dbcbc931f3dab8'
+        //classpath files('english_dictionary/generatewordslist-1.0-SNAPSHOT.jar')
         classpath 'org.jsoup:jsoup:1.9.1'
 
         classpath 'com.github.Triple-T:gradle-play-publisher:8cda31a5d0e3c4f2d7f47ffde6fc3b370e59dd8a'
+
+        classpath 'com.github.menny:GradleVersion:0.0.2'
+
+        classpath('fr.avianey.androidsvgdrawable:gradle-plugin:3.0.0') {
+            exclude group: 'xerces'
+        }
     }
 }
 
 apply plugin: 'checkstyle'
 apply plugin: 'com.android.application'
 apply plugin: 'com.github.triplet.play'
+apply plugin: 'net.evendanan.versiongenerator'
+apply plugin: "androidsvgdrawable"
+
+
+def generators = [
+    new EnvBuildVersionGenerator.CircleCi(0),
+    new GitBuildVersionGenerator(0),
+    new StaticVersionGenerator()
+]
+
+def versionData = versionGenerator.generateVersion(1, 0, 0, generators)
 
 android {
     compileSdkVersion 26
@@ -33,8 +57,14 @@ android {
         applicationId "com.anysoftkeyboard.languagepack.german"
         minSdkVersion 7
         targetSdkVersion 26
-        versionCode 104
-        versionName "2.0.4"
+        versionName versionData.versionName
+        versionCode versionData.versionCode
+
+        // change name of generated apk to make previews and testing of multiple packs easier
+        def packName = applicationId.substring(applicationId.lastIndexOf(".") + 1)
+        setProperty("archivesBaseName", "ASKLangPack-" + packName + "-v" + versionName + "(" + versionCode + ")")
+
+        println "Building ${applicationId} v${versionName}, version-code ${versionCode}..."
     }
 
     signingConfigs {
@@ -100,3 +130,23 @@ task checkstyle(type: Checkstyle) {
     classpath = files()
 }
 
+// task to convert SVGs to PNGs (app icon)
+task svgToDrawablePng(type: SvgDrawableTask) {
+    // specify where to pick SVG from
+    from = files('src/main/svg-png')
+    // specify the android res folder
+    to = file('src/main/res')
+    // create qualified directories if missing
+    createMissingDirectories = true
+    // override files only if necessary
+    overwriteMode = 'ifModified'
+    // generate PNGs for the following densities
+    targetedDensities = ['ldpi', 'hdpi', 'mdpi', 'xhdpi', 'xxhdpi', 'xxxhdpi']
+
+    outputFormat = 'PNG'
+    outputType = 'mipmap'
+
+    // composition of SVGs
+    svgMaskFiles = files('src/main/svg-png/mask')
+    svgMaskResourceFiles = files('src/main/svg-png/mask/svg')
+}
