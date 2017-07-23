@@ -93,20 +93,24 @@ play {
     pk12File = file('/tmp/apk_upload_key.p12')
     uploadImages = true
 }
+def cyrillicCharacters = "љњертѕуиопшѓасдфгхјклчќжзџцвбнм".toCharArray()
+def additionalCyrillicCharacters = "ѐѝ".toCharArray()
 
 task parseTextInputFiles(type: GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
+    inputFiles new File(project.getProjectDir(), "dictionary/conversations.txt"),
                 //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
+                new File(project.getProjectDir(), "dictionary/wordlist.txt")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
+    wordCharacters = cyrillicCharacters
+    additionalInnerCharacters = additionalCyrillicCharacters
 }
 
 //another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
 //make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
-task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
+/*task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
     inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
-    maxWordsInList 300000
+    maxWordsInList 300000 */
 }
 
 task mergeAllWordLists(type: MergeWordsListTask) {
@@ -114,7 +118,6 @@ task mergeAllWordLists(type: MergeWordsListTask) {
 
     inputWordsListFiles = [
             new File(project.getProjectDir(), "dictionary/words_from_texts.xml"),
-            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
     ] as File[]
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
     maxWordsInList 100000
