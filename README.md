@@ -3,7 +3,7 @@
 This is an expansion pack for AnySoftKeyboard.
 Install AnySoftKeyboard first, and then select the desired layout from AnySoftKeyboard's Settings->Keyboards menu."
 
-## Work in progress (**Usable at this point!** Without word-prediction and auto-correct):
+## Work in progress:
 - [x] Fork this repository.
 - [x] Create a new branch, name it after the language.
 - [x] In Android Studio, Refactor->Rename the folder/package com.anysoftkeyboard.languagepack.languagepack in the project tree, replacing the last `languagepack` with the name of the language. This will automatically change it at a couple of other locations.
@@ -14,7 +14,7 @@ Install AnySoftKeyboard first, and then select the desired layout from AnySoftKe
 - [x] Edit `src/main/res/values/strings.xml`, change the strings there and possibly add some more which are referenced in the other xml files. Also, create a new folder `src/main/res/values-XX`, where `XX` is the correspondent two-letter ISO 639-1 language code.
 - [x] Edit `src/main/res/drawable/app_icon.png` to represent the language, e.g. by adding a flag. You can also add a new flag.png and reference it in the `iconResId=""` attribute in the keyboards.xml.
 - [x] Put the source files for the dictionary into the dictionary/ directory. Take special care to take the conditions of the license into account, under which you obtained the data.
-- [ ] Change the build.gradle to use and configure the tasks necessary. There are several different variants ([more Information](https://github.com/AnySoftKeyboard/AnySoftKeyboardTools/blob/master/README.md)):
+- [x] Change the build.gradle to use and configure the tasks necessary. There are several different variants ([more Information](https://github.com/AnySoftKeyboard/AnySoftKeyboardTools/blob/master/README.md)):
     * `GenerateWordsListTask`
     * `GenerateWordsListFromAOSPTask`
     * `MergeWordsListTask`
