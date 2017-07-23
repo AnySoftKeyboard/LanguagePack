@@ -13,14 +13,14 @@ Install AnySoftKeyboard first, and then select the desired layout from AnySoftKe
 - [x] Edit `src/main/res/xml/dictionaries.xml`
 - [x] Edit `src/main/res/values/strings.xml`, change the strings there and possibly add some more which are referenced in the other xml files. Also, create a new folder `src/main/res/values-XX`, where `XX` is the correspondent two-letter ISO 639-1 language code.
 - [x] Edit `src/main/res/drawable/app_icon.png` to represent the language, e.g. by adding a flag. You can also add a new flag.png and reference it in the `iconResId=""` attribute in the keyboards.xml.
-- [ ] Put the source files for the dictionary into the dictionary/ directory. Take special care to take the conditions of the license into account, under which you obtained the data.
+- [x] Put the source files for the dictionary into the dictionary/ directory. Take special care to take the conditions of the license into account, under which you obtained the data.
 - [ ] Change the build.gradle to use and configure the tasks necessary. There are several different variants ([more Information](https://github.com/AnySoftKeyboard/AnySoftKeyboardTools/blob/master/README.md)):
     * `GenerateWordsListTask`
     * `GenerateWordsListFromAOSPTask`
     * `MergeWordsListTask`
-- [ ] Change the README.md to reflect the characteristics of your pack
+- [x] Change the README.md to reflect the characteristics of your pack
 - [ ] Make some screenshots and replace the files in the StoreStuff/ folder. One of them should be a 1024x500 banner.
-- [ ] If a branch of the language does not exist, [open an issue](https://github.com/AnySoftKeyboard/LanguagePack/issues/new) to request the creation of a new branch. As soon, as it is created, you can make a Pull Request from your forked branch to the one in the original repository. Provide translations of the following strings to your language:
+- [x] If a branch of the language does not exist, [open an issue](https://github.com/AnySoftKeyboard/LanguagePack/issues/new) to request the creation of a new branch. As soon, as it is created, you can make a Pull Request from your forked branch to the one in the original repository. Provide translations of the following strings to your language:
     * title: "LANGUAGE Language Pack"
     * promo: "LANGUAGE language pack for AnySoftKeyboard"
     * description: "AnySoftKeyboard keyboards pack:
