@@ -6,3 +6,8 @@
 .DS_Store
 /build
 /captures
+dictionary/words_merged.xml
+dictionary/words_from_aosp.xml
+dictionary/words_from_texts.xml
+
+*.apk
