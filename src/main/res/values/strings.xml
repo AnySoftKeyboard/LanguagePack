@@ -2,5 +2,8 @@
 <resources>
     <string name="app_name">AnySoftKeyboard - Macedonian Language Pack</string>
     <string name="keyboard_name">Македонски</string>
-    <string name="dictionary_name">Македонски речник</string>
+    <string name="dictionary_name">Речник на Македонски јазик</string>
+    <string name="id">4f1eeea0-6802-11e7-9598-0800200c9a66</string>
+    <string name="locale">mk</string>
+    <string name="type">binary_resource</string>
 </resources>

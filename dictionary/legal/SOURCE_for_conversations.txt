@@ -1,0 +1,6 @@
+https://github.com/skopjehacklab/bombstats/tree/master/%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8
+
+I extracted text from these files (which contain transcribed phone conversations) and put them in one file.
+I also modified them (no punctuation or anything else just words plus removed people's names and corrected some typos, most notably the context is also altered!)
+
+Couldn't find any info about the license but I guess they are open since they are on GitHub.
