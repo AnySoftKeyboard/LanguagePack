@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AnySoftKeyboard - Nederlands Taalpakket</string>
-    <string name="keyboard_name_nl">Nederland</string>
-    <string name="keyboard_name_be">België</string>
     <string name="dictionary_name">Nederlands</string>
-    <string name="description">Nederlandstalige ondersteuning door Stichting OpenTaal</string>
+    <string name="dictionary_description">Nederlandstalige ondersteuning door Stichting OpenTaal</string>
+    <string name="keyboard_name">Nederlands</string>
+    <string name="keyboard_description_nl">QWERTY voor Nederland en Surinamed door OpenTaal</string>
+    <string name="keyboard_description_be">AZERTY voor België door OpenTaal</string>
 </resources>

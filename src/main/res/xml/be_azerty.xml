@@ -16,7 +16,7 @@
          "android:keyWidth" : specify the width of this key
          -->
         <Key android:codes="97" android:keyLabel="a" android:popupCharacters="1₁¹&amp;|àáâäåα" ask:hintLabel="1&amp;|" android:keyEdgeFlags="left"/>
-        <Key android:codes="112" android:keyLabel="z" android:popupCharacters="2₂²é@√" ask:hintLabel="2é@"/>
+        <Key android:codes="122" android:keyLabel="z" android:popupCharacters="2₂²é@√" ask:hintLabel="2é@"/>
         <Key android:codes="101" android:keyLabel="e" android:popupCharacters="3₃³&quot;#èéêëᵉ€" ask:hintLabel="3&quot;#"/>
         <Key android:codes="114" android:keyLabel="r" android:popupCharacters="4₄⁴&apos;{ρ®" ask:hintLabel="4&apos;{"/>
         <Key android:codes="116" android:keyLabel="t" android:popupCharacters="5₅⁵(τ" ask:hintLabel="5 ("/>
