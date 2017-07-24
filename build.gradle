@@ -54,7 +54,7 @@ android {
     buildToolsVersion '26.0.0'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.macedonian"
         minSdkVersion 7
         targetSdkVersion 26
         versionName versionData.versionName
@@ -110,8 +110,8 @@ task parseTextInputFiles(type: GenerateWordsListTask) {
 /*task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
     inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
-    maxWordsInList 300000 */
-}
+    maxWordsInList 300000
+}*/
 
 task mergeAllWordLists(type: MergeWordsListTask) {
     dependsOn parseTextInputFiles
