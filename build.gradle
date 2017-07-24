@@ -62,7 +62,7 @@ android {
 
         // change name of generated apk to make previews and testing of multiple packs easier
         def packName = applicationId.substring(applicationId.lastIndexOf(".") + 1)
-        setProperty("archivesBaseName", "ASKLangPack-" + packName + "-v" + versionName + "(" + versionCode + ")")
+        setProperty("archivesBaseName", "ASKLangPack-${packName}-${versionCode}")
 
         println "Building ${applicationId} v${versionName}, version-code ${versionCode}..."
     }
