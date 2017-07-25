@@ -4,7 +4,11 @@
 
 *Додатен пакет за AnySoftKeyboard - софтверска тастатура за Android*
 
-![alt text](/screenshots/01) ![alt text](/screenshots/02) ![alt text](/screenshots/03) ![alt text](/screenshots/04)
+<img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/screenshots/01.png" alt="01" 
+height="340"> <img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/screenshots/02.png" alt="02" 
+height="340"> <img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/screenshots/03.png" alt="03" 
+height="340"> <img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/screenshots/04.png" alt="04" 
+height="340">
 
 ## Превземање и употреба
 

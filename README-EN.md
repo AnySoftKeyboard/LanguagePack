@@ -4,7 +4,11 @@
 
 *Expansion pack for AnySoftKeyboard - a soft keyboard for Android.*
 
-![alt text](/screenshots/01.png) ![alt text](/screenshots/02.png) ![alt text](/screenshots/03.png) ![alt text](/screenshots/04.png)
+<img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/screenshots/01.png" alt="01" 
+height="340"> <img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/screenshots/02.png" alt="02" 
+height="340"> <img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/screenshots/03.png" alt="03" 
+height="340"> <img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/screenshots/04.png" alt="04" 
+height="340">
 
 ## Download and use
 
