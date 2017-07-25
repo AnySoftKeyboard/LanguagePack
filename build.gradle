@@ -47,7 +47,7 @@ def generators = [
     new StaticVersionGenerator()
 ]
 
-def versionData = versionGenerator.generateVersion(1, 0, 0, generators)
+def versionData = versionGenerator.generateVersion(2, 1, 0, generators)
 
 android {
     compileSdkVersion 26
