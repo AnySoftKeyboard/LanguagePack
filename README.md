@@ -189,5 +189,8 @@ use voice input, leave it as **Regular**.
 See also
 --------
 
+* https://www.opentaal.org/het-laatste-nieuws/projectnieuws/51-publicaties/221-anysoftkeyboard
 * https://gitlab.com/fdroid/fdroiddata/blob/master/metadata/com.anysoftkeyboard.languagepack.dutch.txt
 * https://f-droid.org/wiki/page/com.anysoftkeyboard.languagepack.dutch
+* https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.dutch
+* https://f-droid.org/packages/com.anysoftkeyboard.languagepack.dutch

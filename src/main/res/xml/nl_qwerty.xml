@@ -20,7 +20,7 @@
         <Key android:codes="101" android:keyLabel="e" android:popupCharacters="3₃³#èéêëᵉ" ask:hintLabel="3 #"/>
         <Key android:codes="114" android:keyLabel="r" android:popupCharacters="4₄⁴$ρ®" ask:hintLabel="4 $"/>
         <Key android:codes="116" android:keyLabel="t" android:popupCharacters="5₅⁵%τ€" ask:hintLabel="5€%"/>
-        <Key android:codes="121" android:keyLabel="y" android:popupCharacters="6₆⁶^`¥" ask:hintLabel="6¥^"/>
+        <Key android:codes="121" android:keyLabel="y" android:popupCharacters="6₆⁶^¥" ask:hintLabel="6¥^"/>
         <Key android:codes="117" android:keyLabel="u" android:popupCharacters="7₇⁷&amp;ùúûü" ask:hintLabel="7 &amp;"/>
         <Key android:codes="105" android:keyLabel="i" android:popupCharacters="8₈⁸*ìíîï" ask:hintLabel="8 *"/>
         <Key android:codes="111" android:keyLabel="o" android:popupCharacters="9₉⁹(òóôöøω" ask:hintLabel="9 ("/>
