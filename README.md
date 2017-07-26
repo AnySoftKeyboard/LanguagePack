@@ -4,24 +4,24 @@
 
 *Додатен пакет за AnySoftKeyboard - софтверска тастатура за Android*
 
-<img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/screenshots/01.png" alt="01" 
-height="340"> <img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/screenshots/02.png" alt="02" 
-height="340"> <img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/screenshots/03.png" alt="03" 
-height="340"> <img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/screenshots/04.png" alt="04" 
+<img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/src/main/play/en-US/listing/phoneScreenshots/01.png" alt="01" 
+height="340"> <img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/src/main/play/en-US/listing/phoneScreenshots/02.png" alt="02" 
+height="340"> <img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/src/main/play/en-US/listing/phoneScreenshots/03.png" alt="03" 
+height="340"> <img src="https://raw.githubusercontent.com/ikocevski/LanguagePack/Macedonian/src/main/play/en-US/listing/phoneScreenshots/04.png" alt="04" 
 height="340">
 
 ## Превземање и употреба
 
 1. Инсталирајте ја тастатурата AnySoftKeyboard
 
-[<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it 
+[<img src="https://gitlab.com/fdroid/artwork/raw/master/badge/get-it-on.png" alt="Get it 
 on F-Droid" 
 height="90">](https://f-droid.org/app/com.menny.android.anysoftkeyboard) <a href="https://play.google.com/store/apps/details?id=com.menny.android.anysoftkeyboard" target="_blank">
 <img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="90"/></a>
 
 2. Инсталирајте го овој јазичен пакет
 
-[<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it 
+[<img src="https://gitlab.com/fdroid/artwork/raw/master/badge/get-it-on.png" alt="Get it 
 on F-Droid" 
 height="90">](https://f-droid.org/app/com.anysoftkeyboard.languagepack.macedonian) <a href="https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.macedonian" target="_blank">
 <img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="90"/></a>
