@@ -93,7 +93,7 @@
     </module>
 
     <module name="RegexpSingleline">
-        <property name="format" value="com.anysoftkeyboard.languagepack.macedonian" />
+        <property name="format" value="com.anysoftkeyboard.languagepack.languagepack" />
         <property name="message"
             value="You should create a new package id for your language pack, and not 'com.anysoftkeyboard.languagepack.languagepack'." />
     </module>
