@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AnySoftKeyboard - Icelandic Language Pack</string>
-    <string name="keyboard_name">Icelandic keyboard</string>
+    <string name="keyboard_name">Icelandic</string>
     <string name="dictionary_name">Icelandic</string>
 </resources>

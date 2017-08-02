@@ -89,8 +89,7 @@ task mergeAllWordLists(type: com.anysoftkeyboard.tools.generatewordslist.MergeWo
 }
 
 task makeDictionary(type: com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask) {
-    dependsOn mergeAllWordLists
-    inputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
+    inputWordsListFile new File(project.getProjectDir(), "dictionary/is.xml")
 }
 
 afterEvaluate { proj ->
