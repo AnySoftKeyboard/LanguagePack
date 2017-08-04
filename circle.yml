@@ -81,7 +81,7 @@ jobs:
       - run:
           name: Deploy to Play Store
           command: |
-            ./scripts/ci_deploy.sh ${LANGUAGE_PACK_KEYSTORE_FILE_URL} ${PUBLISH_CERT_FILE_URL} ${CIRCLE_PROJECT_USERNAME} ${CIRCLE_BRANCH} ${CIRCLE_PULL_REQUEST}
+            ./scripts/ci_deploy.sh ${CZECH_LANGUAGE_PACK_KEYSTORE_FILE_URL} ${PUBLISH_CERT_FILE_URL} ${CIRCLE_PROJECT_USERNAME} ${CIRCLE_BRANCH} ${CIRCLE_PULL_REQUEST}
 
       - store_artifacts:
           path: /opt/workspace/build/outputs/apk/
