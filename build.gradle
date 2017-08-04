@@ -71,7 +71,7 @@ android {
         release {
             storeFile file("/tmp/language_pack.keystore")
             storePassword System.getenv("CZECH_PACK_KEYSTORE_PASSWORD")
-            keyAlias System.getenv("CZECH_LANGUAGE_PACK_KEYSTORE_FILE_URL")
+            keyAlias System.getenv("CZECH_PACK_KEYSTORE_ALIAS")
             keyPassword System.getenv("CZECH_PACK_KEYSTORE_KEY_PASSWORD")
         }
     }
