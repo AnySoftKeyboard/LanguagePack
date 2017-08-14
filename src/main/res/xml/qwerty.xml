@@ -38,7 +38,7 @@
     </Row>
 
     <Row>
-        <Key android:codes="-1"
+        <Key android:codes="-1" android:keyWidth="15%p"
             android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
         <Key android:codes="122" android:keyLabel="z"/>
         <Key android:codes="120" android:keyLabel="x"/>
@@ -47,8 +47,7 @@
         <Key android:codes="98" android:keyLabel="b"/>
         <Key android:codes="110" android:keyLabel="n"/>
         <Key android:codes="109" android:keyLabel="m"/>
-        <Key android:codes="45" android:keyLabel="-"/>
-        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true"/>
+        <Key android:keyWidth="15%p" android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true"/>
     </Row>
 </Keyboard>
     
