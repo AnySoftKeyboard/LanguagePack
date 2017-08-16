@@ -93,9 +93,9 @@
     </module>
 
     <module name="RegexpSingleline">
-        <property name="format" value="com.anysoftkeyboard.languagepack.languagepack" />
+        <property name="format" value="com.anysoftkeyboard.languagepack.terminal" />
         <property name="message"
-            value="You should create a new package id for your language pack, and not 'com.anysoftkeyboard.languagepack.languagepack'." />
+            value="You should create a new package id for your language pack, and not 'com.anysoftkeyboard.languagepack.terminal'." />
     </module>
 
     <module name="TreeWalker">
@@ -105,7 +105,7 @@
                 value="Use Build.VERSION_CODES.*." />
         </module>
         <module name="RegexpSinglelineJava">
-            <property name="format" value="package*com.anysoftkeyboard.languagepack.languagepack;" />
+            <property name="format" value="package*com.anysoftkeyboard.languagepack.terminal;" />
             <property name="message"
                 value="Move the pack's source files into your package namespace." />
         </module>
