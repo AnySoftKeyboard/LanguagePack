@@ -44,9 +44,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.2708395"
-     inkscape:cx="24.674554"
-     inkscape:cy="75.208783"
+     inkscape:zoom="2.6126298"
+     inkscape:cx="74.056598"
+     inkscape:cy="33.608029"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -230,27 +230,26 @@
        cx="0"
        cy="0" />
   </clipPath>
+  <rect
+     style="fill:#d20000"
+     y="-1470"
+     x="-1864.2401"
+     width="700"
+     height="350"
+     id="rect4256" />
   <g
-     id="g8556"
-     transform="matrix(0.58333327,0,0,0.58333332,-1691.6666,-1470)">
-    <rect
-       id="rect8544"
-       height="600"
-       width="900"
-       x="0"
-       y="0"
-       style="fill:#d7141a" />
-    <rect
-       id="rect8546"
-       height="300"
-       width="900"
-       x="0"
-       y="0"
-       style="fill:#ffffff" />
+     style="fill:#ffe600"
+     id="g4258"
+     transform="matrix(12.5,0,0,12.5,-1864.2401,-1470)">
     <path
-       id="path8548"
-       d="M 450,300 0,0 0,600 Z"
        inkscape:connector-curvature="0"
-       style="fill:#11457e" />
+       d="M 0,0 8.4,0 28,13.5 47.6,0 56,0 0,28 8.4,28 28,14.5 47.6,28 56,28 Z m 56,11.2 0,5.6 -56,-5.6 0,0 0,5.6 z M 25.2,0 28,12 30.8,0 Z m 0,28 2.8,-12 2.8,12 z"
+       id="path4260" />
+    <circle
+       style="stroke:#d20000"
+       cx="28"
+       cy="14"
+       r="4.5"
+       id="circle4262" />
   </g>
 </svg>
