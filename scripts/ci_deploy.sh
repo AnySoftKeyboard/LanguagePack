@@ -32,7 +32,7 @@ else
 fi
 
 #master SHOULD BE REPLACED WITH THE LANGUAGE BRANCH
-if [ "${BRANCH}" == "master" ]; then
+if [ "${BRANCH}" == "Portuguese" ]; then
     echo "Building in the language branch. We should deploy."
 else
     echo "Building in '${BRANCH}'. We should not deploy."
