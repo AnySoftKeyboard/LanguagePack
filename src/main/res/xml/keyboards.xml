@@ -8,11 +8,22 @@
      "layoutResId" : a reference to a keyboard layout XML. See res/xml/qwerty.xml
      -->
 	<Keyboard
-		id="5720a210-ae07-11e7-8f1a-0800200c9a66"
-		nameResId="@string/keyboard_name"
-		layoutResId="@xml/kabyle"
-		iconResId="@drawable/app_icon"
-		defaultDictionaryLocale="kab"
-		description="Created by ButterflyOfFire"
-		index="1"/>
+	nameResId="@string/kabyle_keyboard"
+	layoutResId="@xml/taqbaylit_azerty"
+	id="fa86fd7d-d82a-4592-bbef-fbff2ef7c5e1"
+	index="07"
+	iconResId="@drawable/flag"
+	defaultDictionaryLocale="kab"
+	description="Anasiw Aqbayli"
+	sentenceSeparators=".,)" />
+	
+	<Keyboard
+	nameResId="@string/tifinagh_keyboard"
+	layoutResId="@xml/tifinagh_azerty"
+	id="061f678f-5279-4e2d-b41d-0fdd9e17b7f5"
+	index="08"
+	iconResId="@drawable/flag"
+	defaultDictionaryLocale="ber"
+	description="Anasiw s tifinaγ"
+	sentenceSeparators=".,)" />
 </Keyboards>
