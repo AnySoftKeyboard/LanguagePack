@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<public type="drawable" name="ar" id="0x7f020000" />
+<public type="xml" name="arabic_qwerty" id="0x7f030000" />
+<public type="xml" name="dictionaries" id="0x7f030001" />
+<public type="xml" name="keyboards" id="0x7f030002" />
+<public type="dimen" name="key_height" id="0x7f040000" />
+<public type="dimen" name="candidate_font_height" id="0x7f040001" />
+<public type="dimen" name="candidate_vertical_padding" id="0x7f040002" />
+<public type="string" name="app_name" id="0x7f050000" />
+<public type="string" name="arabic_keyboard" id="0x7f050001" />
+<public type="string" name="dictionary" id="0x7f050002" />
+</resources>
