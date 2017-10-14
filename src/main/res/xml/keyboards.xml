@@ -26,4 +26,12 @@
 	defaultDictionaryLocale="ber"
 	description="Anasiw s tifinaγ"
 	sentenceSeparators=".,)" />
+	
+	<Keyboard nameResId="@string/arabic_keyboard"
+	iconResId="@drawable/ar"
+	layoutResId="@xml/arabic_qwerty"
+	id="141e77eb-bbe9-4e04-b1cc-8b6fd99a5f09"
+	defaultDictionaryLocale="ar"
+	description="Created by Yahya Hamidaddin"
+	index="09" />
 </Keyboards>
