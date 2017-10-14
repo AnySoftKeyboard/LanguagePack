@@ -3,4 +3,7 @@
     <array name="words_dict_array">
         <item>@raw/words_1</item>
     </array>
+        <array name="ar_dic">
+        <item>@raw/ar_dic</item>
+    </array>
 </resources>
