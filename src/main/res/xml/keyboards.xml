@@ -1,39 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Keyboards>
-    <!-- Dictionary attributes:
-     "nameResId" : the name of the keyboard. Should be short. Reference to a string in values.xml 
-     "defaultDictionaryLocale" : the ID of the keyboard's (ISO) locale, e.g., "en", "iw", "ar", "ru", etc. The dictionary should declare the same locale. 
-     "id" : UUID for this keyboard. Obtain from here: http://www.famkruithof.net/uuid/uuidgen
-     "iconResId" : a reference to a drawable which can be used to show a flag in the notification bar.
-     "layoutResId" : a reference to a keyboard layout XML. See res/xml/qwerty.xml
-     -->
-	<Keyboard
-	nameResId="@string/kabyle_keyboard"
-	layoutResId="@xml/taqbaylit_azerty"
-	id="fa86fd7d-d82a-4592-bbef-fbff2ef7c5e1"
-	index="07"
-	iconResId="@drawable/flag"
-	defaultDictionaryLocale="kab"
-	description="Anasiw Aqbayli"
-	sentenceSeparators=".,)" />
-	
-	<Keyboard
-	nameResId="@string/tifinagh_keyboard"
-	layoutResId="@xml/tifinagh_azerty"
-	id="061f678f-5279-4e2d-b41d-0fdd9e17b7f5"
-	index="08"
-	iconResId="@drawable/flag"
-	defaultDictionaryLocale="ber"
-	description="Anasiw s tifinaγ"
-	sentenceSeparators=".,)" />
-	
-	<Keyboard
-	nameResId="@string/arabic_keyboard"
-	layoutResId="@xml/arabic_qwerty"
-	id="141e77eb-bbe9-4e04-b1cc-8b6fd99a5f09"
-	index="09"
-	iconResId="@drawable/ar"
-	defaultDictionaryLocale="ar"
-	description="Arabic keyboard"
-	sentenceSeparators=".,)" />
+	<Keyboard nameResId="@string/keyboard_name" layoutResId="@xml/taqbaylit_azerty" id="fa86fd7d-d82a-4592-bbef-fbff2ef7c5e1" index="07" iconResId="@drawable/app_icon" defaultDictionaryLocale="kab" description="Anasiw Aqbayli" sentenceSeparators=".,)" />
+	<Keyboard nameResId="@string/keyboard_name" layoutResId="@xml/tifinagh_azerty" id="061f678f-5279-4e2d-b41d-0fdd9e17b7f5" index="08" iconResId="@drawable/app_icon" defaultDictionaryLocale="ber" description="Anasiw s tifinaγ" sentenceSeparators=".,)" />
+	<Keyboard nameResId="@string/keyboard_name" layoutResId="@xml/arabic_qwerty" id="141e77eb-bbe9-4e04-b1cc-8b6fd99a5f09" index="09" iconResId="@drawable/app_icon" defaultDictionaryLocale="ar" description="Arabic keyboard" sentenceSeparators=".,)" />
 </Keyboards>

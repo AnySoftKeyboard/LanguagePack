@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Keyboard xmlns:android="http://schemas.android.com/apk/res/android" android:keyWidth="10.000002%p" android:keyHeight="@dimen/key_height" android:horizontalGap="0.0px" android:verticalGap="0.0px">
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android" android:keyWidth="10.000002%p" android:keyHeight="10.0px" android:horizontalGap="0.0px" android:verticalGap="0.0px">
 	<Row android:keyWidth="10.000002%p">
 		<Key android:codes="1590" android:popupCharacters="ًٌٍَُِّْ1" android:keyEdgeFlags="left" android:keyLabel="ض" />
-		<Key android:codes="1589" android:keyLabel="ص" android:popupCharacters="2"  />
-		<Key android:codes="1602" android:keyLabel="ق" android:popupCharacters="3" />
+		<Key android:codes="1589" android:popupCharacters="2" android:keyLabel="ص" />
+		<Key android:codes="1602" android:popupCharacters="3" android:keyLabel="ق" />
 		<Key android:codes="1601" android:popupCharacters="ڤ4" android:keyLabel="ف" />
-		<Key android:codes="1594" android:keyLabel="غ" android:popupCharacters="5" />
-		<Key android:codes="1593" android:keyLabel="ع" android:popupCharacters="6" />
-		<Key android:codes="1607" android:keyLabel="ه" android:popupCharacters="7" />
-		<Key android:codes="1582" android:keyLabel="خ" android:popupCharacters="8" />
-		<Key android:codes="1581" android:keyLabel="ح" android:popupCharacters="9" />
+		<Key android:codes="1594" android:popupCharacters="5" android:keyLabel="غ" />
+		<Key android:codes="1593" android:popupCharacters="6" android:keyLabel="ع" />
+		<Key android:codes="1607" android:popupCharacters="7" android:keyLabel="ه" />
+		<Key android:codes="1582" android:popupCharacters="8" android:keyLabel="خ" />
+		<Key android:codes="1581" android:popupCharacters="9" android:keyLabel="ح" />
 		<Key android:codes="1580" android:popupCharacters="چ0" android:keyEdgeFlags="right" android:keyLabel="ج" />
 	</Row>
 	<Row android:keyWidth="10.000002%p">
@@ -17,7 +17,7 @@
 		<Key android:codes="1587" android:keyLabel="س" />
 		<Key android:codes="1610" android:popupCharacters="ىئ" android:keyLabel="ي" />
 		<Key android:codes="1576" android:popupCharacters="پ" android:keyLabel="ب" />
-		<Key android:codes="1604" android:keyLabel="ل" android:popupCharacters="ـ" />
+		<Key android:codes="1604" android:popupCharacters="ـ" android:keyLabel="ل" />
 		<Key android:codes="1575" android:popupCharacters="أإآء" android:keyLabel="ا" />
 		<Key android:codes="1578" android:keyLabel="ت" />
 		<Key android:codes="1606" android:keyLabel="ن" />
