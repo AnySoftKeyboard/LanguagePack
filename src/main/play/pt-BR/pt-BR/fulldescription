@@ -1,0 +1,6 @@
+Layout de teclado Português so Brasil com dicionário.
+
+Usa o dicionário AOSP. O código fonte está em outro projeto por padrão.
+
+Instale [[com.menny.android.anysoftkeyboard]] primeiro, então selecione um layout de sua vontade
+em configurações do AnySoftKeyboard->Keyboards menu.
