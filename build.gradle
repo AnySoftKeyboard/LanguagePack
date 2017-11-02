@@ -54,7 +54,7 @@ android {
     buildToolsVersion '26.0.0'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.polish"
         minSdkVersion 7
         targetSdkVersion 26
         versionName versionData.versionName
@@ -94,30 +94,21 @@ play {
     uploadImages = true
 }
 
-task parseTextInputFiles(type: GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
-}
-
-//another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
-//make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
-task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
+task parseAospForPolishDictionary(type: GenerateWordsListFromAOSPTask) {
+    inputFile new File(project.getProjectDir(), "dictionary/pl_wordlist.combined")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
     maxWordsInList 300000
 }
 
 task mergeAllWordLists(type: MergeWordsListTask) {
-    dependsOn parseTextInputFiles
+    dependsOn parseAospForPolishDictionary
 
     inputWordsListFiles = [
-            new File(project.getProjectDir(), "dictionary/words_from_texts.xml"),
-            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
+            new File(project.getProjectDir(), "dictionary/words.xml"),
+            new File(project.getProjectDir(), "dictionary/words_from_aosp.xml"),
     ] as File[]
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
-    maxWordsInList 100000
+    maxWordsInList 500000
 }
 
 task makeDictionary(type: MakeDictionaryTask) {
@@ -150,7 +141,7 @@ task checkstyle(type: Checkstyle) {
 // create app icon in all necessary sizes, automatically adding flag
 task svgToDrawablePng(type: SvgDrawableTask) {
     // specify where to pick SVG from
-    from = files('src/main/svg-png/dummy')
+    from = files('src/main/svg-png/launcher-xxxhdpi.svg')
     // specify the android res folder
     to = file('src/main/res')
     // create qualified directories if missing
@@ -171,7 +162,7 @@ task svgToDrawablePng(type: SvgDrawableTask) {
 // create app icon in all necessary sizes, automatically adding flag
 task svgToDrawablePngPlay(type: SvgDrawableTask) {
     // specify where to pick SVG from
-    from = files('src/main/svg-png/dummy')
+    from = files('src/main/svg-png/flag/launcher-xxxhdpi.svg')
     // specify the android res folder
     to = file('src/main/play/en-US/listing/icon')
     // create qualified directories if missing

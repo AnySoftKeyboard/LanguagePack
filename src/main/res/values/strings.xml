@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - change_me Language Pack</string>
-    <string name="keyboard_name">change_me</string>
-    <string name="dictionary_name">change_me</string>
+    <string name="app_name">AnySoftKeyboard - Polish Language Pack</string>
+
+    <string name="dictionary_name">Polish</string>
+
+    <string name="keyboard_qwerty">Polish</string>
+    <string name="keyboard_desc_qwerty">Polish QWERTY keyboard</string>
+
 </resources>

@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+import sys
+import requests
+from bs4 import BeautifulSoup
+
+r = requests.get(sys.argv[1])
+s = BeautifulSoup(r.text, 'html.parser')
+
+urls = set()
+for link in s.find_all('a'):
+    if link.has_attr('href') and link['href'].startswith('http'):
+        urls.add(link['href'])
+
+for url in urls:
+    print(url)

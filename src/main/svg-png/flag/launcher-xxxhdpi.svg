@@ -13,7 +13,7 @@
    version="1.0"
    viewBox="-2100 -1470 933.33334 350"
    id="svg2"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="launcher-xxxhdpi.svg">
   <metadata
      id="metadata118">
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,19 +36,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="717"
+     inkscape:window-width="1182"
+     inkscape:window-height="1160"
      id="namedview116"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="2.6126298"
-     inkscape:cx="74.056598"
-     inkscape:cy="33.608029"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:zoom="3.6948165"
+     inkscape:cx="90.036388"
+     inkscape:cy="-29.13575"
+     inkscape:window-x="7"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <defs
@@ -231,25 +231,17 @@
        cy="0" />
   </clipPath>
   <rect
-     style="fill:#d20000"
      y="-1470"
-     x="-1864.2401"
-     width="700"
-     height="350"
-     id="rect4256" />
-  <g
-     style="fill:#ffe600"
-     id="g4258"
-     transform="matrix(12.5,0,0,12.5,-1864.2401,-1470)">
-    <path
-       inkscape:connector-curvature="0"
-       d="M 0,0 8.4,0 28,13.5 47.6,0 56,0 0,28 8.4,28 28,14.5 47.6,28 56,28 Z m 56,11.2 0,5.6 -56,-5.6 0,0 0,5.6 z M 25.2,0 28,12 30.8,0 Z m 0,28 2.8,-12 2.8,12 z"
-       id="path4260" />
-    <circle
-       style="stroke:#d20000"
-       cx="28"
-       cy="14"
-       r="4.5"
-       id="circle4262" />
-  </g>
+     x="-1651.9469"
+     style="fill:#e9e8e7;stroke-width:0.40746635"
+     width="485.28021"
+     height="175.17043"
+     id="rect3813" />
+  <rect
+     x="-1651.9469"
+     style="fill:#d4213d;stroke-width:0.40746635"
+     width="485.28021"
+     height="175.17043"
+     y="-1294.8296"
+     id="rect3815" />
 </svg>

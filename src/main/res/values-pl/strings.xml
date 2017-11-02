@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AnySoftKeyboard - polski zestaw językowy</string>
+
+    <string name="dictionary_name">Polski</string>
+
+    <string name="keyboard_qwerty">Polski</string>
+    <string name="keyboard_desc_qwerty">Polska klawiatura QWERTY</string>
+</resources>
