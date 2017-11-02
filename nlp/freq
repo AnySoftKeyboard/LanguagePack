@@ -8,26 +8,12 @@ from collections import Counter
 import argparse
 import datetime
 import io
+import gzip
 
 import requests
-from bs4 import BeautifulSoup
 from nltk.tokenize import RegexpTokenizer
 
-try:
-    import requests_cache
-except ImportError:
-    rcache = False
-else:
-    rcache = True
-
-
-def eprint(s):
-    print(s, file=sys.stderr)
-    sys.stderr.flush()
-
-
-def my_dir():
-    return os.path.dirname(os.path.abspath(__file__))
+from common import eprint, my_dir, read_my_dir
 
 
 def parse_args():
@@ -43,13 +29,18 @@ def parse_args():
     parser.add_argument('-o', '--out',
                         default=os.path.join(dict_dir, 'words.xml'),
                         help='result file')
-    parser.add_argument('--no-cache', action='store_true',
-                        help="don't use cache for HTTP requests")
 
     return parser.parse_args()
 
 
-def count_words(text, dct):
+def count_words(fpath, dct):
+    try:
+        with gzip.open(fpath, 'rt') as f:
+            text = f.read()
+    except:
+        with open(fpath) as f:
+            text = f.read()
+
     t = RegexpTokenizer(r'[A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśżź]+')
     tokens =  t.tokenize(text)
 
@@ -60,20 +51,6 @@ def count_words(text, dct):
         elif tok in dct:
             c.update([tok])
     return c
-
-
-def site_text(addr):
-    print("Fetching %s" % addr)
-    sys.stdout.flush()
-
-    try:
-        r = requests.get(addr)
-    except Exception as e:
-        eprint('Fetching %s failed: %s' % (addr, str(e)))
-        return ''
-
-    soup = BeautifulSoup(r.text, 'html.parser')
-    return soup.get_text()
 
 
 def make_dict(zipf):
@@ -118,9 +95,7 @@ def get_dict(url):
         r = requests.get(url)
 
         if not r.ok:
-            soup = BeautifulSoup(r.text, 'html.parser')
             eprint('Downloading dictionary from %s failed' % url)
-            eprint(soup.get_text())
             sys.exit(1)
 
         with open(fname, 'wb') as f:
@@ -133,20 +108,6 @@ def get_dict(url):
         with z.open('odm.txt', 'rU') as odm:
             print('Creating a dictionary...')
             return make_dict(odm)
-
-
-def read_my_dir(fname):
-    path = os.path.join(my_dir(), fname)
-    ret = []
-    with open(path) as f:
-        for line in f:
-            line = line.strip()
-            if line and not line.startswith('#'):
-                yield line
-
-
-def sites():
-    return list(read_my_dir('sites.txt'))
 
 
 def exclude(results):
@@ -187,26 +148,19 @@ def save_results(results, fname, *, min_occurences=1, top_score=None):
 def main():
     args = parse_args()
     dct =  get_dict(args.dict_url)
-    urls = sites()
-
-    if not args.no_cache and rcache:
-        print('HTTP cache will be used')
-        requests_cache.install_cache('freq_http_cache')
 
     assert(dct)
-    assert(urls)
-
-    with multiprocessing.Pool(None) as pool:
-        texts = pool.map(site_text, urls)
 
     # not in a process pool because of pickling speed... (and other issues, like
     # depending on fork() when using a global dct instance)
-    print('Analyzing...')
-    counts = [count_words(txt, dct) for txt in texts]
+    store = os.path.abspath(os.path.join(my_dir(), '..', 'dictionary', 'input'))
+    files = os.listdir(store)
 
+    print('Analyzing %s...' % store)
     gc = Counter()
-    for c in counts:
-        gc.update(c)
+    for f in files:
+        fp = os.path.join(store, f)
+        gc.update(count_words(fp, dct))
 
     # find first non-stopword word.
     sw = stopwords()

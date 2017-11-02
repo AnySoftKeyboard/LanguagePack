@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+
+import sys
+import os
+import urllib.parse as uparse
+import multiprocessing as mp
+import subprocess as sp
+import functools as fn
+import gzip
+
+import requests
+
+from common import my_dir, mkdir_p, eprint
+
+def has_encoding(r):
+    return (r.encoding != 'ISO-8859-1' or 
+            'ISO-8859-1' in r.headers.get('Content-Type', ''))
+
+
+def get_site(addr, store):
+    name = os.path.join(store, uparse.quote(addr, safe=''))
+    gzpath = '%s.gz' % name
+    written = False
+    try:
+        with gzip.open(gzpath, 'xt') as gz:
+            r = requests.get(addr)
+            if r.ok:
+                if not has_encoding(r):
+                    r.encoding = 'utf-8'  # real life
+
+                cp = sp.run(['w3m', '-dump', '-T', 'text/html', 
+                             '-I', r.encoding, '-O', 'utf-8'],
+                            stdout=sp.PIPE, input=r.text,
+                            universal_newlines=True)
+                if cp.returncode == 0:
+                    gz.write(cp.stdout)
+                    written = True
+    except FileExistsError as e:
+        pass
+    finally:
+        if not written:
+            os.unlink(gzpath)
+        sys.stdout.write('.')
+        sys.stdout.flush()
+
+def get_urls():
+    fetched = set()
+    for line in sys.stdin:
+        addr = line.strip()
+        if not addr or addr.startswith('#'):
+            continue
+        if not addr.startswith('http'):
+            addr = 'http://' + addr
+        if addr in fetched:
+            continue
+        fetched.add(addr)
+        yield addr
+
+
+store = os.path.join(my_dir(), '..', 'dictionary', 'input')
+mkdir_p(store)
+
+with mp.Pool(5) as pool:
+    f = fn.partial(get_site, store=store)
+    for _ in pool.imap(f, get_urls()):
+        pass
+print('done')
