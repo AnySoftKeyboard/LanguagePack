@@ -104,8 +104,10 @@ task mergeAllWordLists(type: MergeWordsListTask) {
     dependsOn parseAospForPolishDictionary
 
     inputWordsListFiles = [
-            new File(project.getProjectDir(), "dictionary/words.xml"),
+            new File(project.getProjectDir(), "dictionary/words_nlp.xml"),
+            new File(project.getProjectDir(), "dictionary/websites.xml"),
             new File(project.getProjectDir(), "dictionary/words_from_aosp.xml"),
+            new File(project.getProjectDir(), "dictionary/additional_words.xml"),
     ] as File[]
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
     maxWordsInList 500000

@@ -27,7 +27,7 @@ def parse_args():
     parser.add_argument('-d', '--dict-url', default=def_link,
                         help='URL to a dictionary zip')
     parser.add_argument('-o', '--out',
-                        default=os.path.join(dict_dir, 'words.xml'),
+                        default=os.path.join(dict_dir, 'words_nlp.xml'),
                         help='result file')
 
     return parser.parse_args()

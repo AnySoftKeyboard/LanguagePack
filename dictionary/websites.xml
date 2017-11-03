@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!-- List of the most popular sites used in Poland(minus porn), according to
+      Alexa: https://www.alexa.com/topsites/countries/PL -->
+<wordlist>
+    <w f="48">Facebook</w>
+    <w f="48">Facebooku</w>
+    <w f="48">Facebooka</w>
+    <w f="40">facebook.com</w>
+
+    <w f="48">Github</w>
+    <w f="48">Githubie</w>
+    <w f="48">Githuba</w>
+    <w f="40">github.com</w>
+
+    <w f="48">Google</w>
+    <w f="40">google.pl</w>
+
+    <w f="48">Youtube</w>
+    <w f="48">Youtubie</w>
+    <w f="48">Youtube'a</w>
+    <w f="40">youtube.com</w>
+
+    <w f="48">Yahoo</w>
+    <w f="40">yahoo.com</w>
+
+    <w f="48">Reddit</w>
+    <w f="40">reddit.com</w>
+
+    <w f="48">Wikipedia</w>
+    <w f="48">Wikipedii</w>
+    <w f="48">Wikipedię</w>
+
+    <w f="48">Twitter</w>
+    <w f="48">Twitterze</w>
+    <w f="48">Twittera</w>
+
+    <w f="48">Amazon</w>
+    <w f="40">amazon.com</w>
+    <w f="40">amazon.de</w>
+
+    <w f="48">GMail</w>
+    <w f="48">GMailu</w>
+    <w f="48">GMaila</w>
+    <w f="40">gmail.com</w>
+
+    <w f="48">Onet</w>
+    <w f="48">Onecie</w>
+    <w f="40">onet.pl</w>
+
+    <w f="48">WP</w>
+    <w f="40">wp.pl</w>
+
+    <w f="48">Interia</w>
+    <w f="48">Interii</w>
+    <w f="48">Interię</w>
+    <w f="40">interia.pl</w>
+
+    <w f="48">Wykop</w>
+    <w f="40">wykop.pl</w>
+
+    <w f="48">Allegro</w>
+    <w f="40">allegro.pl</w>
+
+    <w f="48">Olx</w>
+    <w f="40">olx.pl</w>
+
+    <w f="48">Instagram</w>
+    <w f="48">Instagramie</w>
+    <w f="48">Instagrama</w>
+    <w f="40">instagram.com</w>
+
+    <w f="48">Filmweb</w>
+    <w f="40">filmweb.pl</w>
+
+    <w f="48">Otomoto</w>
+    <w f="40">otomoto.pl</w>
+
+    <w f="48">Ceneo</w>
+    <w f="40">ceneo.pl</w>
+
+    <w f="48">Aliexpress</w>
+    <w f="40">aliexpress.com</w>
+
+    <w f="48">Librus</w>
+    <w f="40">librus.pl</w>
+
+    <w f="48">Gumtree</w>
+    <w f="40">gumtree.pl</w>
+
+    <w f="48">O2</w>
+    <w f="40">o2.pl</w>
+
+    <w f="48">Mbank</w>
+    <w f="40">mbank.pl</w>
+
+    <w f="48">TVN24</w>
+    <w f="40">tvn24.pl</w>
+
+    <w f="48">Twitch</w>
+    <w f="48">Twitchu</w>
+    <w f="48">Twitcha</w>
+    <w f="40">twitch.tv</w>
+
+    <w f="40">wyborcza.pl</w>
+    <w f="48">Kwejk</w>
+    <w f="48">Kwejku</w>
+    <w f="48">Kwejka</w>
+    <w f="40">kwejk.pl</w>
+
+    <w f="48">Joemonster</w>
+    <w f="48">Joemonsterze</w>
+    <w f="48">Joemonstera</w>
+    <w f="40">joemonster.org</w>
+
+    <w f="48">TVP</w>
+    <w f="40">tvp.pl</w>
+
+    <w f="40">chomikuj.pl</w>
+    <w f="40">gazeta.pl</w>
+    <w f="40">wiocha.pl</w>
+    <w f="40">cda.pl</w>
+</wordlist>
