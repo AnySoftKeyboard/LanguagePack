@@ -112,8 +112,8 @@ task makeDictionary(type: MakeDictionaryTask) {
   doFirst {
     mkdir 'src/main/res/raw'
   }
-  dependsOn parseAospForDictionary
-  inputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
+  //dependsOn parseAospForDictionary
+  inputWordsListFile new File(project.getProjectDir(), "dictionary/lexique-dicollecte-fr-v6.1.xml")
 }
 
 afterEvaluate { proj ->
