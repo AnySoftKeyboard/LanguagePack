@@ -53,7 +53,7 @@ android {
     buildToolsVersion '26.0.0'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.french"
         minSdkVersion 7
         targetSdkVersion 26
         versionName versionData.versionName

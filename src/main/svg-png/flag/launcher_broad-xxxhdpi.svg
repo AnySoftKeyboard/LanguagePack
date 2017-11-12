@@ -13,7 +13,7 @@
    version="1.0"
    viewBox="-2100 -1470 1120 348.78667"
    id="svg2"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="launcher_broad-xxxhdpi.svg">
   <metadata
      id="metadata118">
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,8 +36,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="717"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
      id="namedview116"
      showgrid="false"
      fit-margin-top="0"
@@ -45,7 +45,7 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="2.5769103"
-     inkscape:cx="83.711421"
+     inkscape:cx="-57.543011"
      inkscape:cy="12.998363"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -230,83 +230,25 @@
        cx="0"
        cy="0" />
   </clipPath>
-  <g
-     id="g5005"
-     transform="matrix(0.44938083,0,0,0.44938087,-2100,-1390.842)">
-    <rect
-       id="rect4991"
-       height="600"
-       width="900"
-       x="0"
-       y="0"
-       style="fill:#377e3f" />
-    <rect
-       id="rect4993"
-       height="360"
-       width="900"
-       y="120"
-       x="0"
-       style="fill:#ffffff" />
-    <rect
-       id="rect4995"
-       height="240"
-       width="900"
-       y="180"
-       x="0"
-       style="fill:#b40a2d" />
-    <path
-       id="path4997"
-       d="m 450,191.459 70.534,217.082 -184.661,-134.164 228.254,0 -184.661,134.164 z"
-       inkscape:connector-curvature="0"
-       style="fill:#ecc81d" />
-  </g>
-  <g
-     id="g5025"
-     transform="matrix(44.937824,0,0,44.938087,-1384.4404,-1390.8419)">
-    <rect
-       id="rect5013"
-       height="6"
-       width="9"
-       x="0"
-       y="0"
-       style="fill:#21468b" />
-    <rect
-       id="rect5015"
-       height="4"
-       width="9"
-       x="0"
-       y="0"
-       style="fill:#ffffff" />
-    <rect
-       id="rect5017"
-       height="2"
-       width="9"
-       x="0"
-       y="0"
-       style="fill:#ae1c28" />
-  </g>
-  <g
-     id="g5044"
-     transform="matrix(0.69136024,0,0,0.69135519,-1695.5544,-1390.8419)">
-    <rect
-       id="rect5032"
-       height="390"
-       width="450"
-       x="0"
-       y="0"
-       style="fill:#ed2939" />
-    <rect
-       id="rect5034"
-       height="390"
-       width="300"
-       x="0"
-       y="0"
-       style="fill:#fae042" />
-    <rect
-       id="rect5036"
-       height="390"
-       width="150"
-       x="0"
-       y="0" />
-  </g>
+  <rect
+     width="525"
+     height="350"
+     id="rect898"
+     x="-1502.2968"
+     y="-1468.254"
+     style="fill:#ed2939;stroke-width:0.58333337" />
+  <rect
+     width="350"
+     height="350"
+     id="rect900"
+     x="-1502.2968"
+     y="-1468.254"
+     style="fill:#ffffff;stroke-width:0.58333337" />
+  <rect
+     width="175"
+     height="350"
+     id="rect902"
+     x="-1502.2968"
+     y="-1468.254"
+     style="fill:#002395;stroke-width:0.58333337" />
 </svg>
