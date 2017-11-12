@@ -1,0 +1,81 @@
+=head1 NAME
+
+Parse::MediaWikiDump::page - Object representing a specific revision of a MediaWiki page
+
+=head1 ABOUT
+
+This object is returned from the "next" method of Parse::MediaWikiDump::Pages 
+and Parse::MediaWikiDump::Revisions. You most likely will not be creating instances
+of this particular object yourself instead you use this object to access the information
+about a page in a MediaWiki instance.
+
+=head1 SYNOPSIS
+  
+  use MediaWiki::DumpFile::Compat;
+  
+  $pages = Parse::MediaWikiDump::Pages->new('pages-articles.xml');
+  
+  #get all the records from the dump files, one record at a time
+  while(defined($page = $pages->next)) {
+    print "title '", $page->title, "' id ", $page->id, "\n";
+  }
+
+=head1 METHODS
+
+=over 4
+
+=item $page->redirect
+
+Returns an empty string (such as '') 
+for the main namespace or a string 
+containing the name of the namespace.
+ 
+=item $page->categories
+
+Returns a reference to an array that 
+contains a list of categories or undef 
+if there are no categories. This method 
+does not understand templates and may 
+not return all the categories the article actually belongs in. 
+ 
+=item $page->title
+
+Returns a string of the full article title including the namespace if present
+  
+=item $page->namespace
+
+Returns a string of the namespace of the article or an empty string if the article is in the default namespace
+  
+=item $page->id
+
+Returns a number that is the id for the page in the MediaWiki instance
+  
+=item $page->revision_id
+
+Returns a number that is the revision id for the page in the MediaWiki instance
+  
+=item $page->timestamp
+
+Returns a string in the following format: 2005-07-09T18:41:10Z
+  
+=item $page->username
+
+Returns a string of the username responsible for this specific revision of the article or undef if the editor was anonymous
+  
+=item $page->userid
+
+Returns a number that is the id for the user returned by $page->username or undef if the editor was anonymous
+
+=item $page->userip
+
+Returns a string of the IP of the editor if the edit was anonymous or undef otherwise
+  
+=item $page->minor
+
+Returns 1 if this article was flaged as a minor edit otherwise returns 0
+  
+=item $page->text
+  
+Returns a reference to a string that contains the article title text
+
+=back 
