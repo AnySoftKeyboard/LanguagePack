@@ -1,3 +1,15 @@
+# French Language Pack (branch)
+
+Resurection of the French Language Pack for AnySoftKeyboard.
+
+French dictionary based on the [Dicollecte](https://www.dicollecte.org/home.php?prj=fr) project,
+more details in the [dictionary/](dictionary) directory.
+
+Two keyboard layouts : AZERTY and QWERTY. Both with symbols and rapid acces to apostrophe and hyphen.
+
+(below the *master* README content)
+----
+
 This is the common template for language Packs for the [AnySoftKeyboard](https://github.com/AnySoftKeyboard/AnySoftKeyboard) app for Android devices.
 Each pack can contain and provide multiple keyboards or dictionaries for auto correction.
 Most packs are maintained here as [branches of the repository](https://github.com/AnySoftKeyboard/LanguagePack/branches) and published to Google Play Store and F-Droid repository. There are some packs maintained as community forks, here on GitHub or not open source at all. Some of these are:
