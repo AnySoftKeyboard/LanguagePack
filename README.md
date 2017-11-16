@@ -1,4 +1,4 @@
-![](other/cademialogo.svg){width="270px"}
+![](other/cademialogo.svg)
 
 Pacchettu Sicilianu pi AnySoftKeyboard
 ======================================
