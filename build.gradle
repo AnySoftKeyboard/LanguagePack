@@ -36,12 +36,12 @@ apply plugin: "androidsvgdrawable"
 
 
 def generators = [
-        new net.evendanan.versiongenerator.generators.EnvBuildVersionGenerator.CircleCi(104,0),
-        new net.evendanan.versiongenerator.generators.GitBuildVersionGenerator(104,0),
+        new net.evendanan.versiongenerator.generators.EnvBuildVersionGenerator.CircleCi(100/*app code offset*/,-260/*minor offset*/),
+        new net.evendanan.versiongenerator.generators.GitBuildVersionGenerator(200,-260),
         new net.evendanan.versiongenerator.generators.StaticVersionGenerator()
 ]
 
-def versionData = versionGenerator.generateVersion(3, 1, 0, generators)
+def versionData = versionGenerator.generateVersion(3, 2, 0, generators)
 
 android {
     compileSdkVersion 26
