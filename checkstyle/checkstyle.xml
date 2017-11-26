@@ -31,14 +31,14 @@
 
     <module name="RegexpSingleline">
         <property name="fileExtensions" value="xml" />
-        <property name="format" value="&#62;AnySoftKeyboard - change_me Language Pack&#60;" />
+        <property name="format" value="&#62;AnySoftKeyboard - Sardu Language Pack&#60;" />
         <property name="message"
             value="'change_me' should be the name of the language. And it should be writen in the native language." />
     </module>
 
     <module name="RegexpSingleline">
         <property name="fileExtensions" value="xml" />
-        <property name="format" value="&#62;change_me keyboard&#60;" />
+        <property name="format" value="&#62;Sardinian keyboard&#60;" />
         <property name="message"
             value="'change_me keyboard' should be the name of the language, e.g. 'English'." />
     </module>
@@ -73,14 +73,14 @@
 
     <module name="RegexpSingleline">
         <property name="fileExtensions" value="xml" />
-        <property name="format" value="defaultDictionaryLocale=&quot;change_me&quot;" />
+        <property name="format" value="defaultDictionaryLocale=&quot;sc&quot;" />
         <property name="message"
             value="'change_me' should be an identifier for the language (please, ISO), and match the locale declared by the dictionary." />
     </module>
 
     <module name="RegexpSingleline">
         <property name="fileExtensions" value="xml" />
-        <property name="format" value="locale=&quot;change_me&quot;" />
+        <property name="format" value="locale=&quot;sc&quot;" />
         <property name="message"
             value="'change_me' should be an identifier for the language (please, ISO), and match the locale required by the keyboard." />
     </module>
@@ -93,7 +93,7 @@
     </module>
 
     <module name="RegexpSingleline">
-        <property name="format" value="com.anysoftkeyboard.languagepack.languagepack" />
+        <property name="format" value="com.anysoftkeyboard.languagepack.sardinian" />
         <property name="message"
             value="You should create a new package id for your language pack, and not 'com.anysoftkeyboard.languagepack.languagepack'." />
     </module>
