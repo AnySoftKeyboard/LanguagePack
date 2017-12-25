@@ -12,7 +12,7 @@
         <Key android:codes="1082" android:keyLabel="к"/>
         <Key android:codes="1077" android:keyLabel="е" android:popupKeyboard="@xml/popup_e"/>
         <Key android:codes="1085" android:keyLabel="н"/>
-        <Key android:codes="1075" android:keyLabel="г"/>
+        <Key android:codes="1075" android:keyLabel="г" android:popupCharacters="ґ"/>
         <Key android:codes="1096" android:keyLabel="ш"/>
         <Key android:codes="1097" android:keyLabel="щ"/>
         <Key android:codes="1079" android:keyLabel="з"/>
