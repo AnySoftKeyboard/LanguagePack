@@ -54,7 +54,7 @@ android {
     buildToolsVersion '26.0.0'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.turkish"
         minSdkVersion 7
         targetSdkVersion 26
         versionName versionData.versionName
@@ -95,26 +95,26 @@ play {
 }
 
 task parseTextInputFiles(type: GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
+    inputFiles  new File(project.getProjectDir(), "dictionary/kelime-listesi-ilk.txt"),
+                new File(project.getProjectDir(), "dictionary/ebook1.txt"),
+                new File(project.getProjectDir(), "dictionary/ebook2.txt")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
 }
 
 //another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
 //make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
 task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
+    inputFile new File(project.getProjectDir(), "dictionary/tr_wordlist.combined")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
     maxWordsInList 300000
 }
 
 task mergeAllWordLists(type: MergeWordsListTask) {
     dependsOn parseTextInputFiles
+    dependsOn parseAospForEnglishDictionary
 
     inputWordsListFiles = [
             new File(project.getProjectDir(), "dictionary/words_from_texts.xml"),
-            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
     ] as File[]
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
     maxWordsInList 100000
