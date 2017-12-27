@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard>
 <Row xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ask="http://schemas.android.com/apk/res-auto"
-    android:keyWidth="8.3%p" >
+    xmlns:ask="http://schemas.android.com/apk/res-auto">
 
-    <Row>
+    <Row android:keyWidth="8.3%p" >
         <!-- Key attributes:
          "android:codes" : a comma separated unicode values of the keys. If you specify more than one code, then the other codes are accessible via multi-tap.
          "android:popupCharacters" : characters to show on long-press popup keyboard
@@ -28,8 +27,8 @@
         <Key android:codes="252" android:keyEdgeFlags="right" />
     </Row>
      
-    <Row>
-        <Key android:horizontalGap="5%p" android:codes="97" android:keyLabel="a" android:popupCharacters="àáâãä" android:keyEdgeFlags="left"/>
+    <Row android:keyWidth="9%p">
+        <Key android:codes="97"  android:keyLabel="a" android:popupCharacters="àáâãä" android:keyEdgeFlags="left"/>
         <Key android:codes="115" android:keyLabel="s" />
         <Key android:codes="100" android:keyLabel="d" />
         <Key android:codes="102" android:keyLabel="f" />
@@ -42,7 +41,7 @@
         <Key android:codes="105" ask:shiftedCodes="304" ask:shiftedKeyLabel="İ" android:keyEdgeFlags="right" />
     </Row>
     
-    <Row>
+    <Row android:keyWidth="8.3%p">
         <Key android:codes="-1" android:keyWidth="13%p"
                 android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
         <Key android:codes="122" android:keyLabel="z" />
@@ -56,7 +55,7 @@
         <Key android:codes="231" />
         <Key android:keyWidth="13%p" android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true"/>
     </Row>
-    <Row>
+    <Row android:keyWidth="10%p">
         <Key android:keyWidth="15%p" android:codes="@integer/key_code_ctrl" android:isModifier="true" android:keyEdgeFlags="left"/>
         <Key android:codes="9"/>
         <Key android:codes="124" android:keyLabel="|"/>
