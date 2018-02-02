@@ -17,16 +17,14 @@ beberapa [script awk](https://github.com/azzamsa/ask-words-id) yang saya buat.
 
 Instalasi dapat dilakukan dari aplikasi F-Droid dan Google Play.
 
-<a href="https://f-droid.org/packages/com.anysoftkeyboard.languagepack.dutch">
-    <!--img src="https://f-droid.org/badge/get-it-on.png"
-         alt="Get it on F-Droid" height="80"-->
-    <img src="https://gitlab.com/fdroid/artwork/raw/master/badge/get-it-on.png"
-         alt="Ontdek het op F-Droid" height="80">
+<a href="#">
+  <img src="https://gitlab.com/fdroid/artwork/raw/master/badge/get-it-on.png"
+       alt="Dapatkan di F-Droid" height="80">
 </a>
 
-<a href="https://play.google.com/store/apps/details?id=com.anysoftkeyboard.languagepack.dutch">
-    <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
-         alt="Get it on Google Play" height="80">
+<a href="#">
+  <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+       alt="Dapatkan di Google Play" height="80">
 </a>
 
 ## Penggunaan
