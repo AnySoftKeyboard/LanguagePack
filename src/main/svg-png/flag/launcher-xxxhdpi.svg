@@ -13,7 +13,7 @@
    version="1.0"
    viewBox="-2100 -1470 933.33334 350"
    id="svg2"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="launcher-xxxhdpi.svg">
   <metadata
      id="metadata118">
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,20 +36,20 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="717"
+     inkscape:window-width="1918"
+     inkscape:window-height="1019"
      id="namedview116"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="2.6126298"
-     inkscape:cx="74.056598"
+     inkscape:zoom="5.2252596"
+     inkscape:cx="141.80443"
      inkscape:cy="33.608029"
      inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-y="32"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <defs
      id="defs4">
@@ -230,26 +230,22 @@
        cx="0"
        cy="0" />
   </clipPath>
-  <rect
-     style="fill:#d20000"
-     y="-1470"
-     x="-1864.2401"
-     width="700"
-     height="350"
-     id="rect4256" />
   <g
-     style="fill:#ffe600"
-     id="g4258"
-     transform="matrix(12.5,0,0,12.5,-1864.2401,-1470)">
-    <path
-       inkscape:connector-curvature="0"
-       d="M 0,0 8.4,0 28,13.5 47.6,0 56,0 0,28 8.4,28 28,14.5 47.6,28 56,28 Z m 56,11.2 0,5.6 -56,-5.6 0,0 0,5.6 z M 25.2,0 28,12 30.8,0 Z m 0,28 2.8,-12 2.8,12 z"
-       id="path4260" />
-    <circle
-       style="stroke:#d20000"
-       cx="28"
-       cy="14"
-       r="4.5"
-       id="circle4262" />
+     id="g4580"
+     transform="matrix(232.3071,0,0,175,-1864.2401,-1470)">
+    <rect
+       id="rect4566"
+       height="2"
+       width="3"
+       x="0"
+       y="0"
+       style="fill:#ffffff" />
+    <rect
+       id="rect4568"
+       height="1"
+       width="3"
+       x="0"
+       y="0"
+       style="fill:#ff0000" />
   </g>
 </svg>
