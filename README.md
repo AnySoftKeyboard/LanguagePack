@@ -1,3 +1,5 @@
+Galician dictionary from ???. Galician flag image from [ic_launcherWikipedia](https://en.wikipedia.org/wiki/Galicia_(Spain)#/media/File:Flag_of_Galicia.svg)
+
 This is the common template for language Packs for the [AnySoftKeyboard](https://github.com/AnySoftKeyboard/AnySoftKeyboard) app for Android devices.
 Each pack can contain and provide multiple keyboards or dictionaries for auto correction.
 Most packs are maintained here as [branches of the repository](https://github.com/AnySoftKeyboard/LanguagePack/branches) and published to Google Play Store and F-Droid repository. There are some packs maintained as community forks, here on GitHub or not open source at all. Some of these are:
