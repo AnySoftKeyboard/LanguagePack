@@ -1,0 +1,185 @@
+#!/usr/bin/env python3
+
+import sys
+import os
+import multiprocessing
+import zipfile
+from collections import Counter
+import argparse
+import datetime
+import io
+import gzip
+
+import requests
+from nltk.tokenize import RegexpTokenizer
+
+from common import eprint, my_dir, read_my_dir
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+
+    today = datetime.date.today().strftime('%Y%m%d')
+    def_link = 'https://sjp.pl/slownik/odmiany/sjp-odm-%s.zip' % today
+
+    dict_dir = os.path.join(my_dir(), '..', 'dictionary')
+
+    parser.add_argument('-d', '--dict-url', default=def_link,
+                        help='URL to a dictionary zip')
+    parser.add_argument('-o', '--out',
+                        default=os.path.join(dict_dir, 'words_nlp.xml'),
+                        help='result file')
+
+    return parser.parse_args()
+
+
+def count_words(fpath, dct):
+    try:
+        with gzip.open(fpath, 'rt') as f:
+            text = f.read()
+    except:
+        with open(fpath) as f:
+            text = f.read()
+
+    t = RegexpTokenizer(r'[A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśżź]+')
+    tokens =  t.tokenize(text)
+
+    c = Counter()
+    for tok in tokens:
+        if tok.lower() in dct:
+            c.update([tok.lower()])
+        elif tok in dct:
+            c.update([tok])
+    return c
+
+
+def make_dict(zipf):
+    '''Creates a dictionary of all Polish words (at least, according to sjp.pl),
+    minus stopwords (which are returned separately). There are almost 4 million
+    words in this dictionary, but most of these are useless to most users. A
+    good dictionary should probably have ~200-300k of most common words, so
+    we'll only use a dictionary to verify words correctness.'''
+    words = set()
+    delims = ', '
+    for line in io.TextIOWrapper(zipf, 'utf-8'):
+        line = line.strip()
+        # exclude words without derivations (which are not conjugated or
+        # declensed). These are mostly some latin phrases (for some reason
+        # included in sjp.pl's dict)
+        if ',' not in line and ' ' in line:
+            continue
+
+        for word in line.split(delims):
+            # exclude very short words and words with non-alpha characters (like
+            # "aa", "zzz", "quasi-sth", "i.t.p.",  etc.)
+            if len(word) > 2 and word.isalpha():
+                words.add(word.strip(delims))
+
+    return words
+
+
+def stopwords():
+    fname = os.path.join(my_dir(), 'stopwords-pl.txt')
+    words = set()
+    with open(fname) as f:
+        # one word per line
+        for word in f:
+            words.add(word.strip())
+    return words
+
+
+def get_dict(url):
+    fname = os.path.join(my_dir(), '_odm_tmp.zip')
+    if not os.path.exists(fname):
+        print('Downloading %s... -> %s' % (url, fname))
+        r = requests.get(url)
+
+        if not r.ok:
+            eprint('Downloading dictionary from %s failed' % url)
+            sys.exit(1)
+
+        with open(fname, 'wb') as f:
+            for chunk in r.iter_content(chunk_size=1024):
+                if chunk:
+                    f.write(chunk)
+
+    with zipfile.ZipFile(fname) as z:
+        print('Extracting  %s...' % fname)
+        with z.open('odm.txt', 'rU') as odm:
+            print('Creating a dictionary...')
+            return make_dict(odm)
+
+
+def exclude(results):
+    excs = set(read_my_dir('excludes.txt'))
+    for e in excs:
+        try:
+            del results[e]
+        except KeyError:
+            pass
+
+
+def save_results(results, fname, *, min_occurences=1, top_score=None):
+    if not top_score:
+        top_score = results.most_common(1)[0][1]
+
+    nmin, nmax = 1, 255
+    groups = nmax - nmin
+    group_capa = top_score / groups
+
+    print('Writing results to %s' % fname)
+    with open(fname, 'w') as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        f.write('<wordlist>\n')
+
+        for word, occurences in results.most_common():
+            if occurences < min_occurences:
+                break;
+
+            if occurences > top_score:
+                occurences = top_score
+
+            group = (occurences / round(group_capa)) + 1
+            f.write('  <w f="%d">%s</w>\n' % (group, word))
+
+        f.write('</wordlist>\n')
+
+
+def main():
+    args = parse_args()
+    dct =  get_dict(args.dict_url)
+
+    assert(dct)
+
+    # not in a process pool because of pickling speed... (and other issues, like
+    # depending on fork() when using a global dct instance)
+    store = os.path.abspath(os.path.join(my_dir(), '..', 'dictionary', 'input'))
+    files = os.listdir(store)
+
+    print('Analyzing %s...' % store)
+    gc = Counter()
+    for f in files:
+        fp = os.path.join(store, f)
+        gc.update(count_words(fp, dct))
+
+    # find first non-stopword word.
+    sw = stopwords()
+    mc = None
+    for word, val in gc.most_common(len(sw) + 1):
+        if word not in sw:
+            mc = val
+            break
+
+    assert(mc)
+
+    # include non-existing stopwords with low priority (are they still stopwords
+    # though?)
+    for word in sw:
+        gc.setdefault(word, 100)
+
+    exclude(gc)
+
+    save_results(gc, args.out, min_occurences=5, top_score=mc)
+    return 0
+
+sys.exit(main())
