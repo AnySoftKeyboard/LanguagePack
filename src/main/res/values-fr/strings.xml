@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AnySoftKeyboard - Module de langue française</string>
+    <string name="keyboard_name">FR - Azerty</string>
+    <string name="keyboard_name_ca">FR - Qwerty</string>
+    <string name="dictionary_name">Français</string>
+</resources>
