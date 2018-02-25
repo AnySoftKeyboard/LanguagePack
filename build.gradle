@@ -26,7 +26,7 @@ buildscript {
 
         classpath 'com.github.Triple-T:gradle-play-publisher:8cda31a5d0e3c4f2d7f47ffde6fc3b370e59dd8a'
 
-        classpath 'com.github.menny:GradleVersion:0.0.2'
+        classpath 'com.github.menny:GradleVersion:0.0.4'
 
         classpath('fr.avianey.androidsvgdrawable:gradle-plugin:3.0.0') {
             exclude group: 'xerces'
@@ -42,8 +42,8 @@ apply plugin: "androidsvgdrawable"
 
 
 def generators = [
-    new EnvBuildVersionGenerator.CircleCi(0),
-    new GitBuildVersionGenerator(0),
+    new EnvBuildVersionGenerator.CircleCi(0,0),
+    new GitBuildVersionGenerator(0,0),
     new StaticVersionGenerator()
 ]
 
@@ -54,7 +54,7 @@ android {
     buildToolsVersion '26.0.0'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.indonesian"
         minSdkVersion 7
         targetSdkVersion 26
         versionName versionData.versionName
@@ -62,7 +62,7 @@ android {
 
         // change name of generated apk to make previews and testing of multiple packs easier
         def packName = applicationId.substring(applicationId.lastIndexOf(".") + 1)
-        setProperty("archivesBaseName", "ASKLangPack-" + packName + "-v" + versionName + "(" + versionCode + ")")
+        setProperty("archivesBaseName", "ASKLangPack-${packName}-${versionCode}")
 
         println "Building ${applicationId} v${versionName}, version-code ${versionCode}..."
     }
@@ -94,35 +94,35 @@ play {
     uploadImages = true
 }
 
-task parseTextInputFiles(type: GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
-}
+//task parseTextInputFiles(type: GenerateWordsListTask) {
+//    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
+//                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
+//                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
+//    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
+//}
 
 //another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
 //make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
-task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
-    maxWordsInList 300000
-}
+//task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
+//    inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
+//    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
+//    maxWordsInList 300000
+//}
 
-task mergeAllWordLists(type: MergeWordsListTask) {
-    dependsOn parseTextInputFiles
-
-    inputWordsListFiles = [
-            new File(project.getProjectDir(), "dictionary/words_from_texts.xml"),
-            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
-    ] as File[]
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
-    maxWordsInList 100000
-}
+//task mergeAllWordLists(type: MergeWordsListTask) {
+//    dependsOn parseTextInputFiles
+//
+//    inputWordsListFiles = [
+//            new File(project.getProjectDir(), "dictionary/words_from_texts.xml"),
+//            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
+//    ] as File[]
+//    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
+//    maxWordsInList 100000
+//}
 
 task makeDictionary(type: MakeDictionaryTask) {
-    dependsOn mergeAllWordLists
-    inputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
+//    dependsOn mergeAllWordLists
+    inputWordsListFile new File(project.getProjectDir(), "dictionary/words.xml")
 }
 
 afterEvaluate { proj ->
