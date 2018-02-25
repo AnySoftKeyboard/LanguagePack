@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AnySoftKeyboard - Türkçe Dil Paketi</string>
+    <string name="keyboard_name">Türkçe</string>
+    <string name="dictionary_name">Türkçe</string>
+    <string name="nameResId">Türkçe</string>
+    <string name="ext_kbd_bottom_row_custom">Custom Extension Bottom Row</string>
+</resources>
