@@ -29,8 +29,8 @@ android {
     defaultConfig {
         applicationId "com.anysoftkeyboard.languagepack.brazilian"
         minSdkVersion 7
-        versionCode 102
-        versionName "2.0.2"
+        versionCode 103
+        versionName "2.0.3"
     }
 
     signingConfigs {
