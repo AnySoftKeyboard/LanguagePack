@@ -13,6 +13,7 @@ buildscript {
     }
 }
 
+apply plugin: 'checkstyle'
 apply plugin: 'com.android.application'
 
 android {
@@ -68,4 +69,10 @@ dependencies {
         maven { url "https://jitpack.io" }
     }
     compile 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.7.0'
+}
+
+task checkstyle(type: Checkstyle) {
+    configFile file("${projectDir}/checkstyle/checkstyle.xml")
+    source 'src'
+    classpath = files()
 }
