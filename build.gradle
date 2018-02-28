@@ -55,7 +55,7 @@ android {
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.turkish"
+        applicationId "com.anysoftkeyboard.languagepack.ossturkish"
         minSdkVersion 9
         targetSdkVersion 27
         versionName versionData.versionName

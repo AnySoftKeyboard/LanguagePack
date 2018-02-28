@@ -1,4 +1,4 @@
-package com.anysoftkeyboard.languagepack.turkish;
+package com.anysoftkeyboard.languagepack.ossturkish;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
