@@ -11,4 +11,8 @@
 	    id="23eaecd1-c74c-11e7-8f1a-0800200c9a66" defaultDictionaryLocale="fr" description="clavier français AZERTY" index="1"/>
 	<Keyboard nameResId="@string/keyboard_name_ca" iconResId="@drawable/flag_ca" layoutResId="@xml/qwerty_with_symbols"
 	    id="23eaecd2-c74c-11e7-8f1a-0800200c9a66" defaultDictionaryLocale="fr" description="clavier français QWERTY" index="2"/>
+	<Keyboard nameResId="@string/bepo_keyboard" layoutResId="@xml/bepo"
+			  id="f6599b5b-df00-4ea8-a958-61b0217ef917" index="3"
+			  defaultDictionaryLocale="fr" description="@string/bepo_keyboard_description"
+			  sentenceSeparators=".,)"/>
 </Keyboards>
