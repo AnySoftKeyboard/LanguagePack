@@ -108,10 +108,9 @@ task mergeAllWordLists(type: MergeWordsListTask) {
 
     inputWordsListFiles = [
             new File(project.getProjectDir(), "dictionary/words.xml"),
-            new File(project.getProjectDir(), "dictionary/words_from_aosp.xml"),
     ] as File[]
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
-    maxWordsInList 100000
+    maxWordsInList 300000
 }
 
 task makeDictionary(type: MakeDictionaryTask) {
