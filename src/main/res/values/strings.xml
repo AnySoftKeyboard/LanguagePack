@@ -4,6 +4,6 @@
     <string name="keyboard_name">FR - Azerty</string>
     <string name="keyboard_name_ca">FR - Qwerty</string>
     <string name="dictionary_name">French</string>
-    <string name="bepo_keyboard">French B&#233;po</string><!-- BEPO -->
+    <string name="bepo_keyboard">B&#233;po</string><!-- BEPO -->
     <string name="bepo_keyboard_description">www.bepo.fr - dvorak like</string><!-- BEPO -->
 </resources>
