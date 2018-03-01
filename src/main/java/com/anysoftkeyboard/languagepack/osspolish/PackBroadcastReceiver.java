@@ -1,4 +1,4 @@
-package com.anysoftkeyboard.languagepack.polish;
+package com.anysoftkeyboard.languagepack.osspolish;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
