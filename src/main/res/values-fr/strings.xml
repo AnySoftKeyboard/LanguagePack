@@ -3,6 +3,7 @@
     <string name="app_name">AnySoftKeyboard - Module de langue française</string>
     <string name="keyboard_name">FR - Azerty</string>
     <string name="keyboard_name_ca">FR - Qwerty</string>
+    <string name="fr_ca_keyboard">FR - CA</string>
     <string name="dictionary_name">Français</string>
     <string name="bepo_keyboard">B&#233;po</string><!-- BEPO -->
     <string name="bepo_keyboard_description">www.bepo.fr - dvorak like</string><!-- BEPO -->

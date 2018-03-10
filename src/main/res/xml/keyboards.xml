@@ -7,12 +7,36 @@
      "iconResId" : a reference to a drawable which can be used to show a flag in the notification bar.
      "layoutResId" : a reference to a keyboard layout XML. See res/xml/qwerty.xml
      -->
-	<Keyboard nameResId="@string/keyboard_name" iconResId="@drawable/flag_fr" layoutResId="@xml/azerty"
-	    id="23eaecd1-c74c-11e7-8f1a-0800200c9a66" defaultDictionaryLocale="fr" description="clavier français AZERTY" index="1"/>
-	<Keyboard nameResId="@string/keyboard_name_ca" iconResId="@drawable/flag_ca" layoutResId="@xml/qwerty_with_symbols"
-	    id="23eaecd2-c74c-11e7-8f1a-0800200c9a66" defaultDictionaryLocale="fr" description="clavier français QWERTY" index="2"/>
-	<Keyboard nameResId="@string/bepo_keyboard" layoutResId="@xml/bepo"
-			  id="f6599b5b-df00-4ea8-a958-61b0217ef917" index="3"
-			  defaultDictionaryLocale="fr" description="@string/bepo_keyboard_description"
-			  sentenceSeparators=".,)"/>
+    <Keyboard
+        defaultDictionaryLocale="fr"
+        description="clavier français AZERTY"
+        iconResId="@drawable/flag_fr"
+        id="23eaecd1-c74c-11e7-8f1a-0800200c9a66"
+        index="1"
+        layoutResId="@xml/azerty"
+        nameResId="@string/keyboard_name" />
+    <Keyboard
+        defaultDictionaryLocale="fr"
+        description="clavier français QWERTY"
+        iconResId="@drawable/flag_ca"
+        id="23eaecd2-c74c-11e7-8f1a-0800200c9a66"
+        index="2"
+        layoutResId="@xml/qwerty_with_symbols"
+        nameResId="@string/keyboard_name_ca" />
+    <Keyboard
+        defaultDictionaryLocale="fr"
+        description="Created with d.nahmiasleonard"
+        id="ef16b5bc-a376-434c-ba18-878751b26fd5"
+        index="151"
+        layoutResId="@xml/ca_fr_qwerty"
+        nameResId="@string/fr_ca_keyboard"
+        sentenceSeparators=".,)" />
+    <Keyboard
+        defaultDictionaryLocale="fr"
+        description="@string/bepo_keyboard_description"
+        id="f6599b5b-df00-4ea8-a958-61b0217ef917"
+        index="3"
+        layoutResId="@xml/bepo"
+        nameResId="@string/bepo_keyboard"
+        sentenceSeparators=".,)" />
 </Keyboards>
