@@ -16,7 +16,7 @@
             android:popupCharacters="&amp;§" />
         <Key
             android:codes="111"
-            android:popupCharacters="ôœòóõöøő" />
+            android:popupCharacters="ôœòóõöøőō" />
         <Key android:codes="119" />
         <Key android:codes="118" />
         <Key android:codes="100" />
@@ -31,16 +31,16 @@
         <Key
             android:codes="97,224"
             android:keyEdgeFlags="left"
-            android:popupCharacters="àâäæáãåą" />
+            android:popupCharacters="àâäæáãåąā" />
         <Key
             android:codes="117,249"
-            android:popupCharacters="ùüúûŭű" />
+            android:popupCharacters="ùüúûŭűū" />
         <Key
             android:codes="105"
-            android:popupCharacters="ïîìíł" />
+            android:popupCharacters="ïîìíłī" />
         <Key
             android:codes="101"
-            android:popupCharacters="èêë€éę" />
+            android:popupCharacters="èêë€éęē" />
         <Key android:codes="99" />
         <Key android:codes="116" />
         <Key
