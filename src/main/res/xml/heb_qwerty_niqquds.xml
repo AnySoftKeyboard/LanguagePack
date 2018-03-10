@@ -32,7 +32,8 @@
         <Key android:codes="1464" android:keyLabel=""/>
         <Key android:codes="1465" android:keyLabel=""/>
         <Key android:codes="1467" android:keyLabel=""/>
-        <Key android:codes="1468" android:keyLabel="" android:keyEdgeFlags="right"/>
+        <Key android:codes="1468" android:keyLabel="" />
+        <Key android:codes="1470" android:keyLabel="&#1470;" android:keyEdgeFlags="right"/>
     </Row>
 
 </Keyboard>
