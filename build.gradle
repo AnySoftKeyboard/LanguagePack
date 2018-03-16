@@ -103,7 +103,7 @@ task parseAospForDictionary(type: com.anysoftkeyboard.tools.generatewordslist.Ge
 }
 
 task mergeAllWordLists(type: MergeWordsListTask) {
-    dependsOn parseTextInputFiles
+    dependsOn parseAospForDictionary
 
     inputWordsListFiles = [
             new File(project.getProjectDir(), "dictionary/words_from_aosp.xml"),
