@@ -95,7 +95,12 @@ play {
     uploadImages = true
 }
 
+task uncompressTextFiles(type:Exec) {
+    commandLine "bunzip2", "-k", "dictionary/glwiki-20180220-pages-articles.txt.bz2"
+}
+
 task parseTextInputFiles(type: GenerateWordsListTask) {
+    dependsOn uncompressTextFiles
     inputFiles new File(project.getProjectDir(), "dictionary/glwiki-20180220-pages-articles.txt")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
 }
