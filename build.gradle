@@ -13,11 +13,12 @@ buildscript {
     repositories {
         jcenter()
         mavenCentral()
+        google()
         maven { url 'https://jitpack.io' }
         maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.1.0'
 
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:287fe7812294918636359e4d28dbcbc931f3dab8'
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:287fe7812294918636359e4d28dbcbc931f3dab8'
@@ -95,9 +96,7 @@ play {
 }
 
 task parseTextInputFiles(type: GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
+    inputFiles new File(project.getProjectDir(), "dictionary/glwiki-20180220-pages-articles.txt")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
 }
 
