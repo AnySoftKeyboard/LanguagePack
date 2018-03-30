@@ -14,6 +14,7 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
+        google()
         maven { url 'https://jitpack.io' }
         maven { url "https://plugins.gradle.org/m2/" }
     }
@@ -55,7 +56,7 @@ android {
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.galician"
         minSdkVersion 9
         targetSdkVersion 27
         versionName versionData.versionName
@@ -95,10 +96,13 @@ play {
     uploadImages = true
 }
 
+task uncompressTextFiles(type:Exec) {
+    commandLine "bunzip2", "-k", "dictionary/glwiki-20180220-pages-articles.txt.bz2"
+}
+
 task parseTextInputFiles(type: GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
+    dependsOn uncompressTextFiles
+    inputFiles new File(project.getProjectDir(), "dictionary/glwiki-20180220-pages-articles.txt")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
 }
 
