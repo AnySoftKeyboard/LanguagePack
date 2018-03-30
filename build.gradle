@@ -19,7 +19,7 @@ buildscript {
         maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.0-beta4'
+        classpath 'com.android.tools.build:gradle:3.1.0'
 
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:287fe7812294918636359e4d28dbcbc931f3dab8'
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:287fe7812294918636359e4d28dbcbc931f3dab8'
@@ -97,7 +97,7 @@ play {
 }
 
 task uncompressTextFiles(type:Exec) {
-    commandLine "bunzip2", "-k", "dictionary/glwiki-20180220-pages-articles.txt.bz2"
+    commandLine "bunzip2", "-k", "-f", "dictionary/glwiki-20180220-pages-articles.txt.bz2"
 }
 
 task parseTextInputFiles(type: GenerateWordsListTask) {
