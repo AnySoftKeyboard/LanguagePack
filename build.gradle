@@ -55,7 +55,7 @@ android {
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.tamazight"
         minSdkVersion 9
         targetSdkVersion 27
         versionName versionData.versionName
