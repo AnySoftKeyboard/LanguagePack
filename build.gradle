@@ -104,14 +104,8 @@ task parseTextInputFiles(type: GenerateWordsListTask) {
     dependsOn uncompressTextFiles
     inputFiles new File(project.getProjectDir(), "dictionary/glwiki-20180220-pages-articles.txt")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
-}
-
-//another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
-//make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
-task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
-    maxWordsInList 300000
+    locale new Locale("gl", "ES")
+    wordCharacters "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁáÉéÍíÓóÚúÜüÑñÇç".toCharArray()
 }
 
 task mergeAllWordLists(type: MergeWordsListTask) {
