@@ -1,4 +1,4 @@
-# Large Pack for AnySoftKeyboard including :
+# Tamazight Large Pack for AnySoftKeyboard including :
 
 * Taqbaylit (latin characters same as in Tamazight)
 * Tifinagh
