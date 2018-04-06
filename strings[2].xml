@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">AnySoftKeyboard - Tamazight Large</string>
+<string name="keyboard_name">Tamazight</string>
+<string name="dictionary_name">Kabyle dictionary</string>
+<string name="notification_contenttitle">AnySoftKeyboard</string>
+<string name="tifinagh_keyboard">Tifinagh</string>
+<string name="arabic_keyboard">Arabic</string>
+<string name="arabic_keyboard_description">Arabic keyboard</string>
+<string name="arabic_dictionary">Arabic dictionary</string>
+<string name="tifinagh_dictionary">Tifinagh dictionary</string>
+<string name="keyboard_name_description">Kabyle dictionary</string>
+<string name="tifinagh_keyboard_description">Amazigh keyboard</string>
+</resources>
