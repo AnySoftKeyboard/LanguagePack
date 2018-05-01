@@ -1,6 +1,9 @@
-Layout de teclado Português so Brasil com dicionário.
+Brazilian Portuguese Language pack
 
-Usa o dicionário AOSP. O código fonte está em outro projeto por padrão.
+Features:
 
-Instale [[com.menny.android.anysoftkeyboard]] primeiro, então selecione um layout de sua vontade
-em configurações do AnySoftKeyboard->Keyboards menu.
+Brazilian Portuguese dictionary based on the open source Android dictionary.
+Includes the ç key.
+
+This is an expansion language pack for AnySoftKeyboard.
+Install AnySoftKeyboard first, and then select the Brazilian keyboard from AnySoftKeyboard's Settings -> Languages -> Keyboards menu.
