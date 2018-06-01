@@ -54,7 +54,7 @@ android {
     buildToolsVersion '26.0.0'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.Afrikaans"
         minSdkVersion 7
         targetSdkVersion 26
         versionName versionData.versionName
@@ -94,13 +94,6 @@ play {
     uploadImages = true
 }
 
-task parseTextInputFiles(type: GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
-}
-
 //another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
 //make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
 task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
@@ -110,11 +103,8 @@ task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
 }
 
 task mergeAllWordLists(type: MergeWordsListTask) {
-    dependsOn parseTextInputFiles
-
     inputWordsListFiles = [
-            new File(project.getProjectDir(), "dictionary/words_from_texts.xml"),
-            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
+            new File(project.getProjectDir(), "dictionary/wordlist_20100711.xml"),
     ] as File[]
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
     maxWordsInList 100000
@@ -123,6 +113,11 @@ task mergeAllWordLists(type: MergeWordsListTask) {
 task makeDictionary(type: MakeDictionaryTask) {
     dependsOn mergeAllWordLists
     inputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
+}
+
+task makeDictionaryAfrikaans(type: MakeDictionaryTask) {
+    // dependsOn mergeAllWordLists
+    inputWordsListFile new File(project.getProjectDir(), "dictionary/wordlist_20100711.xml")
 }
 
 afterEvaluate { proj ->
