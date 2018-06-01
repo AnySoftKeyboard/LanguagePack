@@ -14,11 +14,12 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
+        google()
         maven { url 'https://jitpack.io' }
         maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.0-beta4'
+        classpath 'com.android.tools.build:gradle:3.1.0'
 
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:287fe7812294918636359e4d28dbcbc931f3dab8'
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:287fe7812294918636359e4d28dbcbc931f3dab8'
@@ -55,7 +56,7 @@ android {
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.galician"
         minSdkVersion 9
         targetSdkVersion 27
         versionName versionData.versionName
@@ -95,19 +96,16 @@ play {
     uploadImages = true
 }
 
-task parseTextInputFiles(type: GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
+task uncompressTextFiles(type:Exec) {
+    commandLine "bunzip2", "-k", "-f", "dictionary/glwiki-20180220-pages-articles.txt.bz2"
 }
 
-//another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
-//make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
-task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
-    maxWordsInList 300000
+task parseTextInputFiles(type: GenerateWordsListTask) {
+    dependsOn uncompressTextFiles
+    inputFiles new File(project.getProjectDir(), "dictionary/glwiki-20180220-pages-articles.txt")
+    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
+    locale new Locale("gl", "ES")
+    wordCharacters "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁáÉéÍíÓóÚúÜüÑñÇç".toCharArray()
 }
 
 task mergeAllWordLists(type: MergeWordsListTask) {

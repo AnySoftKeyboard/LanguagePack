@@ -1,3 +1,7 @@
+Galician dictionary extracted from [Galipedia articles dump](https://dumps.wikimedia.org/glwiki/20180220/). 
+
+Galician flag image from [Wikipedia](htt ps://en.wikipedia.org/wiki/Galicia_(Spain)#/media/File:Flag_of_Galicia.svg)
+
 This is the common template for language Packs for the [AnySoftKeyboard](https://github.com/AnySoftKeyboard/AnySoftKeyboard) app for Android devices.
 Each pack can contain and provide multiple keyboards or dictionaries for auto correction.
 Most packs are maintained here as [branches of the repository](https://github.com/AnySoftKeyboard/LanguagePack/branches) and published to Google Play Store and F-Droid repository. There are some packs maintained as community forks, here on GitHub or not open source at all. Some of these are:
@@ -18,7 +22,7 @@ To start a new pack, follow this checklist:
 1. Change `applicationId` in `build.gradle` in the same way.
 1. Edit `src/main/res/xml/keyboards.xml` according to the comments in it. It references `src/main/res/xml/qwerty.xml`, so edit this as well. Have a look at all the other Language Pack branches, to get an idea, what is possible and how to correctly configure a keyboard.
 1. If you want to add more keyboards, you can do this by copying `qwerty.xml` and add a <keyboard> element in `keyboards.xml`. The user can pre-select in the ASK settings, which keyboards she would like to have available for toggling through.
-1. Edit `src/main/res/xml/dictionaries.xml`
+1. Edit `src/main/res/xml/dictionariesfor.xml`
 1. Edit `src/main/res/values/strings.xml`, change the strings there and possibly add some more which are referenced in the other xml files. Also, create a new folder `src/main/res/values-XX`, where `XX` is the correspondent two-letter ISO 639-1 language code.
 1. Edit (e.g. via Inkscape) one of the files in `src/main/svg-png/flag/` to represent the language, e.g. by using the flag from Wikipedia (the flag has to be placed on the right edge of the document and have the full height).
 1. Rebuild the drawables with `./gradlew svgToDrawablePng` or "Build" -> "Rebuild Project" in Android Studio. Drawables will be generated at `src/main/res/mipmap-*/`.
@@ -26,7 +30,7 @@ To start a new pack, follow this checklist:
 1. You can also add a new `src/main/res/drawable/flag.png` and reference it in the `iconResId=""` attribute in the keyboards.xml.
 1. Put the source files for the dictionary into the dictionary/ directory. Take special care to take the conditions of the license into account, under which you obtained the data.
 1. Change the build.gradle to use and configure the tasks necessary. There are several different variants ([more Information](https://github.com/AnySoftKeyboard/AnySoftKeyboardTools/blob/master/README.md)):
-    * `GenerateWordsListTask`
+    * `GenerateWordsListTask`mergeAllWordLists
     * `GenerateWordsListFromAOSPTask`
     * `MergeWordsListTask`
 1. Change the README.md to reflect the characteristics of your pack
