@@ -54,7 +54,7 @@ android {
     buildToolsVersion '26.0.0'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.Afrikaans"
+        applicationId "com.anysoftkeyboard.languagepack.afrikaans"
         minSdkVersion 7
         targetSdkVersion 26
         versionName versionData.versionName
