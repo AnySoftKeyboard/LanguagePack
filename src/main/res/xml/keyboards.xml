@@ -10,9 +10,9 @@
 	<Keyboard 
 	nameResId="@string/keyboard_name" 
 	iconResId="@drawable/son_logo" 
-	layoutResId="@xml/qwerty" 
+	layoutResId="@xml/son_layout"
 	id="233e8700-67fc-11e8-b566-0800200c9a66" 
 	defaultDictionaryLocale="son" 
-	description="soŋay senni walha" 
+	description="Soŋay senni walha"
 	index="1"/>
 </Keyboards>

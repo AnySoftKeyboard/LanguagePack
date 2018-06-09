@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - change_me Language Pack</string>
-    <string name="keyboard_name">change_me</string>
-    <string name="dictionary_name">change_me</string>
+    <string name="app_name">AnySoftKeyboard - Songhay Language Pack</string>
+    <string name="keyboard_name">Songhay</string>
+    <string name="dictionary_name">Songhay</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>

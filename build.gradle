@@ -18,7 +18,7 @@ buildscript {
         maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.0-beta4'
+        classpath 'com.android.tools.build:gradle:3.1.3'
 
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:287fe7812294918636359e4d28dbcbc931f3dab8'
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:287fe7812294918636359e4d28dbcbc931f3dab8'
@@ -43,9 +43,9 @@ apply plugin: "androidsvgdrawable"
 
 
 def generators = [
-    new EnvBuildVersionGenerator.CircleCi(0,0),
-    new GitBuildVersionGenerator(0,0),
-    new StaticVersionGenerator()
+        new EnvBuildVersionGenerator.CircleCi(0, 0),
+        new GitBuildVersionGenerator(0, 0),
+        new StaticVersionGenerator()
 ]
 
 def versionData = versionGenerator.generateVersion(1, 0, 0, generators)
@@ -55,8 +55,8 @@ android {
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
-        minSdkVersion 9
+        applicationId "com.anysoftkeyboard.languagepack.songhay"
+        minSdkVersion 14
         targetSdkVersion 27
         versionName versionData.versionName
         versionCode versionData.versionCode
@@ -95,12 +95,7 @@ play {
     uploadImages = true
 }
 
-task parseTextInputFiles(type: GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
-}
+
 
 //another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
 //make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
@@ -111,10 +106,10 @@ task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
 }
 
 task mergeAllWordLists(type: MergeWordsListTask) {
-    dependsOn parseTextInputFiles
+   // dependsOn parseTextInputFiles
 
     inputWordsListFiles = [
-            new File(project.getProjectDir(), "dictionary/words_from_texts.xml"),
+            new File(project.getProjectDir(), "dictionary/words_son.xml"),
             new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
     ] as File[]
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
@@ -135,6 +130,8 @@ afterEvaluate { proj ->
 }
 
 dependencies {
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     repositories {
         google()
         jcenter()
