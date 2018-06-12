@@ -6,7 +6,7 @@
 <Row>
     <Key android:codes="q" android:popupCharacters="1" ask:hintLabel="1" android:keyEdgeFlags="left" />
     <Key android:codes="w" android:popupCharacters="2" ask:hintLabel="2"/>
-    <Key android:codes="e" android:popupCharacters="3éëě€" ask:hintLabel="3"/>
+    <Key android:codes="e" android:popupCharacters="3éěë€" ask:hintLabel="3"/>
     <Key android:codes="r" android:popupCharacters="4řρ®" ask:hintLabel="4"/>
     <Key android:codes="t" android:popupCharacters="5ťτ" ask:hintLabel="5"/>
     <Key android:codes="y" android:popupCharacters="6ý" ask:hintLabel="6"/>

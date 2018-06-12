@@ -17,11 +17,11 @@
 <Row>
     <Key android:codes="q" android:popupCharacters="" android:keyEdgeFlags="left" />
     <Key android:codes="w" android:popupCharacters="" />
-    <Key android:codes="e" android:popupCharacters="éë€" />
+    <Key android:codes="e" android:popupCharacters="éěë€" />
     <Key android:codes="r" android:popupCharacters="ř" />
     <Key android:codes="t" android:popupCharacters="ť" />
     <Key android:codes="y" android:popupCharacters="ý" />
-    <Key android:codes="u" android:popupCharacters="úü" />
+    <Key android:codes="u" android:popupCharacters="úůü" />
     <Key android:codes="i" android:popupCharacters="í" />
     <Key android:codes="o" android:popupCharacters="óö" />
     <Key android:codes="p" android:popupCharacters="" android:keyEdgeFlags="right" />

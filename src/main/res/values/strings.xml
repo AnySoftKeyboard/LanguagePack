@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - Czech Language Pack</string>
+    <string name="app_name">Czech for AnySoftKeyboard</string>
     <string name="cs_qwerty_keyboard">Czech qwerty</string>
     <string name="cs_qwerty_simple_keyboard">Simplified czech qwerty</string>
     <string name="cs_qwertz_keyboard">Czech qwertz</string>
@@ -8,4 +8,7 @@
     <string name="cs_qwerty_simple_description">Less number of keys to save space</string>
     <string name="cs_qwertz_description">Czech qwertz</string>
     <string name="dictionary">Czech Dictionary</string>
+    <string name="cs_qwerty_keyboard_diacritic">Czech qwerty with diacritic keys</string>
+    <string name="cs_qwertz_keyboard_diacritic">Czech qwertz with diacritic keys</string>
+    <string name="cs_keyboard_diacritic_description">Contains caron and acute keys</string>
 </resources>

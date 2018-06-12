@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - Český jazykový balík</string>
+    <string name="app_name">Čeština pro AnySoftKeyboard</string>
     <string name="cs_qwerty_keyboard">Česká klávesnice qwerty</string>
     <string name="cs_qwerty_simple_keyboard">Zjednodušená česká klávesnice qwerty</string>
     <string name="cs_qwertz_keyboard">Česká klávesnice qwertz</string>
@@ -8,4 +8,7 @@
     <string name="cs_qwerty_simple_description">>Menší počet kláves pro šetření místem</string>
     <string name="cs_qwertz_description">>Česká klávesnice qwertz</string>
     <string name="dictionary">Slovník</string>
+    <string name="cs_qwerty_keyboard_diacritic">Česká klávesnice qwerty s diakritickýmy klávesamy</string>
+    <string name="cs_qwertz_keyboard_diacritic">Česká klávesnice qwertz s diakritickýmy klávesamy</string>
+    <string name="cs_keyboard_diacritic_description">Obsahuje klávesy háčky a čárky</string>
 </resources>
