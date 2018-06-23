@@ -95,23 +95,14 @@ play {
     uploadImages = true
 }
 def sardinianCharacters = "abcdefghilmnopqrstuvzjàèìòùéABCDEFGHILMNOPQRSTUVZJÀÈÌÒÙÉ".toCharArray()
-def additionalSardinianCharacters = "·\"'".toCharArray()
+def additionalInnerSardinianCharacters = "·\"'".toCharArray()
 
 task parseTextInputFiles(type: GenerateWordsListTask) {
     inputFiles new File(project.getProjectDir(), "dictionary/Lista.html"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/wordlist_sc.html")
+                new File(project.getProjectDir(), "dictionary/wordlist_sc.txt")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/wordlist_sc_complete.xml")
     wordCharacters = sardinianCharacters
-    additionalInnerCharacters = additionalSardinianCharacters
-}
-
-//another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
-//make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
-task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/aosp_sc_wordlist.combined")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
-    maxWordsInList 300000000
+    additionalInnerCharacters = additionalInnerSardinianCharacters
 }
 
 task mergeAllWordLists(type: MergeWordsListTask) {
