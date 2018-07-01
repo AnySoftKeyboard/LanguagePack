@@ -31,9 +31,9 @@ android {
         versionName "2.0.0"
     }
 
-     signingConfigs {
+    signingConfigs {
         release {
-            storeFile file("key.store")
+            storeFile file("/tmp/language_pack.keystore")
             storePassword System.getenv("PACK_KEYSTORE_PASSWORD")
             keyAlias System.getenv("PACK_KEYSTORE_ALIAS")
             keyPassword System.getenv("PACK_KEYSTORE_KEY_PASSWORD")
