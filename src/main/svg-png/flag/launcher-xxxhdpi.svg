@@ -1,35 +1,264 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="660" height="480" viewBox="0 0 220 160">
-  <desc>Flag of Israel</desc>
-  <defs>
-    <!-- Specs are taken from "The Provisional Council of State Proclamation of
-      the Flag of the State of Israel," 25 Tishrei 5709 (28 October 1948)
-    For Magen David, the "Israel Science and Technology Homepage" at
-      http://www.science.co.il/Israel-flag.asp specifies each side as 60 cm.
-      Outer radius is then 30 / cos(30) = 20 * sqrt(3)
-    For equilateral triangles, middle radius = outer radius - width:
-      20 * sqrt(3) - 5.5
-    Coordinates for upward-pointing triangle relative to center are then:
-      (                            0,-(20*sqrt(3) - 5.5)          )
-      (-(20*sqrt(3) - 5.5) * cos(30), (20*sqrt(3) - 5.5) * sin(30))
-      ( (20*sqrt(3) - 5.5) * cos(30), (20*sqrt(3) - 5.5) * sin(30)) -->
-    <polygon id="triangle" points="0,-29.1410161513775421
-                -25.2368602791855814, 14.5705080756887710
-                 25.2368602791855814, 14.5705080756887710"
-      stroke="#0038b8" stroke-width="5.5" fill-opacity="0"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="60"
+   width="160"
+   version="1.0"
+   viewBox="-2100 -1470 933.33334 350"
+   id="svg2"
+   inkscape:version="0.92.3 (unknown)"
+   sodipodi:docname="launcher-xxxhdpi.svg">
+  <metadata
+     id="metadata118">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="717"
+     id="namedview116"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.28"
+     inkscape:cx="147.02912"
+     inkscape:cy="87.24404"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <path
+       id="D"
+       d="m -31.5,0 33,0 a 30,30 0 0 0 30,-30 l 0,-10 a 30,30 0 0 0 -30,-30 l -33,0 z m 13,-13 19,0 a 19,19 0 0 0 19,-19 l 0,-6 a 19,19 0 0 0 -19,-19 l -19,0 z"
+       inkscape:connector-curvature="0"
+       style="fill-rule:evenodd" />
+    <path
+       id="E"
+       transform="translate(-31.5,0)"
+       d="m 0,0 63,0 0,-13 -51,0 0,-18 40,0 0,-12 -40,0 0,-14 48,0 0,-13 -60,0 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="e"
+       d="m -26.25,0 52.5,0 0,-12 -40.5,0 0,-16 33,0 0,-12 -33,0 0,-11 39.25,0 0,-12 -51.25,0 z"
+       inkscape:connector-curvature="0" />
+    <g
+       id="G">
+      <clipPath
+         id="gcut">
+        <path
+           d="m -31.5,0 0,-70 63,0 0,70 z M 0,-47 l 0,12 31.5,0 0,-12 z"
+           id="path11"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <use
+         xlink:href="#O"
+         clip-path="url(#gcut)"
+         id="use13"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <rect
+         y="-35"
+         x="5"
+         height="10"
+         width="26.5"
+         id="rect15" />
+      <rect
+         y="-35"
+         x="21.5"
+         height="35"
+         width="10"
+         id="rect17" />
+    </g>
+    <path
+       id="M"
+       d="m -31.5,0 12,0 0,-48 14,48 11,0 14,-48 0,48 12,0 0,-70 -17.5,0 -14,48 -14,-48 -17.5,0 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="O"
+       d="M 0,0 A 31.5,35 0 0 0 0,-70 31.5,35 0 0 0 0,0 m 0,-13 a 18.5,22 0 0 0 0,-44 18.5,22 0 0 0 0,44"
+       inkscape:connector-curvature="0"
+       style="fill-rule:evenodd" />
+    <path
+       id="P"
+       d="m -31.5,0 13,0 0,-26 28,0 a 22,22 0 0 0 0,-44 l -40,0 z m 13,-39 27,0 a 9,9 0 0 0 0,-18 l -27,0 z"
+       inkscape:connector-curvature="0"
+       style="fill-rule:evenodd" />
+    <g
+       id="R">
+      <use
+         xlink:href="#P"
+         id="use23"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <path
+         d="m 28,0 c 0,-10 0,-32 -15,-32 l -19,0 c 22,0 22,22 22,32"
+         id="path25"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       id="S"
+       d="m -15.75,-22 c 0,7 6.75,10.5 16.75,10.5 10,0 14.74,-3.25 14.75,-7.75 C 15.75,-33.5 -31,-24.5 -30.75,-49.5 -30.5,-71 -6,-70 3,-70 c 9,0 26,4 25.75,21.25 l -15.25,0 c 0,-7.5 -7,-10.25 -15,-10.25 -7.75,0 -13.25,1.25 -13.25,8.5 -0.25,11.75 46.25,4 46.25,28.75 C 31.5,-3.5 13.5,0 0,0 -11.5,0 -31.55,-4.5 -31.5,-22 Z"
+       inkscape:connector-curvature="0" />
+    <g
+       id="star"
+       style="fill:#ffffff">
+      <g
+         id="c">
+        <path
+           id="t"
+           transform="matrix(0.95105652,0.30901699,-0.30901699,0.95105652,-0.30901699,-0.04894348)"
+           d="M 0,-1 0,0 0.5,0"
+           inkscape:connector-curvature="0" />
+        <use
+           xlink:href="#t"
+           transform="scale(-1,1)"
+           id="use31"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+      </g>
+      <use
+         xlink:href="#c"
+         transform="matrix(0.30901699,0.95105652,-0.95105652,0.30901699,0,0)"
+         id="use33"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         xlink:href="#c"
+         transform="matrix(0.30901699,-0.95105652,0.95105652,0.30901699,0,0)"
+         id="use35"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         xlink:href="#c"
+         transform="matrix(-0.80901699,0.58778525,-0.58778525,-0.80901699,0,0)"
+         id="use37"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         xlink:href="#c"
+         transform="matrix(-0.80901699,-0.58778525,0.58778525,-0.80901699,0,0)"
+         id="use39"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </g>
+    <use
+       id="star1"
+       xlink:href="#star"
+       transform="scale(31.5,31.5)"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%" />
+    <use
+       id="star2"
+       xlink:href="#star"
+       transform="scale(26.25,26.25)"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%" />
+    <use
+       id="star3"
+       xlink:href="#star"
+       transform="scale(21,21)"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%" />
+    <use
+       id="star4"
+       xlink:href="#star"
+       transform="scale(15,15)"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%" />
+    <use
+       id="star5"
+       xlink:href="#star"
+       transform="scale(10.5,10.5)"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%" />
   </defs>
-  <!-- "The flag is 220 cm long and 160 cm wide.  The background is white" -->
-  <rect width="220" height="160" fill="white"/>
-  <!-- "...two stripes of dark sky-blue, 25 cm broad, over the whole length of
-    the flag, at a distance of 15 cm from the top and from the bottom..."
-    Legislation does not specify exact shade of blue; "#0038b8" is typical of
-    flags used in Israel -->
-  <rect width="220" height="25" fill="#0038b8" y="15"/>
-  <rect width="220" height="25" fill="#0038b8" y="120"/>
-  <use xlink:href="#triangle" transform="translate(110,80)"/>
-  <use xlink:href="#triangle" transform="translate(110,80) rotate(180)"/>
+  <clipPath
+     id="band">
+    <circle
+       r="735"
+       id="circle53"
+       cx="0"
+       cy="0" />
+  </clipPath>
+  <rect
+     y="-1470"
+     x="-1647.9166"
+     style="fill:#ffffff;stroke-width:2.1875"
+     width="481.25"
+     height="350"
+     id="rect7" />
+  <rect
+     x="-1647.9166"
+     style="fill:#0038b8;stroke-width:2.1875"
+     width="481.25"
+     height="54.6875"
+     y="-1437.1875"
+     id="rect9" />
+  <rect
+     x="-1647.9166"
+     style="fill:#0038b8;stroke-width:2.1875"
+     width="481.25"
+     height="54.6875"
+     y="-1207.5"
+     id="rect11" />
+  <path
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#0038b8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:12.03125;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     d="m -1407.2917,-1370.7764 -65.625,113.6646 h 131.25 l -5.2081,-9.0234 z m 0,24.0583 44.7882,77.575 h -89.5764 z"
+     id="use13-9"
+     inkscape:connector-curvature="0" />
+  <path
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#0038b8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:12.03125;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     d="m -1407.2917,-1219.2236 65.625,-113.6646 h -131.25 l 5.2082,9.0235 z m 0,-24.0582 -44.7882,-77.5751 h 89.5764 z"
+     id="use15"
+     inkscape:connector-curvature="0" />
 </svg>
