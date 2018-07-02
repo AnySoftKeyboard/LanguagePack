@@ -13,7 +13,7 @@
    version="1.0"
    viewBox="-2100 -1470 933.33334 350"
    id="svg2"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (unknown)"
    sodipodi:docname="launcher-xxxhdpi.svg">
   <metadata
      id="metadata118">
@@ -36,7 +36,7 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
+     inkscape:window-width="1076"
      inkscape:window-height="717"
      id="namedview116"
      showgrid="false"
@@ -44,12 +44,12 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="2.6126298"
-     inkscape:cx="74.056598"
-     inkscape:cy="33.608029"
+     inkscape:zoom="0.88897841"
+     inkscape:cx="97.786808"
+     inkscape:cy="41.016492"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <defs
      id="defs4">
@@ -221,6 +221,48 @@
        y="0"
        width="100%"
        height="100%" />
+    <inkscape:perspective
+       id="perspective61"
+       inkscape:persp3d-origin="525 : 233.33333 : 1"
+       inkscape:vp_z="1050 : 350 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 350 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <style
+       id="style6"
+       type="text/css">
+   
+    .str1 {stroke:#1F1A17;stroke-width:0.1764}
+    .str2 {stroke:#1F1A17;stroke-width:0.3528}
+    .str0 {stroke:#131516;stroke-width:0.3528}
+    .str4 {stroke:#EEB300;stroke-width:0.3528}
+    .str3 {stroke:#F5D300;stroke-width:0.3528}
+    .fil6 {fill:none}
+    .fil7 {fill:#1F1A17}
+    .fil9 {fill:white}
+    .fil12 {fill:#009F3C}
+    .fil10 {fill:#00A03B}
+    .fil5 {fill:#2DA638}
+    .fil8 {fill:#4E9145}
+    .fil11 {fill:#65B857}
+    .fil1 {fill:#DA2724}
+    .fil4 {fill:#E4A615}
+    .fil3 {fill:#EFC899}
+    .fil13 {fill:#F3E400}
+    .fil0 {fill:#F5CB00}
+    .fil2 {fill:#1F1A17;fill-rule:nonzero}
+    .fil14 {fill:#EEB300;fill-rule:nonzero}
+   
+  </style>
+    <metadata
+       id="ID_0-Layer" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective2917" />
   </defs>
   <clipPath
      id="band">
@@ -230,26 +272,22 @@
        cx="0"
        cy="0" />
   </clipPath>
-  <rect
-     style="fill:#d20000"
-     y="-1470"
-     x="-1864.2401"
-     width="700"
-     height="350"
-     id="rect4256" />
   <g
-     style="fill:#ffe600"
-     id="g4258"
-     transform="matrix(12.5,0,0,12.5,-1864.2401,-1470)">
-    <path
-       inkscape:connector-curvature="0"
-       d="M 0,0 8.4,0 28,13.5 47.6,0 56,0 0,28 8.4,28 28,14.5 47.6,28 56,28 Z m 56,11.2 0,5.6 -56,-5.6 0,0 0,5.6 z M 25.2,0 28,12 30.8,0 Z m 0,28 2.8,-12 2.8,12 z"
-       id="path4260" />
-    <circle
-       style="stroke:#d20000"
-       cx="28"
-       cy="14"
-       r="4.5"
-       id="circle4262" />
+     id="g1257"
+     transform="matrix(0.4375,0,0,0.4375,-1691.6667,-1470)">
+    <rect
+       id="rect1243"
+       height="800"
+       width="1200"
+       x="0"
+       y="0"
+       style="fill:#005bbb" />
+    <rect
+       id="rect1245"
+       y="400"
+       height="400"
+       width="1200"
+       x="0"
+       style="fill:#ffd500" />
   </g>
 </svg>
