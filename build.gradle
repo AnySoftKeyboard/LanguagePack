@@ -55,7 +55,7 @@ android {
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
+        applicationId "com.anysoftkeyboard.languagepack.sicilian"
         minSdkVersion 9
         targetSdkVersion 27
         versionName versionData.versionName
@@ -96,9 +96,7 @@ play {
 }
 
 task parseTextInputFiles(type: GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
+    inputFiles new File(project.getProjectDir(), "dictionary/scnwiki.txt")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
 }
 

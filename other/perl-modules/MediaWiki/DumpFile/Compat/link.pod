@@ -1,0 +1,24 @@
+=head1 NAME
+
+Parse::MediaWikiDump::link - Object representing a link from one article to another
+
+=head1 ABOUT
+
+This object is used to access the data associated with each individual link between articles in a MediaWiki instance. 
+
+=head1 METHODS
+
+=over 4
+
+=item $link->from
+
+Returns the article id (not the name) that the link orginiates from.
+
+=item $link->namespace
+
+Returns the namespace id (not the name) that the link points to
+
+=item $link->to
+
+Returns the article title (not the id and not including the namespace) that the link points to
+

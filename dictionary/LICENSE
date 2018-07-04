@@ -1,0 +1,11 @@
+scnwiki-20171103-pages-articles-multistream.xml.bz2 is a dump of
+scn.wikipedia.org, which is then transformed into scnwiki.txt by
+means of a Perl script available in other/ -- which is separately
+licensed (see comment).
+
+scnwiki-*.bz2, and all derived files, are licensed under the
+Creative Commons Attribution-ShareAlike 3.0 Unported License. To
+view a copy of this license, visit
+    http://creativecommons.org/licenses/by-sa/3.0/
+or send a letter to Creative Commons, PO Box 1866, Mountain View,
+CA 94042, USA.

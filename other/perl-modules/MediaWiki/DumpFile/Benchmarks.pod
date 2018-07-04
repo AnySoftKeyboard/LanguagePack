@@ -1,0 +1,277 @@
+=head1 NAME
+
+MediaWiki::DumpFile::Benchmarks - Documentation on parsing speeds
+
+=head1 ENVIRONMENT
+
+The tests were conducted on Debian/squeeze using the vendor supplied
+Perl version 5.10.1. All modules were installed from CPAN and not from the
+Debian package archives.
+
+The host hardware is a 4 core Intel i7 at 2.8ghz with 16 GiB of RAM and
+disks that can read at 100 MiB/sec. 
+
+=head1 SOFTWARE
+
+The benchmark software is included in the MediaWiki::DumpFile distribution
+tarball in the speed_test/ directory. 
+
+The tested version of MediaWiki::DumpFile is version 0.2.0
+
+Parse::MediaWikiDump version 1.0.6 is included for comparison against
+the original implementation. 
+
+=head1 RESULTS
+
+All times are expressed in seconds. See the SPEED section of the 
+MediaWiki::DumpFile documentation for an explanation of the various 
+parsing modes. 
+
+=head2 With XML::CompactTree::XS
+
+=head3 English Wikipedia
+
+  markup_density: 0.171869387735729
+  size: 25247483017
+  tests:
+    - MiB/sec: 35.0121798854383
+      name: suite//MediaWiki-DumpFile-FastPages.t
+      percentage: 100
+      runtimes:
+        system: 25.04
+        total: 687.7
+        user: 662.66
+    - MiB/sec: 30.0620222578669
+      name: suite//MediaWiki-DumpFile-Pages_fastmode.t
+      percentage: 116
+      runtimes:
+        system: 26.52
+        total: 800.94
+        user: 774.42
+    - MiB/sec: 23.3355715754023
+      name: suite//MediaWiki-DumpFile-Compat_fastmode.t
+      percentage: 150
+      runtimes:
+        system: 28.1
+        total: 1031.81
+        user: 1003.71
+    - MiB/sec: 9.00969754502099
+      name: suite//MediaWiki-DumpFile-Pages.t
+      percentage: 388
+      runtimes:
+        system: 31.56
+        total: 2672.44
+        user: 2640.88
+    - MiB/sec: 7.83820750529512
+      name: suite//MediaWiki-DumpFile-Compat.t
+      percentage: 446
+      runtimes:
+        system: 31.28
+        total: 3071.86
+        user: 3040.58
+    - MiB/sec: 5.19432459350304
+      name: suite//Parse-MediaWikiDump.t
+      percentage: 674
+      runtimes:
+        system: 23.22
+        total: 4635.42
+        user: 4612.2
+
+
+=head3 Simple English Wikipedia
+
+  markup_density: 0.202659609191331
+  size: 227681797
+  tests:
+    - MiB/sec: 27.9092907599128
+      name: suite//MediaWiki-DumpFile-FastPages.t
+      percentage: 100
+      runtimes:
+        system: 0.17
+        total: 7.78
+        user: 7.61
+    - MiB/sec: 26.19231388566
+      name: suite//MediaWiki-DumpFile-Pages_fastmode.t
+      percentage: 106
+      runtimes:
+        system: 0.15
+        total: 8.29
+        user: 8.14
+    - MiB/sec: 19.632394404351
+      name: suite//MediaWiki-DumpFile-Compat_fastmode.t
+      percentage: 142
+      runtimes:
+        system: 0.19
+        total: 11.06
+        user: 10.87
+    - MiB/sec: 7.20180040172874
+      name: suite//MediaWiki-DumpFile-Pages.t
+      percentage: 387
+      runtimes:
+        system: 0.27
+        total: 30.15
+        user: 29.88
+    - MiB/sec: 6.39382456160546
+      name: suite//MediaWiki-DumpFile-Compat.t
+      percentage: 436
+      runtimes:
+        system: 0.26
+        total: 33.96
+        user: 33.7
+    - MiB/sec: 4.14457495919301
+      name: suite//Parse-MediaWikiDump.t
+      percentage: 673
+      runtimes:
+        system: 0.12
+        total: 52.39
+        user: 52.27
+
+=head3 Chuvash Wikipedia
+
+  markup_density: 0.18934898819024
+  size: 39436366
+  tests:
+    - MiB/sec: 25.7598968401347
+      name: suite//MediaWiki-DumpFile-FastPages.t
+      percentage: 100
+      runtimes:
+        system: 0.03
+        total: 1.46
+        user: 1.43
+    - MiB/sec: 22.6562948112028
+      name: suite//MediaWiki-DumpFile-Pages_fastmode.t
+      percentage: 113
+      runtimes:
+        system: 0.06
+        total: 1.66
+        user: 1.6
+    - MiB/sec: 17.9949518596156
+      name: suite//MediaWiki-DumpFile-Compat_fastmode.t
+      percentage: 143
+      runtimes:
+        system: 0.04
+        total: 2.09
+        user: 2.05
+    - MiB/sec: 7.46219233861045
+      name: suite//MediaWiki-DumpFile-Pages.t
+      percentage: 345
+      runtimes:
+        system: 0.04
+        total: 5.04
+        user: 5
+    - MiB/sec: 6.45102047797542
+      name: suite//MediaWiki-DumpFile-Compat.t
+      percentage: 399
+      runtimes:
+        system: 0.05
+        total: 5.83
+        user: 5.78
+    - MiB/sec: 4.15574026371234
+      name: suite//Parse-MediaWikiDump.t
+      percentage: 619
+      runtimes:
+        system: 0.02
+        total: 9.05
+        user: 9.03
+
+=head2 With out XML::CompactTree::XS
+
+=head3 Simple English Wikipedia
+
+  markup_density: 0.202659609191331
+  size: 227681797
+  tests:
+    - MiB/sec: 30.0740002925376
+      name: suite//MediaWiki-DumpFile-FastPages.t
+      percentage: 100
+      runtimes:
+        system: 0.18
+        total: 7.22
+        user: 7.04
+    - MiB/sec: 24.3697286321124
+      name: suite//MediaWiki-DumpFile-Pages_fastmode.t
+      percentage: 123
+      runtimes:
+        system: 0.23
+        total: 8.91
+        user: 8.68
+    - MiB/sec: 20.2550636298621
+      name: suite//MediaWiki-DumpFile-Compat_fastmode.t
+      percentage: 148
+      runtimes:
+        system: 0.19
+        total: 10.72
+        user: 10.53
+    - MiB/sec: 4.21456292919491
+      name: suite//Parse-MediaWikiDump.t
+      percentage: 713
+      runtimes:
+        system: 0.12
+        total: 51.52
+        user: 51.4
+    - MiB/sec: 4.06770854462573
+      name: suite//MediaWiki-DumpFile-Pages.t
+      percentage: 739
+      runtimes:
+        system: 0.24
+        total: 53.38
+        user: 53.14
+    - MiB/sec: 3.79871032386497
+      name: suite//MediaWiki-DumpFile-Compat.t
+      percentage: 791
+      runtimes:
+        system: 0.28
+        total: 57.16
+        user: 56.88
+
+=head3 Chuvash Wikipedia
+
+  markup_density: 0.18934898819024
+  size: 39436366
+  tests:
+    - MiB/sec: 25.5846594466644
+      name: suite//MediaWiki-DumpFile-FastPages.t
+      percentage: 100
+      runtimes:
+        system: 0.04
+        total: 1.47
+        user: 1.43
+    - MiB/sec: 20.4399181448895
+      name: suite//MediaWiki-DumpFile-Pages_fastmode.t
+      percentage: 125
+      runtimes:
+        system: 0.04
+        total: 1.84
+        user: 1.8
+    - MiB/sec: 14.5210229291879
+      name: suite//MediaWiki-DumpFile-Compat_fastmode.t
+      percentage: 176
+      runtimes:
+        system: 0.03
+        total: 2.59
+        user: 2.56
+    - MiB/sec: 4.11481940772393
+      name: suite//Parse-MediaWikiDump.t
+      percentage: 621
+      runtimes:
+        system: 0.03
+        total: 9.14
+        user: 9.11
+    - MiB/sec: 3.87726282336048
+      name: suite//MediaWiki-DumpFile-Pages.t
+      percentage: 659
+      runtimes:
+        system: 0.03
+        total: 9.7
+        user: 9.67
+    - MiB/sec: 3.53140369827199
+      name: suite//MediaWiki-DumpFile-Compat.t
+      percentage: 724
+      runtimes:
+        system: 0.06
+        total: 10.65
+        user: 10.59
+
+
+
+        

@@ -1,0 +1,92 @@
+=head1 NAME
+
+Parse::MediaWikiDump::Links - Object capable of processing link dump files
+
+=head1 ABOUT
+
+This object is used to access content of the SQL based category dump files by providing an iterative interface
+for extracting the individual article links to the same. Objects returned are an instance of Parse::MediaWikiDump::link. 
+
+=head1 SYNOPSIS
+  
+  use MediaWiki::DumpFile::Compat;
+  
+  $pmwd = Parse::MediaWikiDump->new;
+  $links = $pmwd->links('pagelinks.sql');
+  $links = $pmwd->links(\*FILEHANDLE);
+  
+  #print the links between articles 
+  while(defined($link = $links->next)) {
+    print 'from ', $link->from, ' to ', $link->namespace, ':', $link->to, "\n";
+  }
+
+=head1 METHODS
+
+=over 4
+
+=item Parse::MediaWikiDump::Links->new
+
+Create a new instance of a page links dump file parser
+
+=item $links->next
+
+Return the next available Parse::MediaWikiDump::link object or undef if there is no more data left
+
+=back
+
+=head1 EXAMPLE
+
+=head2 List all links between articles in a friendly way
+
+  #!/usr/bin/perl
+  
+  use strict;
+  use warnings;
+  
+  use MediaWiki::DumpFile::Compat;
+  
+  my $pmwd = Parse::MediaWikiDump->new;
+  my $links = $pmwd->links(shift) or die "must specify a pagelinks dump file";
+  my $dump = $pmwd->pages(shift) or die "must specify an article dump file";
+  my %id_to_namespace;
+  my %id_to_pagename;
+  
+  binmode(STDOUT, ':utf8');
+  
+  #build a map between namespace ids to namespace names
+  foreach (@{$dump->namespaces}) {
+  	my $id = $_->[0];
+  	my $name = $_->[1];	
+  
+  	$id_to_namespace{$id} = $name;
+  }
+  
+  #build a map between article ids and article titles
+  while(my $page = $dump->next) {
+  	my $id = $page->id;
+  	my $title = $page->title;
+  
+  	$id_to_pagename{$id} = $title;
+  }
+  
+  $dump = undef; #cleanup since we don't need it anymore
+  
+  while(my $link = $links->next) {
+  	my $namespace = $link->namespace;
+  	my $from = $link->from;
+  	my $to = $link->to;
+  	my $namespace_name = $id_to_namespace{$namespace};	
+  	my $fully_qualified;
+  	my $from_name = $id_to_pagename{$from};
+  
+  	if ($namespace_name eq '') {
+  		#default namespace
+  		$fully_qualified = $to;
+  	} else {
+  		$fully_qualified = "$namespace_name:$to";
+  	}
+  
+  	print "Article \"$from_name\" links to \"$fully_qualified\"\n";
+  }
+
+

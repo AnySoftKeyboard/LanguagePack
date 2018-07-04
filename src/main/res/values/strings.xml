@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - change_me Language Pack</string>
-    <string name="keyboard_name">change_me</string>
-    <string name="dictionary_name">change_me</string>
+    <string name="app_name">AnySoftKeyboard - Sicilian Language Pack</string>
+    <string name="keyboard_name">Sicilian</string>
+    <string name="dictionary_name">Sicilian</string>
+    <string name="dictionary_description">Sicilian dictionary</string>
 </resources>
