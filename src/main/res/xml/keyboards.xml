@@ -7,6 +7,6 @@
      "iconResId" : a reference to a drawable which can be used to show a flag in the notification bar.
      "layoutResId" : a reference to a keyboard layout XML. See res/xml/qwerty.xml
      -->
-	<Keyboard nameResId="@string/keyboard_name" iconResId="change_me" layoutResId="@xml/qwerty" 
-	    id="change_me" defaultDictionaryLocale="change_me" description="change_me" index="1"/>
+	<Keyboard nameResId="@string/persian_qwerty" iconResId="@drawable/fa" layoutResId="@xml/qwerty" 
+	    id="92362342-1f4a-44e8-a141-a8ed0d48dc92" defaultDictionaryLocale="fa" description="By AmiraliNull" index="1"/>
 </Keyboards>
