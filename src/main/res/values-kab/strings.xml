@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">AnySoftKeyboard - Tamaziγt ahrawan</string>
+<string name="keyboard_name">Taqbaylit</string>
+<string name="dictionary_name">Amawal n taqbaylit</string>
+<string name="notification_contenttitle">AnySoftKeyboard</string>
+<string name="tifinagh_keyboard">Tifinaγ</string>
+<string name="arabic_keyboard">Taɛrabt</string>
+<string name="arabic_keyboard_description">Anasiw n taɛrabt</string>
+<string name="arabic_dictionary">Amawal n taɛrabt</string>
+<string name="tifinagh_dictionary">Amawal n Tmaziγt</string>
+<string name="keyboard_name_description">Taqbaylit</string>
+<string name="tifinagh_keyboard_description">Anasiw n teqbaylit</string>
+</resources>
