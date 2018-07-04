@@ -26,4 +26,16 @@
 		layoutResId="@xml/cs_qwerty_simple"  landscapeResId="@xml/cs_qwerty_simple"
 		id="d34c2b60-554c-11e8-b566-0800200c9a66" description="@string/cs_qwerty_simple_description"
 		index="3" defaultDictionaryLocale="cs" />
+
+	<Keyboard nameResId="@string/cs_qwerty_keyboard_diacritic" iconResId="@drawable/cs"
+		layoutResId="@xml/cs_qwerty_diacritic"  landscapeResId="@xml/cs_qwerty_diacritic"
+		id="6482fe40-5e6b-4ea5-8aba-56ef89ca0670" description="@string/cs_keyboard_diacritic_description"
+		index="4" physicalKeyboardMappingResId="@xml/cs_qwerty_physical"
+		defaultDictionaryLocale="cs" />
+
+	<Keyboard nameResId="@string/cs_qwertz_keyboard_diacritic" iconResId="@drawable/cs"
+		layoutResId="@xml/cs_qwertz_diacritic"  landscapeResId="@xml/cs_qwertz_diacritic"
+		id="6480fe40-5e6b-4ea5-80ba-46ef89ca0670" description="@string/cs_keyboard_diacritic_description"
+		index="5" physicalKeyboardMappingResId="@xml/cs_qwertz_physical"
+		defaultDictionaryLocale="cs" />
 </Keyboards>
