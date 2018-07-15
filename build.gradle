@@ -1,28 +1,24 @@
-import com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListFromAOSPTask
-import com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask
 import com.anysoftkeyboard.tools.generatewordslist.MergeWordsListTask
 import com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask
 import fr.avianey.androidsvgdrawable.gradle.SvgDrawableTask
-import net.evendanan.versiongenerator.generators.EnvBuildVersionGenerator
-import net.evendanan.versiongenerator.generators.GitBuildVersionGenerator
-import net.evendanan.versiongenerator.generators.StaticVersionGenerator
 
 System.setProperty("file.encoding", "UTF-8")
 
 buildscript {
     repositories {
+        google()
         jcenter()
         mavenCentral()
         maven { url 'https://jitpack.io' }
         maven { url "https://plugins.gradle.org/m2/" }
-        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.1.3'
 
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:287fe7812294918636359e4d28dbcbc931f3dab8'
         classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:287fe7812294918636359e4d28dbcbc931f3dab8'
         //classpath files('english_dictionary/generatewordslist-1.0-SNAPSHOT.jar')
+
         classpath 'org.jsoup:jsoup:1.9.1'
 
         classpath 'com.github.Triple-T:gradle-play-publisher:8cda31a5d0e3c4f2d7f47ffde6fc3b370e59dd8a'
@@ -43,21 +39,21 @@ apply plugin: "androidsvgdrawable"
 
 
 def generators = [
-    new EnvBuildVersionGenerator.CircleCi(0,0),
-    new GitBuildVersionGenerator(0,0),
-    new StaticVersionGenerator()
+        new net.evendanan.versiongenerator.generators.EnvBuildVersionGenerator.CircleCi(100/*app code offset*/, -260/*minor offset*/),
+        new net.evendanan.versiongenerator.generators.GitBuildVersionGenerator(200, -260),
+        new net.evendanan.versiongenerator.generators.StaticVersionGenerator()
 ]
 
-def versionData = versionGenerator.generateVersion(1, 0, 0, generators)
+def versionData = versionGenerator.generateVersion(3, 2, 0, generators)
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "com.anysoftkeyboard.languagepack.sardinian"
-        minSdkVersion 7
-        targetSdkVersion 26
+        minSdkVersion 9
+        targetSdkVersion 27
         versionName versionData.versionName
         versionCode versionData.versionCode
 
@@ -94,26 +90,30 @@ play {
     pk12File = file('/tmp/apk_upload_key.p12')
     uploadImages = true
 }
-def sardinianCharacters = "abcdefghilmnopqrstuvzjàèìòùéABCDEFGHILMNOPQRSTUVZJÀÈÌÒÙÉ".toCharArray()
-def additionalInnerSardinianCharacters = "·\"'".toCharArray()
 
-task parseTextInputFiles(type: GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/Lista.html"),
-                new File(project.getProjectDir(), "dictionary/wordlist_sc.txt")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/wordlist_sc_complete.xml")
+//Taken from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
+
+def sardinianCharacters = "abcdefghilmnopqrstuvzjàèìòùéABCDEFGHILMNOPQRSTUVZJÀÈÌÒÙÉ".toCharArray()
+def additionalInnersardinianCharacters = "·\"'".toCharArray()
+
+task parseTextInputFiles(type: com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask) {
+    inputFiles new File(project.getProjectDir(), "dictionary/wordlist_sc.txt")
+    outputWordsListFile new File(project.getProjectDir(), "dictionary/wordlist_sc2.xml")
     wordCharacters = sardinianCharacters
-    additionalInnerCharacters = additionalInnerSardinianCharacters
+    additionalInnerCharacters = additionalInnersardinianCharacters
 }
 
 task mergeAllWordLists(type: MergeWordsListTask) {
     dependsOn parseTextInputFiles
 
     inputWordsListFiles = [
-            new File(project.getProjectDir(), "dictionary/wordlist_sc_complete.xml"),
-            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
+            new File(project.getProjectDir(), "dictionary/Lista.xml"),
+            new File(project.getProjectDir(), "dictionary/Lista2.xml"),
+            new File(project.getProjectDir(), "dictionary/Lista3.xml"),
+            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),
     ] as File[]
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
-    maxWordsInList 100000000
+    maxWordsInList 200000000
 }
 
 task makeDictionary(type: MakeDictionaryTask) {
@@ -131,10 +131,11 @@ afterEvaluate { proj ->
 
 dependencies {
     repositories {
+        google()
         jcenter()
         maven { url "https://jitpack.io" }
     }
-    compile 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.9.0'
+    api 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.10.0'
 }
 
 task checkstyle(type: Checkstyle) {
@@ -184,7 +185,4 @@ task svgToDrawablePngPlay(type: SvgDrawableTask) {
     doLast {
         file('src/main/play/en-US/listing/icon/logo_launcher.png').renameTo(file('src/main/play/en-US/listing/icon/ask_logo.png'))
     }
-}
-repositories {
-    google()
 }
