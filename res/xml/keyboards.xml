@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Keyboards>
-    <!-- Dictionary attributes:
-     "nameResId" : the name of the keyboard. Should be short. Reference to a string in values.xml 
-     "defaultDictionaryLocale" : the ID of the keyboard's (ISO) locale, e.g., "en", "iw", "ar", "ru", etc. The dictionary should declare the same locale. 
-     "id" : UUID for this keyboard. Obtain from here: http://www.famkruithof.net/uuid/uuidgen
-     "iconResId" : a reference to a drawable which can be used to show a flag in the notification bar.
-     "layoutResId" : a reference to a keyboard layout XML. See res/xml/qwerty.xml
-     -->
-	<Keyboard nameResId="@string/keyboard_name" iconResId="change_me" layoutResId="@xml/qwerty" 
-	    id="change_me" defaultDictionaryLocale="change_me" description="change_me" index="1"/>
+	<!--
+	id := a UUID (you may want to generate this using our simple Java program at:  /trunk/project/dict_creation (uuidgen_Windows.bat or uuidgen_Linux)
+	nameResId := the resource Id which holds the name of the keyboard. See strings.xml.
+	layoutResId := the resource Id which holds the layout definition of this keyboard. The sample is an English QWERTY keyboard.
+	*landscapeResId := the resource Id which holds the layout definition of this keyboard in landscape orientation (optional).
+	*physicalKeyboardMappingResId := a physical keyboard translation definition (optional). The sample is a Russian layout.
+	*iconResId := an icon to show when switching to this layout (optional).
+	*defaultDictionaryLocale := a locate identifier for this keyboard. E.g., English will be en, Hebrew will be iw, etc.
+	description := some text you would like to add.
+	index := the sort index of this keyboard in the Settings page.
+	
+	* are optional.
+	 -->
+	<Keyboard 
+	id="35cd9efb-3625-4cfa-9ab7-a62acfae8681" 
+	nameResId="@string/catalan_keyboard"
+	layoutResId="@xml/catalan"
+	iconResId="@drawable/flag"
+	defaultDictionaryLocale="ca" 
+	description=""
+	additionalIsLetterExceptions="&#183;"
+	index="1"/>
+	<!-- you can add additional layouts. Just create additional Keyboard xml node. -->
 </Keyboards>
