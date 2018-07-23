@@ -11,7 +11,7 @@
    	<Key android:codes="e,é,ě" android:popupCharacters="3éě" android:keyLabel=""/>
     <Key android:codes="r,ŕ,ř" android:popupCharacters="4ŕř" android:keyLabel=""/>
     <Key android:codes="t,ť" android:popupCharacters="5ť" android:keyLabel=""/>
-    <Key android:codes="z,ž" android:popupCharacters="ž" android:keyLabel="" />
+    <Key android:codes="z,ž" android:popupCharacters="6ž" android:keyLabel="" />
     <Key android:codes="u,ú,ů" android:popupCharacters="7úů" android:keyLabel=""/>
     <Key android:codes="i,í" android:popupCharacters="8í" android:keyLabel=""/>
     <Key android:codes="o,ó,ô" android:popupCharacters="9óô" android:keyLabel=""/>
@@ -31,7 +31,7 @@
 <Row> 
 	<Key android:codes="-1"
          android:isModifier="true" android:keyWidth="15%p" android:isSticky="true" android:keyEdgeFlags="left"/>
-    <Key android:codes="y,ý" android:popupCharacters="6ý" android:keyLabel=""/>
+    <Key android:codes="y,ý" android:popupCharacters="ý" android:keyLabel=""/>
     <Key android:codes="x" android:popupCharacters="" android:keyLabel=""/>
     <Key android:codes="c,č" android:popupCharacters="č" android:keyLabel=""/>
     <Key android:codes="v" android:popupCharacters="" android:keyLabel=""/>
