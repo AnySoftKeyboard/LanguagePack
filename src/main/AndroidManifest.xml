@@ -14,7 +14,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name">
         <receiver
-            android:name="com.anysoftkeyboard.languagepack.languagepack.PackBroadcastReceiver"
+            android:name="com.anysoftkeyboard.languagepack.songhay.PackBroadcastReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.menny.android.anysoftkeyboard.KEYBOARD" />
