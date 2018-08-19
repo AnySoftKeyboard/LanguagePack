@@ -15,12 +15,12 @@
 	 -->
 	<Keyboard 
 	id="35cd9efb-3625-4cfa-9ab7-a62acfae8681" 
-	nameResId="@string/catalan_keyboard"
-	layoutResId="@xml/catalan"
-	iconResId="@drawable/flag"
-	defaultDictionaryLocale="ca" 
+	nameResId="@string/keyboard_name"
+	layoutResId="@xml/qwerty"
+	defaultDictionaryLocale="ca"
 	description=""
 	additionalIsLetterExceptions="&#183;"
 	index="1"/>
+	<!--iconResId="@drawable/flag"-->
 	<!-- you can add additional layouts. Just create additional Keyboard xml node. -->
 </Keyboards>
