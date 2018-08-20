@@ -95,7 +95,7 @@ play {
     uploadImages = true
 }
 
-task parseTextInputFiles(type: GenerateWordsListTask) {
+/*task parseTextInputFiles(type: GenerateWordsListTask) {
     inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
                 //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
                 new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
@@ -108,17 +108,16 @@ task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
     inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
     maxWordsInList 300000
-}
+}*/
 
 task mergeAllWordLists(type: MergeWordsListTask) {
-    dependsOn parseTextInputFiles
+    //dependsOn parseTextInputFiles
 
     inputWordsListFiles = [
-            new File(project.getProjectDir(), "dictionary/words_from_texts.xml"),
-            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
+            new File(project.getProjectDir(), "dictionary/ca_wordlist.xml")
     ] as File[]
     outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
-    maxWordsInList 100000
+    maxWordsInList 10000
 }
 
 task makeDictionary(type: MakeDictionaryTask) {
