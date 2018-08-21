@@ -71,5 +71,16 @@
 	iconResId="ru"
 	defaultDictionaryLocale="ru"
 	index="6"/>
+    
+    <Keyboard
+	id="d604b360-a527-11e8-b568-0800200c9a66"
+	nameResId="@string/cyrillic_name"
+	layoutResId="@xml/cyrillic_qwerty"
+	landscapeResId="@xml/cyrillic_qwerty"
+	description="Кириллические символы при длительном нажатии"
+	physicalKeyboardMappingResId="@xml/cyrillic_physical"
+	iconResId="ru"
+	defaultDictionaryLocale="ru"
+	index="7"/>
 
 </Keyboards>

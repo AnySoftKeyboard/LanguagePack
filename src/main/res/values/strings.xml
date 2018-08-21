@@ -9,4 +9,5 @@
     <string name="russian_27_keys">Русский 27 клавиш</string>
     <string name="russian_25_keys">Русский 25 клавиш</string>
     <string name="russian_27_keys_desc">Редко используемые буквы вызываются длительным нажатием</string>
+    <string name="cyrillic_name">Кириллица</string>
 </resources>
