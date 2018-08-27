@@ -1,6 +1,6 @@
 # Greek Language Pack (branch)
 
-The dictionary in this branch is based on the Greek hunspell dictionary(licensed under MPL 1.1/GPL 2.0/LGPL 2.1),with word frequencies extracted from Greek Wikipedia. 
+The dictionary in this branch is based on the Greek hunspell dictionary(licensed under MPL 1.1/GPL 2.0/LGPL 2.1),with word frequencies extracted from various sources. 
 
 # (below the master README content)
 This is the common template for language Packs for the [AnySoftKeyboard](https://github.com/AnySoftKeyboard/AnySoftKeyboard) app for Android devices.
