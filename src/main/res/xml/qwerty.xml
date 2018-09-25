@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:keyWidth="10%p"><!-- "android:keyWidth" specify the default width of a key. In this example, 10% of parent (the whole keyboard) -->
+    android:keyWidth="10%p"><!-- "android:keyWidth" specifies the default width of a key. In this example, 10% of parent (the whole keyboard) -->
     
     <Row>
         <!-- Key attributes:
-         "android:codes" : a comma separated unicode values of the keys. If you specify more than one code, then the other codes are accessible via multi-tap.
+         "android:codes" : a comma-separated list of unicode values for the keys. If you specify more than one code, then the other codes are accessible via multi-tap.
          "android:popupCharacters" : characters to show on long-press popup keyboard
          "android:keyLabel" : the text to show on the key. If this attribute is missing, the first code in "android:codes" will be used.
          "android:horizontalGap" : gap to add to the left of this key.
-         "android:isModifier" : true/false (default is false) whether this key is a modifier key. Means it will be rendered with a differnt background (shift, delete are example of modifier key)
-         "android:isRepeatable" : true/false (default is false) whether this key repeats printing on long press (like the backspace). Setting this to true will disable the long-press (android:popupCharacters) functionality
-         "android:keyWidth" : specify the width of this key
+         "android:isModifier" : true/false (default is false) whether this key is a modifier key. This means it will be rendered with a different background (shift & delete are examples of modifier key)
+         "android:isRepeatable" : true/false (default is false) whether this key repeats printing on long press (like the backspace). Setting this to true will disable the long-press (android:popupCharacters) functionality.
+         "android:keyWidth" : specifies the width of this key
          -->
         <Key android:codes="113" android:popupCharacters="1" android:keyEdgeFlags="left"/>
         <Key android:codes="119" android:popupCharacters="2"/>
