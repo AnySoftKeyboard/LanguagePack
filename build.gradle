@@ -97,18 +97,18 @@ play {
 
 //another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
 //make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
-task parseAospForDictionary(type: GenerateWordsListFromAOSPTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/el_wordlist.combined")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
-    maxWordsInList 300000
-}
+//task parseAospForDictionary(type: GenerateWordsListFromAOSPTask) {
+//    inputFile new File(project.getProjectDir(), "dictionary/el_wordlist.combined")
+//    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
+//    maxWordsInList 300000
+//}
 
 task makeDictionary(type: MakeDictionaryTask) {
   doFirst {
     mkdir 'src/main/res/raw'
   }
-  dependsOn parseAospForDictionary
-  inputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
+  //dependsOn parseAospForDictionary
+  inputWordsListFile new File(project.getProjectDir(), "dictionary/el_wordlist.xml")
 }
 
 afterEvaluate { proj ->
