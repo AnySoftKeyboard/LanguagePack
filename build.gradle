@@ -1,11 +1,3 @@
-import com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListFromAOSPTask
-import com.anysoftkeyboard.tools.generatewordslist.GenerateWordsListTask
-import com.anysoftkeyboard.tools.generatewordslist.MergeWordsListTask
-import com.anysoftkeyboard.tools.makedictionary.MakeDictionaryTask
-import fr.avianey.androidsvgdrawable.gradle.SvgDrawableTask
-import net.evendanan.versiongenerator.generators.EnvBuildVersionGenerator
-import net.evendanan.versiongenerator.generators.GitBuildVersionGenerator
-import net.evendanan.versiongenerator.generators.StaticVersionGenerator
 
 System.setProperty("file.encoding", "UTF-8")
 
@@ -14,180 +6,210 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
+        mavenLocal()
         maven { url 'https://jitpack.io' }
         maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.0-beta4'
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.github.menny:GradleVersion:1cd6d47894028c58924d80238068aaf579a04663'
 
-        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:makedictionary:287fe7812294918636359e4d28dbcbc931f3dab8'
-        classpath 'com.github.AnySoftKeyboard.AnySoftKeyboardTools:generatewordslist:287fe7812294918636359e4d28dbcbc931f3dab8'
-        //classpath files('english_dictionary/generatewordslist-1.0-SNAPSHOT.jar')
-        classpath 'org.jsoup:jsoup:1.9.1'
+        classpath 'com.github.triplet.gradle:play-publisher:2.0.0'
 
-        classpath 'com.github.Triple-T:gradle-play-publisher:8cda31a5d0e3c4f2d7f47ffde6fc3b370e59dd8a'
-
-        classpath 'com.github.menny:GradleVersion:0.0.4'
-
-        classpath('fr.avianey.androidsvgdrawable:gradle-plugin:3.0.0') {
-            exclude group: 'xerces'
-        }
+        //this is needed for publishing
+        classpath 'com.novoda:bintray-release:0.9'
     }
 }
 
-apply plugin: 'checkstyle'
-apply plugin: 'com.android.application'
-apply plugin: 'com.github.triplet.play'
 apply plugin: 'net.evendanan.versiongenerator'
-apply plugin: "androidsvgdrawable"
-
 
 def generators = [
-    new EnvBuildVersionGenerator.CircleCi(0,0),
-    new GitBuildVersionGenerator(0,0),
-    new StaticVersionGenerator()
+        new net.evendanan.versiongenerator.generators.EnvBuildVersionGenerator.CircleCi(1000, -1600),
+        new net.evendanan.versiongenerator.generators.GitBuildVersionGenerator(0, 0),
+        new net.evendanan.versiongenerator.generators.StaticVersionGenerator()
 ]
 
-def versionData = versionGenerator.generateVersion(1, 0, 0, generators)
+def versionData = versionGenerator.generateVersion(4, 0, 0, generators)
+rootProject.version = versionData.versionName
 
-android {
-    compileSdkVersion 27
-    buildToolsVersion '27.0.3'
+rootProject.file('.generated_pack_version').write(versionData.versionName)
 
-    defaultConfig {
-        applicationId "com.anysoftkeyboard.languagepack.languagepack"
-        minSdkVersion 9
-        targetSdkVersion 27
-        versionName versionData.versionName
-        versionCode versionData.versionCode
+def languagePacks = new ArrayList<String>()
 
-        // change name of generated apk to make previews and testing of multiple packs easier
-        def packName = applicationId.substring(applicationId.lastIndexOf(".") + 1)
-        setProperty("archivesBaseName", "ASKLangPack-${packName}-${versionCode}")
+tasks.register("generateMarkDownOfLanguagePacks") {
+    group "AnySoftKeyboard"
+    description 'Printing a MarkDown-friendly list of languages'
 
-        println "Building ${applicationId} v${versionName}, version-code ${versionCode}..."
-    }
-
-    signingConfigs {
-        release {
-            storeFile file("/tmp/language_pack.keystore")
-            storePassword System.getenv("PACK_KEYSTORE_PASSWORD")
-            keyAlias System.getenv("PACK_KEYSTORE_ALIAS")
-            keyPassword System.getenv("PACK_KEYSTORE_KEY_PASSWORD")
-        }
-    }
-
-    buildTypes {
-        release {
-            signingConfig signingConfigs.release
-            zipAlignEnabled true
-            debuggable false
-
-            minifyEnabled false
-        }
-    }
-}
-
-play {
-    track = 'alpha'
-    serviceAccountEmail = System.getenv("PUBLISH_APK_SERVICE_ACCOUNT_EMAIL")
-    pk12File = file('/tmp/apk_upload_key.p12')
-    uploadImages = true
-}
-
-task parseTextInputFiles(type: GenerateWordsListTask) {
-    inputFiles new File(project.getProjectDir(), "dictionary/NY_STATE_ASSEMBLY_TRANSCRIPT_20120621.txt"),
-                //Download the archive from https://dumps.wikimedia.org/other/static_html_dumps/current/simple/
-                new File(project.getProjectDir(), "dictionary/First_English_Civil_War_Wikipedia.htm")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_texts.xml")
-}
-
-//another option is to download the words-list from AOSP at https://android.googlesource.com/platform/packages/inputmethods/LatinIME/+/master/dictionaries/
-//make sure that you are using an unzipped file. The XX_wordlist.combined file should be a plain text file.
-task parseAospForEnglishDictionary(type: GenerateWordsListFromAOSPTask) {
-    inputFile new File(project.getProjectDir(), "dictionary/aosp_en_wordlist.combined")
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_from_aosp.xml")
-    maxWordsInList 300000
-}
-
-task mergeAllWordLists(type: MergeWordsListTask) {
-    dependsOn parseTextInputFiles
-
-    inputWordsListFiles = [
-            new File(project.getProjectDir(), "dictionary/words_from_texts.xml"),
-            new File(project.getProjectDir(), "dictionary/popular_websites_words.xml"),//website I use most
-    ] as File[]
-    outputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
-    maxWordsInList 100000
-}
-
-task makeDictionary(type: MakeDictionaryTask) {
-    dependsOn mergeAllWordLists
-    inputWordsListFile new File(project.getProjectDir(), "dictionary/words_merged.xml")
-}
-
-afterEvaluate { proj ->
-    proj.tasks.all { task ->
-        if (task.name.startsWith('generate') && task.name.endsWith('BuildConfig')) {
-            task.dependsOn makeDictionary
-        }
-    }
-}
-
-dependencies {
-    repositories {
-        google()
-        jcenter()
-        maven { url "https://jitpack.io" }
-    }
-    api 'com.github.AnySoftKeyboard:AnySoftKeyboard-API:1.10.0'
-}
-
-task checkstyle(type: Checkstyle) {
-    configFile file("${projectDir}/checkstyle/checkstyle.xml")
-    source 'src'
-    classpath = files()
-}
-
-// create app icon in all necessary sizes, automatically adding flag
-task svgToDrawablePng(type: SvgDrawableTask) {
-    // specify where to pick SVG from
-    from = files('src/main/svg-png/dummy')
-    // specify the android res folder
-    to = file('src/main/res')
-    // create qualified directories if missing
-    createMissingDirectories = true
-    // override files only if necessary
-    overwriteMode = 'ifModified'
-    // generate PNGs for the following densities
-    targetedDensities = ['ldpi', 'hdpi', 'mdpi', 'xhdpi', 'xxhdpi', 'xxxhdpi']
-
-    outputFormat = 'PNG'
-    outputType = 'mipmap'
-
-    // composition of SVGs
-    svgMaskFiles = files('src/main/svg-png/mask-launcher')
-    svgMaskResourceFiles = files('src/main/svg-png/flag')
-}
-
-// create app icon in all necessary sizes, automatically adding flag
-task svgToDrawablePngPlay(type: SvgDrawableTask) {
-    // specify where to pick SVG from
-    from = files('src/main/svg-png/dummy')
-    // specify the android res folder
-    to = file('src/main/play/en-US/listing/icon')
-    // create qualified directories if missing
-    createMissingDirectories = true
-    // override files only if necessary
-    overwriteMode = 'ifModified'
-
-    outputFormat = 'PNG'
-    outputType = 'raw'
-
-    // composition of SVGs
-    svgMaskFiles = files('src/main/svg-png/mask-play')
-    svgMaskResourceFiles = files('src/main/svg-png/flag')
     doLast {
-        file('src/main/play/en-US/listing/icon/logo_launcher.png').renameTo(file('src/main/play/en-US/listing/icon/ask_logo.png'))
+        println("## Languages in this repo")
+        println("We have ${languagePacks.size()} language packs in this repo:")
+        println()
+        languagePacks.each { println(it) }
+    }
+}
+
+static <T> T getExtValue(Project proj, String key, T defaultValue) {
+    if (proj.hasProperty(key)) {
+        return proj.getProperties().get(key)
+    } else {
+        return defaultValue
+    }
+}
+
+static Object getExtValue(Project proj, String key) {
+    return getExtValue(proj, key, null)
+}
+
+subprojects {
+    it.group "com.anysoftkeybaord${it.parent.path.replace(':', '.')}"
+    it.version = rootProject.version
+    it.afterEvaluate { project ->
+        def languageName = project.parent.name
+
+        //ANDROID BASICS
+        if (project.plugins.hasPlugin('com.android.library') || project.plugins.hasPlugin('com.android.application')) {
+            project.android {
+                compileSdkVersion 28
+                buildToolsVersion '28.0.3'
+
+                defaultConfig {
+                    minSdkVersion 9
+                    targetSdkVersion 28
+                    versionCode versionData.versionCode
+                    versionName versionData.versionName
+                }
+            }
+        }
+
+        if (project.plugins.hasPlugin('com.android.application')) {
+            project.setProperty("archivesBaseName", "ASKLangPack-${languageName}-${versionData.versionCode}")
+
+            project.android {
+                defaultConfig {
+                    applicationId "com.anysoftkeyboard.languagepack.${languageName}"
+                }
+            }
+        }
+
+        //PUBLISH TO PLAY-STORE
+        if (project.plugins.hasPlugin('com.android.application')) {
+            def image = "<img src='https://github.com/AnySoftKeyboard/LanguagePack/raw/master/languages/${project.parent.name}/apk/flag/{{IMAGE_FILENAME}}' height='16'>&nbsp;"
+            if (file("flag/flag.png")) {
+                image = image.replace("{{IMAGE_FILENAME}}", "flag.png")
+            } else if (file("flag/flag.svg")) {
+                image = image.replace("{{IMAGE_FILENAME}}", "flag.svg")
+            } else {
+                image = ""
+            }
+            def packReadMeDetails = "* ${image}${languageName.capitalize()}: [Source](https://github.com/AnySoftKeyboard/LanguagePack/tree/master/languages/${project.parent.name})"
+
+            project.android {
+                signingConfigs {
+                    release {
+                        def keystoreFile = file("/tmp/language_pack.keystore")
+                        if (keystoreFile.exists()) {
+                            storeFile keystoreFile
+                            storePassword System.getenv("PACKS_ALL_KEY_STORE_FILE_PASSWORD")
+                            keyAlias getExtValue(project, "override_release_key_alias", System.getenv("PACKS_ALL_KEY_STORE_FILE_DEFAULT_ALIAS"))
+                            keyPassword System.getenv("PACKS_ALL_KEY_STORE_FILE_DEFAULT_ALIAS_PASSWORD")
+                            println "Using '${storeFile.absolutePath}' to release APK ${path} (with alias '${keyAlias}')."
+                        } else {
+                            println "Could not find '${keystoreFile.absolutePath}' file. Can not sign release APK with release keystore! Using debug."
+                            initWith signingConfigs.debug
+                        }
+                    }
+                }
+
+                buildTypes {
+                    release {
+                        signingConfig signingConfigs.release
+                        zipAlignEnabled true
+                        debuggable false
+
+                        minifyEnabled false
+                    }
+                }
+            }
+
+            if (project.ext.shouldBePublished) {
+                packReadMeDetails += " • [Play Store](https://play.google.com/store/apps/details?id=${project.android.defaultConfig.applicationId})"
+                println("Project ${path} is marked for publishing")
+
+                project.apply plugin: 'com.github.triplet.play'
+
+                play {
+                    // you can promote from command-line by specifying the track to promote to:
+                    // ./gradlew :languages:hebrew:apk:promoteReleaseArtifact -DpublishTrackOverride=beta
+                    track = System.getProperty('publishTrackOverride', 'alpha')
+                    serviceAccountEmail = System.getenv().getOrDefault('PUBLISH_APK_SERVICE_ACCOUNT_EMAIL', 'dummy@example.com')
+                    serviceAccountCredentials = file('/tmp/apk_upload_key.p12')
+                }
+            } else {
+                println("Project ${path} is NOT marked for publishing")
+            }
+
+            languagePacks.add(packReadMeDetails)
+        }
+
+        //GENERATING ICONS
+        if (project.plugins.hasPlugin('com.android.library') && name != "base") {
+            def generateIconsTask = project.tasks.register('generateLanguagePackIcons') {
+                group "AnySoftKeyboard"
+                description 'Creating icons for AnySoftKeyboard language pack library'
+            }
+
+            [['xxxhdpi', 96, 80], ['xxhdpi', 72, 62], ['xhdpi', 48, 40], ['hdpi', 36, 32], ['mdpi', 24, 22]].each { dimens ->
+                def statusIcon = project.tasks.register("generateStatusIcon_${dimens[0]}", Exec) {
+                    commandLine "${rootDir.absolutePath}/scripts/generate_status_icon.sh", project.ext.status_icon_text, languageName, "${dimens[1]}", "${dimens[2]}", "${projectDir.absolutePath}/src/main/res/drawable-${dimens[0]}"
+                }
+
+                generateIconsTask.configure { dependsOn.add(statusIcon) }
+            }
+        }
+
+        if (project.plugins.hasPlugin('com.android.application')) {
+            def imageAssetsFolder = new File(new File(rootDir, "StoreStuff"), "assets")
+            if (!imageAssetsFolder.exists()) {
+                throw new IllegalStateException("store assets folder '${imageAssetsFolder.absolutePath} does not exist!")
+            }
+
+            def generateLogoTask = project.tasks.register('generateStoreLogoIcon', Exec) {
+                group "AnySoftKeyboard"
+                description 'Creating icons for AnySoftKeyboard language pack APK'
+
+                commandLine "${imageAssetsFolder.absolutePath}/logo-base/generate.sh", projectDir.absolutePath, buildDir.absolutePath, "${imageAssetsFolder.absolutePath}/logo-base"
+            }
+
+            def launcherAssetsDir = "${imageAssetsFolder.absolutePath}/launcher-base"
+            [['xxxhdpi', 64, 24], ['xxhdpi', 48, 20], ['xhdpi', 36, 10], ['hdpi', 30, 4], ['mdpi', 22, 1]].each { dimens ->
+                def convert = project.tasks.register("generateLauncherIcon_${dimens[0]}", Exec) {
+                    commandLine "${launcherAssetsDir}/generate.sh", projectDir.absolutePath, buildDir.absolutePath, "${dimens[0]}", "${dimens[1]}", "${dimens[2]}", launcherAssetsDir
+                }
+
+                generateLogoTask.configure { dependsOn.add(convert) }
+            }
+        }
+
+        if (getExtValue(project, "shouldGenerateDictionary", true) && project.plugins.hasPlugin('com.android.library') && name != "base") {
+            //project.apply plugin: 'makedictionary'
+        }
+
+        //CHECKS
+        if (project.plugins.hasPlugin('com.android.library') || project.plugins.hasPlugin('com.android.application')) {
+            project.android {
+                lintOptions {
+                    htmlOutput file("${buildDir.absolutePath}/reports/lint/${path.substring(1).replace(':', '-')}-lint-results.html")
+                    lintConfig rootProject.file('configs/lint.xml')
+                }
+            }
+        }
+    }
+
+    dependencies {
+        repositories {
+            google()
+            jcenter()
+            maven { url "https://jitpack.io" }
+        }
     }
 }
