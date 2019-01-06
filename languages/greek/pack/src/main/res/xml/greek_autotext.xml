@@ -22,4 +22,10 @@
     <!-- rght will be converted to right -->
     <word src="rght">right</word>
     <word src="riht">right</word>
+    <word src="οτι">ότι</word>
+    <word src="υπο">υπό</word>
+    <word src="ποθ">που</word>
+    <word src="απο">από</word>
+    <word src="χόρος">χώρος</word>
+    <word src="παιρνώ">περνώ</word>
 </words>
