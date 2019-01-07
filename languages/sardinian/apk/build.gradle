@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-ext.shouldBePublished = true
+ext.shouldBePublished = false
 dependencies {
     implementation project(path: ':languages:sardinian:pack')
 }
