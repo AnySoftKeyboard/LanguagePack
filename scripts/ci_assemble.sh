@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-./gradlew --no-daemon --stacktrace assembleDebug
+./gradlew ${EXTRA_GRADLE_ARGS} assemble
