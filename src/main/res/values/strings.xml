@@ -2,11 +2,13 @@
 <resources>
     <string name="app_name">Czech for AnySoftKeyboard</string>
     <string name="cs_qwerty_keyboard">Czech qwerty</string>
-    <string name="cs_qwerty_simple_keyboard">Czech</string>
+    <string name="cs_qwerty_simple_keyboard">Simple Czech qwerty</string>
     <string name="cs_qwertz_keyboard">Czech qwertz</string>
+    <string name="cs_qwertz_simple_keyboard">Simple Czech qwertz</string>
     <string name="cs_qwerty_description">Czech qwerty</string>
     <string name="cs_qwerty_simple_description">Space saving QWERTY</string>
     <string name="cs_qwertz_description">Czech qwertz</string>
+    <string name="cs_qwertz_simple_description">Space saving QWERTZ</string>
     <string name="dictionary">Czech Dictionary</string>
     <string name="cs_qwerty_keyboard_diacritic">Czech qwerty with diacritic keys</string>
     <string name="cs_qwertz_keyboard_diacritic">Czech qwertz with diacritic keys</string>
