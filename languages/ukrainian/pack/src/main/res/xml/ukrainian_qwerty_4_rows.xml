@@ -18,7 +18,7 @@
     
     <Row>
         <Key android:codes="1092" android:keyLabel="" android:keyEdgeFlags="left"/>
-        <Key android:codes="1110" android:keyLabel=""/>
+        <Key android:codes="1110" android:keyLabel="" android:popupCharacters="ы"/>
         <Key android:codes="1074" android:keyLabel=""/>
         <Key android:codes="1072" android:keyLabel=""/>
         <Key android:codes="1087" android:keyLabel=""/>
@@ -36,7 +36,7 @@
         <Key android:codes="1084" android:keyLabel=""/>
         <Key android:codes="1080" android:keyLabel=""/>
         <Key android:codes="1090" android:keyLabel=""/>
-        <Key android:codes="1100" android:keyLabel=""/>
+        <Key android:codes="1100" android:keyLabel="" android:popupCharacters="ъ"/>
         <Key android:codes="1073" android:keyLabel=""/>
         <Key android:codes="1102" android:keyLabel="" android:keyEdgeFlags="right"/>
     </Row>
@@ -46,7 +46,7 @@
         <Key android:codes="1169" android:keyLabel="" android:horizontalGap="5%p"/>
         <Key android:codes="33" android:keyLabel=""/>
         <Key android:codes="45" android:keyLabel=""/>
-        <Key android:codes="1108" android:keyLabel=""/>
+        <Key android:codes="1108" android:keyLabel="" android:popupCharacters="э"/>
         <Key android:codes="1093" android:keyLabel=""/>
         <Key android:codes="1111" android:keyLabel=""/>
         <Key android:codes="-5" android:horizontalGap="5%p" android:keyWidth="15%p" android:keyEdgeFlags="right" android:isRepeatable="true"/>

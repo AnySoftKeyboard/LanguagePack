@@ -57,7 +57,7 @@ Letter frequency, from http://jrnl.nau.edu.ua/index.php/ZI/article/view/1968
     <Row android:keyWidth="10%p">
     <!-- фівапролджє -->
         <Key android:codes="1092" android:keyLabel="ф" android:keyEdgeFlags="left"/>
-        <Key android:codes="1110" android:keyLabel="і"/>
+        <Key android:codes="1110" android:keyLabel="і" android:popupCharacters="ы"/>
         <Key android:codes="1074" android:keyLabel="в"/>
         <Key android:codes="1072" android:keyLabel="а"/>
         <Key android:codes="1087" android:keyLabel="п"/>
@@ -65,7 +65,7 @@ Letter frequency, from http://jrnl.nau.edu.ua/index.php/ZI/article/view/1968
         <Key android:codes="1086" android:keyLabel="о"/>
         <Key android:codes="1083" android:keyLabel="л"/>
         <Key android:codes="1076" android:keyLabel="д"/>
-        <Key android:codes="1078" android:keyLabel="ж" android:keyEdgeFlags="right"/>
+        <Key android:codes="1078" android:keyLabel="ж" android:popupCharacters="э" android:keyEdgeFlags="right"/>
     </Row>
 
     <Row android:keyWidth="10%p">
@@ -77,7 +77,7 @@ Letter frequency, from http://jrnl.nau.edu.ua/index.php/ZI/article/view/1968
         <Key android:codes="1084" android:keyLabel="м"/>
         <Key android:codes="1080" android:keyLabel="и" android:popupCharacters="й"/>
         <Key android:codes="1090" android:keyLabel="т"/>
-        <Key android:codes="1100" android:keyLabel="ь"/>
+        <Key android:codes="1100" android:keyLabel="ь" android:popupCharacters="ъ"/>
         <Key android:codes="1073" android:keyLabel="б"/>
         <Key android:codes="-5" android:keyWidth="15%p" android:keyEdgeFlags="right" android:isRepeatable="true"/>
     </Row>
