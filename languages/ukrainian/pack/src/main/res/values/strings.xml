@@ -2,4 +2,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="keyboard_name">Ukrainian</string>
     <string name="dictionary_name">Ukrainian</string>
+    <string name="keyboard_name_4_rows_desc">4 rows</string>
+    <string name="keyboard_name_27_keys">Ukrainian 27 keys</string>
+    <string name="keyboard_name_27_keys_desc">Less used keys invoked by long press</string>
 </resources>

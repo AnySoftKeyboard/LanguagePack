@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Letter frequency, from http://jrnl.nau.edu.ua/index.php/ZI/article/view/1968
+ о 0,100
+ н 0,079
+ а 0,075
+ и 0,064
+ в 0,053
+ i 0,052
+ т 0,052
+ р 0,050
+ е 0,048
+ с 0,043
+ к 0,039
+ м 0,034
+ л 0,032
+ у 0,032
+ д 0,031
+ п 0,029
+ з 0,023
+ я 0,021
+ ь 0,018
+ б 0,015
+ г 0,015
+ х 0,013
+ ч 0,012
+ ц 0,012
+ ї 0,011
+ й 0,010
+ ю 0,009
+ ж 0,008
+ ш 0,006
+ є 0,005
+ ф 0,004
+ щ 0,004
+ ґ 0,000
+-->
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p">
+
+    <Row android:keyWidth="10%p">
+    <!-- йцукенгшщзхї -->
+        <Key android:codes="1094" android:keyLabel="ц" android:popupCharacters="ч1" android:keyEdgeFlags="left"/>
+        <Key android:codes="1091" android:keyLabel="у" android:popupCharacters="2"/>
+        <Key android:codes="1082" android:keyLabel="к" android:popupCharacters="3"/>
+        <Key android:codes="1077" android:keyLabel="е" android:popupCharacters="є4"/>
+        <Key android:codes="1085" android:keyLabel="н" android:popupCharacters="5"/>
+        <Key android:codes="1075" android:keyLabel="г" android:popupCharacters="ґ6"/>
+        <Key android:codes="1096" android:keyLabel="ш" android:popupCharacters="щ7"/>
+        <Key android:codes="1079" android:keyLabel="з" android:popupCharacters="8"/>
+        <Key android:codes="1093" android:keyLabel="х" android:popupCharacters="9"/>
+        <Key android:codes="1111" android:keyLabel="ї" android:popupCharacters="ю0" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row android:keyWidth="10%p">
+    <!-- фівапролджє -->
+        <Key android:codes="1092" android:keyLabel="ф" android:keyEdgeFlags="left"/>
+        <Key android:codes="1110" android:keyLabel="і"/>
+        <Key android:codes="1074" android:keyLabel="в"/>
+        <Key android:codes="1072" android:keyLabel="а"/>
+        <Key android:codes="1087" android:keyLabel="п"/>
+        <Key android:codes="1088" android:keyLabel="р"/>
+        <Key android:codes="1086" android:keyLabel="о"/>
+        <Key android:codes="1083" android:keyLabel="л"/>
+        <Key android:codes="1076" android:keyLabel="д"/>
+        <Key android:codes="1078" android:keyLabel="ж" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row android:keyWidth="10%p">
+    <!-- ячсмитьбю -->
+        <Key android:codes="-1" android:keyWidth="15%p"
+                android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="1103" android:keyLabel="я"/>
+        <Key android:codes="1089" android:keyLabel="с"/>
+        <Key android:codes="1084" android:keyLabel="м"/>
+        <Key android:codes="1080" android:keyLabel="и" android:popupCharacters="й"/>
+        <Key android:codes="1090" android:keyLabel="т"/>
+        <Key android:codes="1100" android:keyLabel="ь"/>
+        <Key android:codes="1073" android:keyLabel="б"/>
+        <Key android:codes="-5" android:keyWidth="15%p" android:keyEdgeFlags="right" android:isRepeatable="true"/>
+    </Row>
+</Keyboard>

@@ -8,7 +8,7 @@
      "layoutResId" : a reference to a keyboard layout XML. See res/xml/qwerty.xml
      -->
 	<Keyboard
-		id="b078a198-dfaf-48bc-a30c-426abed41514" 
+		id="b078a198-dfaf-48bc-a30c-426abed41514"
 		nameResId="@string/keyboard_name"
 		layoutResId="@xml/ukrainian_qwerty"
 		iconResId="@drawable/ic_status_ukrainian"
@@ -24,7 +24,17 @@
 		landscapeResId="@xml/ukrainian_qwerty"
 		iconResId="@drawable/ic_status_ukrainian"
 		defaultDictionaryLocale="uk"
-		description="4 rows - Created with rlavriv"
+		description="@string/keyboard_name_4_rows_desc"
 		index="2"
+		physicalKeyboardMappingResId="@xml/ukrainian_physical"/>
+
+	<Keyboard
+		id="73919470-570e-11e9-b475-0800200c9a66"
+		nameResId="@string/keyboard_name_27_keys"
+		layoutResId="@xml/ukrainian_qwerty_27_keys"
+		iconResId="@drawable/ic_status_ukrainian"
+		defaultDictionaryLocale="uk"
+		description="@string/keyboard_name_27_keys_desc"
+		index="1"
 		physicalKeyboardMappingResId="@xml/ukrainian_physical"/>
 </Keyboards>

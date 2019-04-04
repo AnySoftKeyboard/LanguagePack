@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="keyboard_name">Українська</string>
+    <string name="dictionary_name">Українська</string>
+    <string name="keyboard_name_4_rows_desc">4 рядки</string>
+    <string name="keyboard_name_27_keys">Українська 27 клавіш</string>
+    <string name="keyboard_name_27_keys_desc">Менш вживані літери за довгим дотиком</string>
+</resources>
