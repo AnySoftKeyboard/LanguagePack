@@ -1,0 +1,6 @@
+Підтримка української мови для AnySoftKeyboard
+
+Цей додаток працює лише разом з AnySoftKeyboard.
+Встановіть AnySoftKeyboard, відкрийте Налаштування -> Мови, та оберіть українську мову.
+
+Встановити AnySoftKeyboard можна тут: <a href="https://play.google.com/store/apps/details?id=com.menny.android.anysoftkeyboard"><u>https://play.google.com/store/apps/details?id=com.menny.android.anysoftkeyboard</u></a>

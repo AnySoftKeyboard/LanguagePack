@@ -22,6 +22,7 @@ include ':languages:russian2:pack', ':languages:russian2:apk'
 include ':languages:sardinian:pack', ':languages:sardinian:apk'
 include ':languages:spain:pack', ':languages:spain:apk'
 include ':languages:tamazight:pack', ':languages:tamazight:apk'
+include ':languages:ukrainian:pack', ':languages:ukrainian:apk'
 
 //list of themes should be alphabetized-ordered
 include ':themes'
