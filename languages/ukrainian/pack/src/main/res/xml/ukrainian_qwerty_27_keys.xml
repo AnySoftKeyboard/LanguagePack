@@ -45,7 +45,7 @@ Letter frequency, from http://jrnl.nau.edu.ua/index.php/ZI/article/view/1968
         <Key android:codes="1094" android:keyLabel="ц" android:popupCharacters="ч1" android:keyEdgeFlags="left"/>
         <Key android:codes="1091" android:keyLabel="у" android:popupCharacters="2"/>
         <Key android:codes="1082" android:keyLabel="к" android:popupCharacters="3"/>
-        <Key android:codes="1077" android:keyLabel="е" android:popupCharacters="є4"/>
+        <Key android:codes="1077" android:keyLabel="е" android:popupCharacters="4"/>
         <Key android:codes="1085" android:keyLabel="н" android:popupCharacters="5"/>
         <Key android:codes="1075" android:keyLabel="г" android:popupCharacters="ґ6"/>
         <Key android:codes="1096" android:keyLabel="ш" android:popupCharacters="щ7"/>
@@ -56,16 +56,16 @@ Letter frequency, from http://jrnl.nau.edu.ua/index.php/ZI/article/view/1968
 
     <Row android:keyWidth="10%p">
     <!-- фівапролджє -->
-        <Key android:codes="1092" android:keyLabel="ф" android:keyEdgeFlags="left"/>
-        <Key android:codes="1110" android:keyLabel="і" android:popupCharacters="ы"/>
-        <Key android:codes="1074" android:keyLabel="в"/>
+        <Key android:codes="1110" android:keyLabel="і" android:popupCharacters="ы" android:keyEdgeFlags="left"/>
+        <Key android:codes="1074" android:keyLabel="в" android:popupCharacters="ф"/>
         <Key android:codes="1072" android:keyLabel="а"/>
         <Key android:codes="1087" android:keyLabel="п"/>
         <Key android:codes="1088" android:keyLabel="р"/>
         <Key android:codes="1086" android:keyLabel="о"/>
         <Key android:codes="1083" android:keyLabel="л"/>
         <Key android:codes="1076" android:keyLabel="д"/>
-        <Key android:codes="1078" android:keyLabel="ж" android:popupCharacters="э" android:keyEdgeFlags="right"/>
+        <Key android:codes="1078" android:keyLabel="ж"/>
+        <Key android:codes="1108" android:keyLabel="є" android:popupCharacters="э" android:keyEdgeFlags="right"/>
     </Row>
 
     <Row android:keyWidth="10%p">
