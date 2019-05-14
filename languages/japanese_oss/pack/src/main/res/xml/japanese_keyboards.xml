@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Keyboards>
     <Keyboard nameResId="@string/japanese_keyboard" iconResId="@drawable/ic_status_japanese"
-              layoutResId="@xml/japanese_qwerty" id=""
+              layoutResId="@xml/japanese_qwerty" id="b8615a8a-d088-4177-8b58-9e00b330dd32"
               defaultDictionaryLocale="jp" description="@string/japanese_keyboard_description"
               index="1" />
     <Keyboard nameResId="@string/japanese_keyboard_12keys"
               iconResId="@drawable/ic_status_japanese" layoutResId="@xml/japanese_12keys"
-              landscapeResId="@xml/japanese_qwerty" id=""
+              landscapeResId="@xml/japanese_qwerty" id="99c4ea84-1557-48c0-b40e-fe4988f1b072"
               defaultDictionaryLocale="jp" description="@string/japanese_keyboard_12keys_description"
               index="2" />
 </Keyboards>

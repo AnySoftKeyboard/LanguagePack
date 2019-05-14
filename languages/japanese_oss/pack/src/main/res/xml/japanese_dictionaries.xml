@@ -4,7 +4,7 @@
         autoTextResourceId="@xml/jp_autotext"
         description=""
         dictionaryResourceId="@array/jp_words_dict_array"
-        id=""
+        id="9a0b63d6-ac84-474a-a014-8d8baf112045"
         locale="jp"
         nameResId="@string/jp_dictionary"
         type="binary_resource" />
