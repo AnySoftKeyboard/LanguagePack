@@ -1,0 +1,4 @@
+#Fri May 24 23:24:15 IRDT 2019
+base.0=/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/dex/debug/mergeDexDebug/out
+renamed.0=classes.dex
+path.0=classes.dex

@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_ic_status_persian.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/ic_status_persian.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/xml_persian_autotext.xml.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/xml/persian_autotext.xml"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/raw_persian_words_1.dict.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/raw/persian_words_1.dict"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_ic_status_english.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/drawable-xxxhdpi-v4/ic_status_english.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_status_persian.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/drawable-xxhdpi-v4/ic_status_persian.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/xml_persian_qwerty.xml.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/xml/persian_qwerty.xml"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/xml_persian_physical.xml.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/xml/persian_physical.xml"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_status_english.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/drawable-xxhdpi-v4/ic_status_english.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/xml_persian_dictionaries.xml.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/xml/persian_dictionaries.xml"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/drawable-xhdpi-v4_ic_status_persian.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/ic_status_persian.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/drawable-hdpi-v4_ic_status_persian.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_status_persian.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/drawable-mdpi-v4_ic_status_persian.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/drawable-mdpi-v4/ic_status_persian.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/drawable-xhdpi-v4_ic_status_english.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/ic_status_english.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/xml_persian_keyboards.xml.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/xml/persian_keyboards.xml"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/drawable-hdpi-v4_ic_status_english.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_status_english.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/res/merged/debug/drawable-mdpi-v4_ic_status_english.png.flat",
+        "source": "/home/mzeinali/Projects/LanguagePack-master/languages/persian/pack/build/intermediates/packaged_res/debug/drawable-mdpi-v4/ic_status_english.png"
+    }
+]

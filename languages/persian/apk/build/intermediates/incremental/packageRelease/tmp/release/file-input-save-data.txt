@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Mon May 20 18:58:38 IRDT 2019
+0.base=/home/mzeinali/Projects/LanguagePack-master/languages/persian/apk/build/intermediates/dex/release/mergeDexRelease/out
+0.path=classes.dex
+count=1
+0.baseType=DIRECTORY
+0.set=DEX
