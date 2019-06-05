@@ -16,7 +16,7 @@
     </Row>
     
     <Row>
-        <Key android:codes="331" android:keyLabel="" android:popupCharacters="q" android:keyEdgeFlags="left"/>
+        <Key android:codes="331" android:keyLabel="ŋ" android:popupCharacters="q" android:keyEdgeFlags="left"/>
         <Key android:codes="115" android:keyLabel="s"/>
         <Key android:codes="100" android:keyLabel="d"/>
         <Key android:codes="102" android:keyLabel="f"/>
