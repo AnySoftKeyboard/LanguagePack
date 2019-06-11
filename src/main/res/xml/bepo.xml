@@ -34,13 +34,13 @@
             android:popupCharacters="àâäæáãåąā" />
         <Key
             android:codes="117,249"
-            android:popupCharacters="ùüúûŭűū" />
+            android:popupCharacters="ùüúûŭűūµ" />
         <Key
             android:codes="105"
             android:popupCharacters="ïîìíłī" />
         <Key
             android:codes="101"
-            android:popupCharacters="èêë€éęē" />
+            android:popupCharacters="ēëêèé€ę" />
         <Key android:codes="99" />
         <Key android:codes="116" />
         <Key
