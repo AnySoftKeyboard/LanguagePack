@@ -8,7 +8,9 @@
 	description := some text you would like to add.
 	index := the sort index of this keyboard in the Settings page.
 	 -->
-	<Keyboard nameResId="@string/de_keyboard" layoutResId="@xml/de_qwertz" id="5a1b25da-c17d-4be1-ad8e-3e24333341ec" defaultDictionaryLocale="de" description="Created with tudor and Claude Philipona" index="1"/>
+	<Keyboard nameResId="@string/de_keyboard" layoutResId="@xml/de_qwertz" id="c6b12940-c414-11e9-bb97-0800200c9a66" defaultDictionaryLocale="de" description="AOSP/Gboard like default qwertz" index="1"/>
+	<Keyboard nameResId="@string/de_keyboard_extend" layoutResId="@xml/de_qwertz_extend" id="5a1b25da-c17d-4be1-ad8e-3e24333341ec" defaultDictionaryLocale="de" description="Created with tudor and Claude Philipona" index="1"/>
 	<Keyboard nameResId="@string/de_keyboard_broad" layoutResId="@xml/de_qwertz_broad" id="40f48890-e52f-11e6-9598-0800200c9a66" defaultDictionaryLocale="de" description="Slightly broader layout with umlauts as popups (saving keys)" index="1"/>
 	<Keyboard nameResId="@string/de_keyboard_extra" layoutResId="@xml/de_qwertz_extra" id="5eb23620-e52f-11e6-9598-0800200c9a66" defaultDictionaryLocale="de" description="Slightly broader layout with umlauts as popups (saving keys), also additional characters" index="1"/>
+	<Keyboard nameResId="@string/de_keyboard_qwerty" layoutResId="@xml/de_qwerty" id="574f7971-7d9b-4b20-ab86-940d086c946a" defaultDictionaryLocale="de" description="German QWERTY layout with umlauts as popups (saving keys), also additional characters" index="1"/>
 </Keyboards>

@@ -3,8 +3,10 @@
 <resources>
 	<string name="app_name">AnySoftKeyboard - German Language Pack</string>
   <string name="de_keyboard">German</string>
+  <string name="de_keyboard_extend">German extended</string>
   <string name="de_keyboard_broad">German broad</string>
   <string name="de_keyboard_extra">German broad+</string>
+  <string name="de_keyboard_qwerty">German qwerty</string>
   <string name="german_dictionary">German</string>
   <string name="dictionary_name">German</string>
   <string name="keyboard_name">German</string>
