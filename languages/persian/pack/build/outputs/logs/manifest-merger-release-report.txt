@@ -1,0 +1,81 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:1:1-31:12
+INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:1:1-31:12
+INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:1:1-31:12
+INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:1:1-31:12
+INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:1:1-31:12
+INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:1:1-31:12
+INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:1:1-31:12
+	package
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:2:11-66
+		INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+		INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:1:1-31:12
+		INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:1:1-31:12
+		INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:4:5-30:19
+receiver#com.anysoftkeyboard.languagepack.persian.PackBroadcastReceiver
+ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:5:9-29:20
+	android:exported
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:7:13-36
+	android:name
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:6:13-90
+intent-filter#action:name:com.menny.android.anysoftkeyboard.KEYBOARD+category:name:android.intent.category.ALTERNATIVE+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.SELECTED_ALTERNATIVE
+ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:8:13-14:29
+action#com.menny.android.anysoftkeyboard.KEYBOARD
+ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:9:17-85
+	android:name
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:9:25-82
+category#android.intent.category.DEFAULT
+ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:11:17-76
+	android:name
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:11:27-73
+category#android.intent.category.ALTERNATIVE
+ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:12:17-80
+	android:name
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:12:27-77
+category#android.intent.category.SELECTED_ALTERNATIVE
+ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:13:17-89
+	android:name
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:13:27-86
+intent-filter#action:name:com.menny.android.anysoftkeyboard.DICTIONARY+category:name:android.intent.category.ALTERNATIVE+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.SELECTED_ALTERNATIVE
+ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:15:13-21:29
+action#com.menny.android.anysoftkeyboard.DICTIONARY
+ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:16:17-87
+	android:name
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:16:25-84
+meta-data#com.menny.android.anysoftkeyboard.keyboards
+ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:23:13-25:61
+	android:resource
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:25:17-58
+	android:name
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:24:17-75
+meta-data#com.menny.android.anysoftkeyboard.dictionaries
+ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:26:13-28:64
+	android:resource
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:28:17-61
+	android:name
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml:27:17-78
+uses-sdk
+INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+		INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+		ADDED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml
+		INJECTED from /home/mzkde/Projcts/test/LanguagePack/languages/persian/pack/src/main/AndroidManifest.xml

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="english_words_dict_array">
+        <item>@raw/english_words_1</item>
+        <item>@raw/english_words_2</item>
+    </array>
+</resources>

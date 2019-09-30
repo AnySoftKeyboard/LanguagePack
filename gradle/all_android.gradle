@@ -1,0 +1,46 @@
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '29.0.2'
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 28
+    }
+
+    lintOptions {
+        htmlOutput file("${buildDir.absolutePath}/reports/lint/${path.substring(1).replace(':', '-')}-lint-results.html")
+        lintConfig rootProject.file('configs/lint.xml')
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    aaptOptions {
+        //does not compress any asset
+        noCompress ''
+    }
+
+    testOptions.unitTests.includeAndroidResources true
+}
+
+apply from: "$rootDir/gradle/versioning_add_on.gradle"
+
+dependencies {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+
+    if (path != ':api') {
+        api project(path: ':api')
+    }
+
+    testImplementation 'org.robolectric:robolectric:4.3'
+    testImplementation 'junit:junit:4.12'
+}

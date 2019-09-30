@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/api" />
+            <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/buildSrc" />
+            <option value="$PROJECT_DIR$/languages" />
+            <option value="$PROJECT_DIR$/languages/afrikaans_oss" />
+            <option value="$PROJECT_DIR$/languages/afrikaans_oss/apk" />
+            <option value="$PROJECT_DIR$/languages/afrikaans_oss/pack" />
+            <option value="$PROJECT_DIR$/languages/armenian2" />
+            <option value="$PROJECT_DIR$/languages/armenian2/apk" />
+            <option value="$PROJECT_DIR$/languages/armenian2/pack" />
+            <option value="$PROJECT_DIR$/languages/brazilian" />
+            <option value="$PROJECT_DIR$/languages/brazilian/apk" />
+            <option value="$PROJECT_DIR$/languages/brazilian/pack" />
+            <option value="$PROJECT_DIR$/languages/catalan" />
+            <option value="$PROJECT_DIR$/languages/catalan/apk" />
+            <option value="$PROJECT_DIR$/languages/catalan/pack" />
+            <option value="$PROJECT_DIR$/languages/czech" />
+            <option value="$PROJECT_DIR$/languages/czech/apk" />
+            <option value="$PROJECT_DIR$/languages/czech/pack" />
+            <option value="$PROJECT_DIR$/languages/english" />
+            <option value="$PROJECT_DIR$/languages/english/apk" />
+            <option value="$PROJECT_DIR$/languages/english/pack" />
+            <option value="$PROJECT_DIR$/languages/finnish" />
+            <option value="$PROJECT_DIR$/languages/finnish/apk" />
+            <option value="$PROJECT_DIR$/languages/finnish/pack" />
+            <option value="$PROJECT_DIR$/languages/french" />
+            <option value="$PROJECT_DIR$/languages/french/apk" />
+            <option value="$PROJECT_DIR$/languages/french/pack" />
+            <option value="$PROJECT_DIR$/languages/greek" />
+            <option value="$PROJECT_DIR$/languages/greek/apk" />
+            <option value="$PROJECT_DIR$/languages/greek/pack" />
+            <option value="$PROJECT_DIR$/languages/hebrew" />
+            <option value="$PROJECT_DIR$/languages/hebrew/apk" />
+            <option value="$PROJECT_DIR$/languages/hebrew/pack" />
+            <option value="$PROJECT_DIR$/languages/indonesian" />
+            <option value="$PROJECT_DIR$/languages/indonesian/apk" />
+            <option value="$PROJECT_DIR$/languages/indonesian/pack" />
+            <option value="$PROJECT_DIR$/languages/italian" />
+            <option value="$PROJECT_DIR$/languages/italian/apk" />
+            <option value="$PROJECT_DIR$/languages/italian/pack" />
+            <option value="$PROJECT_DIR$/languages/nias" />
+            <option value="$PROJECT_DIR$/languages/nias/apk" />
+            <option value="$PROJECT_DIR$/languages/nias/pack" />
+            <option value="$PROJECT_DIR$/languages/ossturkish" />
+            <option value="$PROJECT_DIR$/languages/ossturkish/apk" />
+            <option value="$PROJECT_DIR$/languages/ossturkish/pack" />
+            <option value="$PROJECT_DIR$/languages/persian" />
+            <option value="$PROJECT_DIR$/languages/persian/apk" />
+            <option value="$PROJECT_DIR$/languages/persian/pack" />
+            <option value="$PROJECT_DIR$/languages/romanian" />
+            <option value="$PROJECT_DIR$/languages/romanian/apk" />
+            <option value="$PROJECT_DIR$/languages/romanian/pack" />
+            <option value="$PROJECT_DIR$/languages/russian2" />
+            <option value="$PROJECT_DIR$/languages/russian2/apk" />
+            <option value="$PROJECT_DIR$/languages/russian2/pack" />
+            <option value="$PROJECT_DIR$/languages/sardinian" />
+            <option value="$PROJECT_DIR$/languages/sardinian/apk" />
+            <option value="$PROJECT_DIR$/languages/sardinian/pack" />
+            <option value="$PROJECT_DIR$/languages/serbian" />
+            <option value="$PROJECT_DIR$/languages/serbian/apk" />
+            <option value="$PROJECT_DIR$/languages/serbian/pack" />
+            <option value="$PROJECT_DIR$/languages/spain" />
+            <option value="$PROJECT_DIR$/languages/spain/apk" />
+            <option value="$PROJECT_DIR$/languages/spain/pack" />
+            <option value="$PROJECT_DIR$/languages/tamazight" />
+            <option value="$PROJECT_DIR$/languages/tamazight/apk" />
+            <option value="$PROJECT_DIR$/languages/tamazight/pack" />
+            <option value="$PROJECT_DIR$/quicktexts" />
+            <option value="$PROJECT_DIR$/quicktexts/bbcodes" />
+            <option value="$PROJECT_DIR$/quicktexts/bbcodes/apk" />
+            <option value="$PROJECT_DIR$/quicktexts/bbcodes/pack" />
+            <option value="$PROJECT_DIR$/themes" />
+            <option value="$PROJECT_DIR$/themes/classic_pc" />
+            <option value="$PROJECT_DIR$/themes/classic_pc/apk" />
+            <option value="$PROJECT_DIR$/themes/classic_pc/pack" />
+            <option value="$PROJECT_DIR$/themes/ics" />
+            <option value="$PROJECT_DIR$/themes/ics/apk" />
+            <option value="$PROJECT_DIR$/themes/ics/pack" />
+            <option value="$PROJECT_DIR$/themes/israel64" />
+            <option value="$PROJECT_DIR$/themes/israel64/apk" />
+            <option value="$PROJECT_DIR$/themes/israel64/pack" />
+            <option value="$PROJECT_DIR$/themes/three_d" />
+            <option value="$PROJECT_DIR$/themes/three_d/apk" />
+            <option value="$PROJECT_DIR$/themes/three_d/pack" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

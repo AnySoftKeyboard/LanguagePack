@@ -1,0 +1,4 @@
+#Mon Sep 30 14:43:55 IRST 2019
+base.0=/home/mzkde/Projcts/LanguagePack/languages/persian/apk/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

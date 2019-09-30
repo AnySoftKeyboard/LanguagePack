@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hebrew_words_dict_array">
+        <item>@raw/hebrew_words_1</item>
+        <item>@raw/hebrew_words_2</item>
+    </array>
+</resources>

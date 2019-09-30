@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="spain_words_dict_array">
+        <item>@raw/spain_words_1</item>
+        <item>@raw/spain_words_2</item>
+        <item>@raw/spain_words_3</item>
+    </array>
+</resources>

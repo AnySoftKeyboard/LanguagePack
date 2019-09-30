@@ -1,0 +1,18 @@
+R_DEF: Internal format may change without notice
+local
+array persian_words_dict_array
+drawable ic_status_persian
+raw persian_words_1
+string dictionary_name
+string keyboard_qwerty_description
+string keyboard_qwerty_name
+string persian_dictionary
+string persian_dictionary_description
+string persian_qwerty
+string persian_qwerty_compact
+xml persian_autotext
+xml persian_dictionaries
+xml persian_keyboards
+xml persian_physical
+xml persian_qwerty
+xml persian_qwerty_compact

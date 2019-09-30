@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="italian_words_dict_array">
+        <item>@raw/italian_words_1</item>
+        <item>@raw/italian_words_2</item>
+        <item>@raw/italian_words_3</item>
+    </array>
+</resources>

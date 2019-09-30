@@ -1,0 +1,37 @@
+rootProject.name = 'LanguagePack'
+include ':api'
+include ':base'
+//list of packs should be alphabetized-ordered
+include ':languages'
+include ':languages:afrikaans_oss:pack', ':languages:afrikaans_oss:apk'
+include ':languages:armenian2:pack', ':languages:armenian2:apk'
+include ':languages:brazilian:pack', ':languages:brazilian:apk'
+include ":languages:catalan:pack", ":languages:catalan:apk"
+include ":languages:czech:pack", ":languages:czech:apk"
+include ':languages:english:pack', ':languages:english:apk'
+include ':languages:finnish:pack', ':languages:finnish:apk'
+include ":languages:french:pack", ":languages:french:apk"
+include ':languages:greek:pack', ':languages:greek:apk'
+include ':languages:hebrew:pack', ':languages:hebrew:apk'
+include ':languages:indonesian:pack', ':languages:indonesian:apk'
+include ':languages:italian:pack', ':languages:italian:apk'
+include ':languages:nias:pack', ':languages:nias:apk'
+include ':languages:ossturkish:pack', ':languages:ossturkish:apk'
+include ':languages:persian:pack', ':languages:persian:apk'
+include ':languages:romanian:pack', ':languages:romanian:apk'
+include ':languages:russian2:pack', ':languages:russian2:apk'
+include ':languages:sardinian:pack', ':languages:sardinian:apk'
+include ':languages:serbian:pack', ':languages:serbian:apk'
+include ':languages:spain:pack', ':languages:spain:apk'
+include ':languages:tamazight:pack', ':languages:tamazight:apk'
+
+//list of themes should be alphabetized-ordered
+include ':themes'
+include ':themes:classic_pc:pack', ':themes:classic_pc:apk'
+include ':themes:ics:pack', ':themes:ics:apk'
+include ':themes:israel64:pack', ':themes:israel64:apk'
+include ':themes:three_d:pack', ':themes:three_d:apk'
+
+//list of quick-text should be alphabetized-ordered
+include ':quicktexts'
+include ':quicktexts:bbcodes:pack', ':quicktexts:bbcodes:apk'

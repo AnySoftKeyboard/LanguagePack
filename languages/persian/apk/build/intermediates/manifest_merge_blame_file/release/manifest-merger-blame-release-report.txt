@@ -1,0 +1,75 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.anysoftkeyboard.languagepack.persian"
+4    android:versionCode="1"
+5    android:versionName="4.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="9"
+8-->/home/mzkde/Projcts/LanguagePack/languages/persian/apk/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/home/mzkde/Projcts/LanguagePack/languages/persian/apk/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/home/mzkde/Projcts/LanguagePack/languages/persian/apk/src/main/AndroidManifest.xml:4:5-6:55
+12        android:allowBackup="false"
+12-->/home/mzkde/Projcts/LanguagePack/languages/persian/apk/src/main/AndroidManifest.xml:4:18-45
+13        android:icon="@mipmap/ic_launcher"
+13-->/home/mzkde/Projcts/LanguagePack/languages/persian/apk/src/main/AndroidManifest.xml:5:9-43
+14        android:label="persian for anysoftkeyboard" >
+14-->/home/mzkde/Projcts/LanguagePack/languages/persian/apk/src/main/AndroidManifest.xml:6:9-52
+15        <receiver
+15-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:12:9-36:20
+16            android:name="com.anysoftkeyboard.languagepack.persian.PackBroadcastReceiver"
+16-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-90
+17            android:exported="true" >
+17-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-36
+18            <intent-filter>
+18-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-21:29
+19                <action android:name="com.menny.android.anysoftkeyboard.KEYBOARD" />
+19-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:16:17-85
+19-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:16:25-82
+20
+21                <category android:name="android.intent.category.DEFAULT" />
+21-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:18:17-76
+21-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:18:27-73
+22                <category android:name="android.intent.category.ALTERNATIVE" />
+22-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:19:17-80
+22-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:19:27-77
+23                <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
+23-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:20:17-89
+23-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:20:27-86
+24            </intent-filter>
+25            <intent-filter>
+25-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:22:13-28:29
+26                <action android:name="com.menny.android.anysoftkeyboard.DICTIONARY" />
+26-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:23:17-87
+26-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:23:25-84
+27
+28                <category android:name="android.intent.category.DEFAULT" />
+28-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:18:17-76
+28-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:18:27-73
+29                <category android:name="android.intent.category.ALTERNATIVE" />
+29-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:19:17-80
+29-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:19:27-77
+30                <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
+30-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:20:17-89
+30-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:20:27-86
+31            </intent-filter>
+32
+33            <meta-data
+33-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:30:13-32:61
+34                android:name="com.menny.android.anysoftkeyboard.keyboards"
+34-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:31:17-75
+35                android:resource="@xml/persian_keyboards" />
+35-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:32:17-58
+36            <meta-data
+36-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:33:13-35:64
+37                android:name="com.menny.android.anysoftkeyboard.dictionaries"
+37-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:34:17-78
+38                android:resource="@xml/persian_dictionaries" />
+38-->[:languages:persian:pack] /home/mzkde/Projcts/LanguagePack/languages/persian/pack/build/intermediates/library_manifest/release/AndroidManifest.xml:35:17-61
+39        </receiver>
+40    </application>
+41
+42</manifest>

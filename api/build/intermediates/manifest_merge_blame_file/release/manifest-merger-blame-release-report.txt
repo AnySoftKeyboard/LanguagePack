@@ -1,0 +1,17 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.anysoftkeyboard.api"
+5    android:versionCode="1"
+6    android:versionName="4.0.1" >
+7
+8    <uses-sdk
+8-->/home/mzkde/Projcts/test/LanguagePack/api/src/main/AndroidManifest.xml:4:5-74
+9        android:minSdkVersion="9"
+9-->/home/mzkde/Projcts/test/LanguagePack/api/src/main/AndroidManifest.xml:4:5-74
+10        android:targetSdkVersion="28"
+10-->/home/mzkde/Projcts/test/LanguagePack/api/src/main/AndroidManifest.xml:4:5-74
+11        tools:overrideLibrary="androidx.test,androidx.test.core" />
+11-->/home/mzkde/Projcts/test/LanguagePack/api/src/main/AndroidManifest.xml:4:15-71
+12
+13</manifest>
