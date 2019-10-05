@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyboards>
+    <Keyboard
+        nameResId="کوردی"
+        iconResId="@drawable/ic_status_kurdish"
+        layoutResId="@xml/central_kurdish_qwerty"
+        id="3dd3f14d-0807-43c5-b401-b3992ced5017"
+        defaultDictionaryLocale="ku"
+        description="QWERTY Central Kurdish"
+        index="1" defaultEnabled="true" />
+    <Keyboard
+        nameResId="Kurdi"
+        iconResId="@drawable/ic_status_kurdish"
+        layoutResId="@xml/kurmanji_qwerty"
+        id="2af93037-6492-4820-941a-d78139181c58"
+        defaultDictionaryLocale="ku"
+        description="QWERTY Kurdi "
+        index="2"
+        defaultEnabled="true" />
+    <Keyboard
+        nameResId="کوردی"
+        iconResId="@drawable/ic_status_kurdish"
+        layoutResId="@xml/central_kurdish_arabic_layout"
+        id="0bd07961-b6ce-4ccf-b19a-7ea832add5b5"
+        defaultDictionaryLocale="ku"
+        description="Central Kurdish Arabic layout "
+        index="3"
+        defaultEnabled="true" />
+</Keyboards>

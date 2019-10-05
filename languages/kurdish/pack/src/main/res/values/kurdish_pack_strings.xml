@@ -1,0 +1,5 @@
+<resources>
+    <string name="kurdish_dictionary_description">Kurdish</string>
+    <string name="kurdish_keyboard_description">Kurdish qwerty</string>
+    <string name="kurdish_keyboard_description_symbol">Kurdish qwerty with Symbol </string>
+</resources>
