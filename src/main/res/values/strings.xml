@@ -6,5 +6,7 @@
 
     <string name="keyboard_qwerty">Polish</string>
     <string name="keyboard_desc_qwerty">Polish QWERTY keyboard</string>
+    <string name="keyboard_qwerty_alt">Polish - Alternative</string>
+    <string name="keyboard_desc_qwerty_alt">Alternative Polish QWERTY keyboard with priority given to Polish special characters</string>
 
 </resources>
