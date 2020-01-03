@@ -6,4 +6,6 @@
 
     <string name="keyboard_qwerty">Polski</string>
     <string name="keyboard_desc_qwerty">Polska klawiatura QWERTY</string>
+    <string name="keyboard_qwerty_alt">Polski - Alternatywna</string>
+    <string name="keyboard_desc_qwerty_alt">Polska klawiatura QWERTY z priorytetem dla polskich znaków specjalnych</string>
 </resources>
