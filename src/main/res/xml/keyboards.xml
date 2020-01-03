@@ -24,4 +24,12 @@
         defaultDictionaryLocale="pl"
         description="@string/keyboard_desc_qwerty"
         index="1"/>
+    <Keyboard
+        nameResId="@string/keyboard_qwerty_alt"
+        iconResId="@drawable/pl"
+        layoutResId="@xml/qwerty_alt"
+        id="1a0a631a-5283-40c0-85bf-d8293f1f6f44"
+        defaultDictionaryLocale="pl"
+        description="@string/keyboard_desc_qwerty_alt"
+        index="2"/>
 </Keyboards>
