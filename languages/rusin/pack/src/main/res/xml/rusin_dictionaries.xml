@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionaries>
+    <Dictionary
+        autoTextResourceId="@xml/rusin_autotext"
+        description="@string/rusin_dictionary_description"
+        dictionaryResourceId="@array/rusin_words_dict_array"
+        id="a6cc6503-e08d-499d-9f0c-4471a67b3258"
+        initialSuggestions="@array/rusin_initial_suggestions"
+        locale="rue"
+        nameResId="@string/rusin_dictionary"
+        type="binary_resource" />
+</Dictionaries>
