@@ -1,3 +1,6 @@
+# deprecated
+This repository was merged into the main [repository](https://github.com/AnySoftKeyboard/AnySoftKeyboard/tree/master/addons/languages).
+
 # AnySoftKeyboard Add-On Packs
 `master` latest build: [![CircleCI](https://circleci.com/gh/AnySoftKeyboard/LanguagePack/tree/master.svg?style=svg)](https://circleci.com/gh/AnySoftKeyboard/LanguagePack/tree/master)<br/>
 <br/>
